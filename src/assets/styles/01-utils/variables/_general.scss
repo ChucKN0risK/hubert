@@ -6,12 +6,12 @@
   /// ---------------------
   /// STYLE
   /// ---------------------
-  --border-radius-small: 4px;
-  --border-radius-medium: 6px;
-  --border-radius-large: 8px;
-  --border-radius-xl: 16px;
-  --border: 1px solid var(--border-component-lightest-border);
-  --margin-element-following-titles: var(--base-space-2);
+  // Taken from Reshaped: https://reshaped.so/
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+  --radius-circular: 999px;
+  
   // --page-horizontal-padding: var(--base-space-6);
   // --page-vertical-padding: var(--base-space-6);
   // --base-cta-height: var(--base-space-8);
