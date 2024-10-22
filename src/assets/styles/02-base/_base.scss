@@ -1,0 +1,195 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --white: #ffffff;
+  --black: #181818;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--white);
+  --color-text: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black);
+    --color-text: var(--white);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* ======================================================================================== */
+/* Base | Default, single element selectors that will look the same regardless of location. */
+/* ======================================================================================== */
+
+html {
+  min-height: 100vh;
+  text-size-adjust: 100%;
+  /* Mobile First Approach */
+  /* Refer to https://prowebtype.com/setting-type/ */
+  font-family: var(--font-text), serif;
+  font-size: 100%;
+  font-weight: 400;
+  text-align: left;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* Make scrollbars black */
+/* https://twitter.com/diegohaz/status/1529543787311144961 */
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------- */
+/* GENERAL SETTINGS                  */
+/* --------------------------------- */
+
+body {
+  display: flex;
+  position: relative;
+  font-family: var(--font-text);
+  height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* p,
+a,
+ul,
+blockquote,
+figcaption {
+  @include text-body-m;
+} */
+
+picture {
+  display: block;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  --grid-template-areas: 
+    'main'
+    'nav'
+  ;
+  --grid-template-rows: 1fr minmax(min-content, max-content);
+
+  display: grid;
+  grid-template-areas: var(--grid-template-areas);
+  width: 100%;
+  height: 100%;
+  
+  
+  @media only screen and (max-width: 800px) {
+    grid-template-rows: var(--grid-template-rows);
+    
+    &:has(.o-player) {
+      --grid-template-areas: 
+        'main'
+        'player'
+        'nav'
+      ;
+      --grid-template-rows: 1fr var(--player-height) minmax(min-content, max-content);
+    }
+  }
+
+  @media only screen and (min-width: 801px) {
+    --grid-template-areas:
+      'nav main'
+      'nav player'
+    ;
+    --grid-template-rows: 1fr var(--player-height);
+    grid-template-columns: var(--main-nav-width) 1fr;
+  }
+}
+
+main,
+aside {
+  scroll-behavior: var(--scroll-behavior, auto);
+}
+
+main {
+  grid-area: main;
+  overflow-y: scroll;
+  max-height: 100%;
+
+  @media only screen and (min-width: 801px) {
+    padding: var(--base-space-2);
+  }
+}
+
+.base-layout,
+aside {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 800px) {
+    padding-top: var(--base-space-4);
+    padding-bottom: var(--player-padding);
+    padding-left: var(--player-padding);
+    padding-right: var(--player-padding);
+  }
+  
+  & > * + * {
+    margin-top: var(--margin-element-following-titles);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-7);
+
+  &:hover {
+    background-color: #0000330f;
+  }
+}
+
+.base-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--player-padding);
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: var(--base-space-2);
+  }
+}
+
+.o-song__duration {
+  margin-left: auto;
+}
+
+.o-song__options {
+  @include flex-absolute-center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  @include size(var(--base-space-6));
+}

@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+/* Fonts */
+:root {
+  --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-text-regular: 'Inter-Regular', var(--font-fallback);
+  --font-text-bold: 'Inter-Bold', var(--font-fallback);
+  --font-text-black: 'Inter-Black', var(--font-fallback);
+  --font-text: var(--font-text-regular);
+}

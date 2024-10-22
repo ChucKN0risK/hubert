@@ -1,0 +1,14 @@
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/red.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/blue-dark.css';
+@import '@radix-ui/colors/green-dark.css';
+@import '@radix-ui/colors/red-dark.css';
+
+:root {
+  --icon-default-color: var(--gray-8);
+  --icon-width: var(--base-space-4);
+  --icon-height: var(--base-space-4);
+}

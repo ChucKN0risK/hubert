@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+/* Fonts */
+:root {
+  --font-text-small: 'Inter-Regular', sans-serif;
+  --font-text-large: 'Inter-SemiBold', sans-serif;
+  --font-text-medium: 'Inter-Medium', sans-serif;
+  --font-text: var(--font-text-small);
+}
