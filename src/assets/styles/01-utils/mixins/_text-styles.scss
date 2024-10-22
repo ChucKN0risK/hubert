@@ -1,71 +1,83 @@
 @mixin text-title-1 {
-  font-family: var(--font-text-large);
-  font-weight: 600;
+  font-family: var(--font-text-black);
+  font-size: 6rem;
+  line-height: 1.04;
+}
+
+@mixin text-title-2 {
+  font-family: var(--font-text-black);
+  font-size: 5rem;
+  line-height: 1.04;
+}
+
+@mixin text-title-3 {
+  font-family: var(--font-text-black);
+  font-size: 4rem;
+  line-height: 1.04;
+}
+
+@mixin text-title-4 {
+  font-family: var(--font-text-bold);
+  font-size: 3.5rem;
+  line-height: 1.04;
+}
+
+@mixin text-title-5 {
+  font-family: var(--font-text-bold);
+  font-size: 3rem;
+  line-height: 1.04;
+}
+
+@mixin text-title-6 {
+  font-family: var(--font-text-bold);
+  font-size: 2.25rem;
+  line-height: 1.04;
+}
+
+@mixin text-featured-1 {
+  font-family: var(--font-text-regular);
   font-size: 2rem;
   line-height: 1.25;
 }
 
-@mixin text-title-2 {
-  font-family: var(--font-text-large);
-  font-weight: 600;
+@mixin text-featured-2 {
+  font-family: var(--font-text-regular);
   font-size: 1.5rem;
   line-height: 1.33;
 }
 
-@mixin text-subtitle {
-  font-family: var(--font-text-medium);
-  font-weight: 500;
+@mixin text-featured-3 {
+  font-family: var(--font-text-regular);
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+@mixin text-body-1 {
+  font-family: var(--font-text-regular);
   font-size: 1.125rem;
-  line-height: 1.78;
+  line-height: 1.33;
 }
 
-@mixin text-body-l {
-  font-family: var(--font-text-large);
-  font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.43;
-}
-
-@mixin text-body-m {
-  font-family: var(--font-text-medium);
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.43;
-}
-
-@mixin text-body-s {
-  font-family: var(--font-text-small);
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.43;
-}
-
-@mixin text-body-xs {
-  font-family: var(--font-text-small);
-  font-weight: 400;
-  font-size: 0.6rem;
-  line-height: 1.1;
-}
-
-@mixin text-body-xs-bold {
-  font-family: var(--font-text-large);
-  font-weight: 400;
-  font-size: 0.6rem;
-  line-height: 1.1;
-}
-
-@mixin text-section {
-  font-family: var(--font-text-medium);
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 1.67;
-  letter-spacing: 0.00375rem;
-  text-transform: uppercase;
-}
-
-@mixin text-caption {
-  font-family: var(--font-text-small);
-  font-weight: 400;
-  font-size: 0.75rem;
+@mixin text-body-2 {
+  font-family: var(--font-text-regular);
+  font-size: 1rem;
   line-height: 1.5;
+}
+
+@mixin text-body-2 {
+  font-family: var(--font-text-regular);
+  font-size: 0.875rem;
+  line-height: 1.42;
+}
+
+@mixin text-caption-1 {
+  font-family: var(--font-text-regular);
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+@mixin text-caption-2 {
+  font-family: var(--font-text-regular);
+  font-size: 0.625rem;
+  line-height: 1.2;
 }
