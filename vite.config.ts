@@ -7,11 +7,6 @@ const scssPaths: Array<string> = ["./src/assets/styles/01-utils/_mixins.scss"];
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
   css: {
     preprocessorOptions: {
       scss: {
