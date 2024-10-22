@@ -1,19 +1,15 @@
-import { HTMLProps, ReactNode } from 'react';
-import Text from '@/components/01-atoms/Text/Text';
 import './Button.scss'
 
-interface ButtonProps extends Omit<HTMLProps<HTMLButtonElement>, 'size'> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** The Button variant */
   variant?: 'primary' | 'secondary';
   /** The Button size */
   size?: 'small' | 'medium' | 'large';
   /** Is the Button full-width? */
   isFullWidth?: boolean;
-  /** The button icon */
-  icon?: ReactNode;
 }
 
-function Button({ children, variant = 'primary', size = 'medium', isFullWidth = false, icon, ...props }: ButtonProps) {
+function Button({ children, variant = 'primary', size = 'medium', isFullWidth = false, ...props }: ButtonProps) {
   return (
     <>
       <button

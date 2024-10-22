@@ -8,9 +8,13 @@ function App() {
 
   return (
     <>
-      <Text tag='h1' text='Vite + React' variant='title-1' />
-      <Button text={`count is ${count}`} clickHandler={() => setCount((count) => count + 1)} />
-      <Button variant='secondary' text={`count is ${count}`} clickHandler={() => setCount((count) => count + 1)} />
+      <Text tag='h1' variant='title-1'>Couou</Text>
+      <Button onClick={() => setCount((count) => count + 1)}>
+        <Text>{`count is ${count}`}</Text>
+      </Button>
+      <Button variant='secondary' onClick={() => setCount((count) => count + 1)}>
+        <Text>{`count is ${count}`}</Text>
+      </Button>
     </>
   )
 }
