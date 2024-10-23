@@ -1,0 +1,8 @@
+.a-stack {
+  display: flex;
+  gap: var(--space);
+}
+
+.a-stack--vertical {
+  flex-direction: column;
+}

@@ -25,6 +25,7 @@
   height: var(--button-height);
   padding-left: var(--button-side-padding);
   padding-right: var(--button-side-padding);
+  gap: var(--base-space-2);
   color: inherit;
   text-decoration: none;
   border-radius: var(--button-border-radius);
@@ -44,15 +45,6 @@
 
   &[disabled] {
     cursor: not-allowed;
-  }
-
-  &:active {
-    box-shadow: var(--shadow-button-active);
-  }
-
-  .m-button__icon + .m-button__text,
-  .m-button__text + .m-button__icon {
-    margin-left: var(--base-space-2);
   }
 }
 
