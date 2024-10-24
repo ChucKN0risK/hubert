@@ -1,6 +1,10 @@
 :root {
   @media (prefers-color-scheme: light) {
     /* COLOR */
-
+    --background-elevation-base: #ffffff;
+    --foreground-neutral: rgb(20, 24, 31, 1);
+    --foreground-critical: #C42525;
+    --border-neutral: color-mix(in srgb, var(--foreground-neutral), transparent 12.16%);
+    --border-primary: #3B38ED;
   }  
 } 

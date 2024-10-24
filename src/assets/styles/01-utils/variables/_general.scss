@@ -11,6 +11,12 @@
   --radius-medium: 8px;
   --radius-large: 12px;
   --radius-circular: 999px;
+
+  --interactive-element-height-small: var(--base-space-6);
+  --interactive-element-height-medium: var(--base-space-8);
+  --interactive-element-height-large: var(--base-space-10);
+  --input-padding: var(--base-space-2);
+  --input-border-color: var(--border-neutral);
   
   // --page-horizontal-padding: var(--base-space-6);
   // --page-vertical-padding: var(--base-space-6);
