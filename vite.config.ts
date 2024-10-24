@@ -1,12 +1,16 @@
 import { defineConfig } from "vite";
 import path from "path";
 import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
 
-const scssPaths: Array<string> = ["./src/assets/styles/01-utils/_mixins.scss"];
+const scssPaths: Array<string> = [
+  "./src/assets/styles/01-utils/_mixins.scss",
+  "./src/assets/styles/01-utils/_variables.scss",
+];
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgr()],
   css: {
     preprocessorOptions: {
       scss: {
