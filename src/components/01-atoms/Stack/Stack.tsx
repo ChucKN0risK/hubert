@@ -25,7 +25,13 @@ interface StackProps {
 
 function Stack({ children, axis = 'y', gap = 2, as = 'div' }: StackProps) {
   const Tag = as;
-  return (<Tag className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''}`} style={{ '--space': `var(--base-space-${gap})` }}>{children}</Tag>)
+  return (
+    <Tag
+      className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''}`}
+      style={{ '--space': `var(--base-space-${gap})` }}
+    >
+      {children}
+    </Tag>)
 }
 
 export default Stack;
