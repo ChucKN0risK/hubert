@@ -311,15 +311,15 @@
 // SIZES
 // ---------------------------
 .m-button--small {
-  --button-height: var(--base-space-6);
+  --button-height: var(--interactive-element-height-small);
 }
 
 .m-button--medium {
-  --button-height: var(--base-space-8);
+  --button-height: var(--interactive-element-height-medium);
 }
 
 .m-button--large {
-  --button-height: var(--base-space-10);
+  --button-height: var(--interactive-element-height-large);
 }
 
 .m-button--full-width {
