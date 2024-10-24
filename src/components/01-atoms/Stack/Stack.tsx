@@ -1,7 +1,7 @@
 import { ElementType, ReactNode } from "react";
 import './Stack.scss';
 
-interface StackProps {
+interface StackProps extends React.HTMLAttributes<HTMLElement> {
   as?: ElementType;
   axis?: 'x' | 'y';
   gap?:

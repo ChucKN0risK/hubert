@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Stack from "./Stack";
-import Text from "../Text/Text";
+// import Text from "../Text/Text";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Example/Stack",
+  title: "01-atoms/Stack",
   component: Stack,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -18,7 +18,8 @@ const meta = {
   //   variant: { control: 'color' },
   // },
   args: {
-    children: [<Text>Stack item 1</Text>, "cououcoucouou"],
+    // TODO: Set native HTML elements 👇
+    children: ["cououcoucouou"],
   },
 } satisfies Meta<typeof Stack>;
 
