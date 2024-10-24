@@ -1,4 +1,4 @@
-import { createElement, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import './Text.scss'
 
 type TextTag =
@@ -10,6 +10,7 @@ type TextTag =
   | 'h4'
   | 'h5'
   | 'h6'
+  | 'label'
   | 'time';
 
 type TextVariant =
@@ -28,21 +29,27 @@ type TextVariant =
   | 'caption-1'
   | 'caption-2';
 
-interface TextProps {
-  /** The HTML tag to use */
-  tag?: TextTag;
+interface TextProps extends React.HTMLAttributes<HTMLElement> {
+  /**
+   * The HTML tag to use
+   * @defaultValue 'p'
+   **/
+  as?: TextTag;
   /** The Text content */
   children: ReactNode
-  /** The Text variant */
+  /**
+   * The text variant
+   * @defaultValue 'body-1'
+   **/
   variant?: TextVariant;
   /** The Text color */
   color?: string;
 }
 
-function Text({ tag = 'p', children, variant = 'body-1' }: TextProps) {
+function Text({ as = 'p', children, variant = 'body-1', ...props }: TextProps) {
+  const Tag = as;
   return (
-    // Y'a aussi une notaton de tag dynamique en JSX. Adrien sait.
-    createElement(tag, { className: `text-${variant}` }, children)
+    <Tag className={`text-${variant}`} {...props}>{children}</Tag>
   );
 }
 
