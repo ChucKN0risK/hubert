@@ -29,7 +29,7 @@ type TextVariant =
   | 'caption-1'
   | 'caption-2';
 
-interface TextProps extends React.HTMLAttributes<HTMLElement> {
+interface TextProps extends React.AllHTMLAttributes<HTMLElement> {
   /**
    * The HTML tag to use
    * @defaultValue 'p'
