@@ -1,0 +1,15 @@
+.m-accordion {
+  summary {
+    background-color: var(--foreground-neutral-faded);
+  }
+
+  &[open] {
+    .m-accordion__toggle-icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  summary {
+    align-items: center;
+  }
+}
