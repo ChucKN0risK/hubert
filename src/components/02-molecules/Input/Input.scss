@@ -1,0 +1,32 @@
+.m-input {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--input-border-color);
+  gap: var(--base-space-2);
+  padding: var(--input-padding);
+  height: var(--input-height);
+
+  &:focus-within {
+    --input-border-color: var(--border-primary); 
+  }
+
+  input {
+    all: unset;
+  }
+
+  textarea {
+    field-sizing: content;
+  }
+}
+
+.m-input--small {
+  --input-height: var(--interactive-element-height-small);
+}
+
+.m-input--medium {
+  --input-height: var(--interactive-element-height-medium);
+}
+
+.m-input--large {
+  --input-height: var(--interactive-element-height-large);
+}
