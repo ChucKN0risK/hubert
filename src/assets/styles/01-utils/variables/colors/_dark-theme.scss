@@ -1,6 +1,12 @@
-:root {
+:root, .dark-theme {
   @media (prefers-color-scheme: dark) {
     /* COLOR */
-    
+    --background-elevation-base: rgb(0, 0, 0);
+    --background-page: rgb(15, 17, 22, 1);
+    --foreground-neutral: white;
+    --foreground-neutral-faded: #5b667e;
+    --foreground-critical: #C42525;
+    --border-neutral: color-mix(in srgb, var(--foreground-neutral), transparent 12.16%);
+    --border-primary: #3B38ED;
   }
 }

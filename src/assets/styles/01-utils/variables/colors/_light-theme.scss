@@ -1,7 +1,8 @@
-:root {
+:root, .light-theme {
   @media (prefers-color-scheme: light) {
     /* COLOR */
-    --background-elevation-base: #ffffff;
+    --background-elevation-base: rgba(255, 255, 255, 1);
+    --background-page: rgba(255, 255, 255, 1);
     --foreground-neutral: rgba(20, 24, 31, 1);
     --foreground-neutral-faded: #5b667e;
     --foreground-critical: #C42525;
