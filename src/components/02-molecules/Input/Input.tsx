@@ -1,5 +1,5 @@
 import './Input.scss';
-// import Text from '../../01-atoms/Text/Text'
+import Icon from '../../01-atoms/Icon/Icon';
 
 interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   /**
@@ -13,14 +13,14 @@ interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, '
    * @defaultValue 'text'
    **/
   type?: string;
+  icon?: string;
   onChange: () => void;
 }
 
-function Input({ children, type = 'text', size = 'medium', placeholder, name, onChange }: InputProps) {
+function Input({ type = 'text', size = 'medium', icon, placeholder, name, onChange }: InputProps) {
   return (
     <div className={`m-input m-input--${size}`}>
-      {children}
-      {/* <Text as='label'>Coucou</Text> */}
+      {icon ? <Icon name={icon} className="m-input__icon" /> : null}
       <input type={type} id={name} placeholder={placeholder} className='m-input__input' onChange={onChange} />
     </div>
   )
