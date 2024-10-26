@@ -8,6 +8,7 @@ import './Accordion.scss'
 interface FolderProps extends React.ComponentPropsWithoutRef<'details'> {
   summary: string;
   children: ReactNode | ReactNode[];
+  summaryIcon?: string;
   /**
    * Is the Accordion open by default
    * @defaultValue false
@@ -15,11 +16,12 @@ interface FolderProps extends React.ComponentPropsWithoutRef<'details'> {
   open?: boolean;
 }
 
-function Folder({ summary, open = false, children }: FolderProps) {
+function Folder({ summary, summaryIcon, open = false, children, ...props }: FolderProps) {
   return (
-    <details className='m-accordion' open={open} aria-expanded={open}>
+    <details className='m-accordion' open={open} aria-expanded={open} {...props}>
       <Stack axis="x" as='summary'>
         <Icon name='caret-right' className='m-accordion__toggle-icon' />
+        {summaryIcon ? <Icon name={summaryIcon} className='m-accordion__summary-icon' /> : null}
         <Text>{summary}</Text>
       </Stack>
       <div className="m-accrodion__content">
