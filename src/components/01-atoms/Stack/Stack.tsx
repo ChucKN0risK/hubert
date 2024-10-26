@@ -1,4 +1,4 @@
-import { ElementType, ReactNode } from "react";
+import { ElementType } from "react";
 import './Stack.scss';
 
 interface StackProps extends React.HTMLAttributes<HTMLElement> {
@@ -20,15 +20,15 @@ interface StackProps extends React.HTMLAttributes<HTMLElement> {
   | 16
   | 18
   | 20;
-  children: ReactNode;
 }
 
-function Stack({ children, axis = 'y', gap = 2, as = 'div' }: StackProps) {
+function Stack({ children, axis = 'y', gap = 2, as = 'div', ...props }: StackProps) {
   const Tag = as;
   return (
     <Tag
       className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''}`}
       style={{ '--space': `var(--base-space-${gap})` }}
+      {...props}
     >
       {children}
     </Tag>)
