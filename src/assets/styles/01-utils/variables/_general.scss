@@ -11,7 +11,9 @@
   --radius-medium: 8px;
   --radius-large: 12px;
   --radius-circular: 999px;
+  --shadow-raised: 0px 1px 5px -4px rgba(0,0,0,.5), 0px 4px 8px 0px rgba(0,0,0,.05);
 
+  // Custom
   --interactive-element-height-small: var(--base-space-6);
   --interactive-element-height-medium: var(--base-space-8);
   --interactive-element-height-large: var(--base-space-10);

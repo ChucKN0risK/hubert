@@ -2,11 +2,13 @@
   @media (prefers-color-scheme: light) {
     /* COLOR */
     --background-elevation-base: rgba(255, 255, 255, 1);
+    --background-elevation-raised: rgba(255, 255, 255, 1);
     --background-page: rgba(255, 255, 255, 1);
     --foreground-neutral: rgba(20, 24, 31, 1);
     --foreground-neutral-faded: #5b667e;
     --foreground-critical: #C42525;
     --border-neutral: color-mix(in srgb, var(--foreground-neutral), transparent 12.16%);
+    --border-neutral-faded: #000000a1;
     --border-primary: #3B38ED;
   }  
 } 
