@@ -39,11 +39,11 @@ export const Icon = ({ name, ...props }: IconProps) => {
   const { loading, error, Svg } = useIconImport(name);
 
   if (error) {
-    return "An error occurred";
+    console.log(`An error occurred while loading icon ${name}`);
   }
 
   if (loading) {
-    return "Loading...";
+    console.log("Loading...");
   }
 
   if (!Svg) {
