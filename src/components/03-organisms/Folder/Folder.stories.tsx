@@ -33,12 +33,22 @@ export const Default: Story = {
 export const withSubFolders: Story = {
   args: {
     item: {
-      id: '0',
+      id: '65565',
       name: "Design Tokens",
       children: [
         {
           id: '01',
-          name: 'Tools'
+          name: 'Tools',
+          children: [
+            {
+              id: '07877',
+              name: 'Asset 01',
+            },
+            {
+              id: '07848',
+              name: 'Asset 02',
+            }
+          ]
         },
         {
           id: '02',
