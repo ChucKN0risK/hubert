@@ -4,6 +4,7 @@ import './Stack.scss';
 interface StackProps extends React.HTMLAttributes<HTMLElement> {
   as?: ElementType;
   axis?: 'x' | 'y';
+  alignItems?: 'start' | 'center' | 'end';
   gap?:
   1
   | 2
@@ -22,12 +23,12 @@ interface StackProps extends React.HTMLAttributes<HTMLElement> {
   | 20;
 }
 
-function Stack({ children, axis = 'y', gap = 2, as = 'div', ...props }: StackProps) {
+function Stack({ children, axis = 'y', gap = 2, as = 'div', alignItems, ...props }: StackProps) {
   const Tag = as;
   return (
     <Tag
-      className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''}`}
-      style={{ '--space': `var(--base-space-${gap})` }}
+      className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''} `}
+      style={{ '--space': `var(--base-space-${gap})`, '--align-items': alignItems }}
       {...props}
     >
       {children}

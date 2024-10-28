@@ -1,6 +1,7 @@
 .a-stack {
   display: flex;
   gap: var(--space);
+  align-items: var(--align-items, start);
 }
 
 .a-stack--vertical {
