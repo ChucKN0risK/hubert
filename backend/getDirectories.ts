@@ -8,16 +8,18 @@ const nodesToExclude = ["Assets.library", ".DS_Store"];
 
 class TreeNode {
   public id: string;
+  public name: string;
   public path: string;
   public size?: number;
-  public dateModified?: Date;
+  public lastModified?: Date;
   public children: Array<TreeNode>;
 
-  constructor(path: string, size?: number, dateModified?: Date) {
+  constructor(path: string, name: string, size?: number, lastModified?: Date) {
     this.id = crypto.randomUUID();
+    this.name = name;
     this.path = path;
     this.size = size;
-    this.dateModified = dateModified;
+    this.lastModified = lastModified;
     this.children = [];
   }
 }
@@ -35,7 +37,7 @@ function generateDataFile(content: TreeNode) {
 }
 
 export function buildTree(rootPath: string) {
-  const root = new TreeNode(rootPath);
+  const root = new TreeNode(rootPath, "00. ASSETS 📎");
 
   const stack = [root];
 
@@ -48,12 +50,14 @@ export function buildTree(rootPath: string) {
       for (const child of children) {
         if (!nodesToExclude.includes(child)) {
           const childPath = `${currentNode.path}/${child}`;
+          const childName = child;
           const childSize = fs.statSync(childPath).size;
-          const childDateModified = fs.statSync(childPath).mtime;
+          const childLastModified = fs.statSync(childPath).mtime;
           const childNode = new TreeNode(
             childPath,
+            childName,
             childSize,
-            childDateModified
+            childLastModified
           );
           currentNode.children.push(childNode);
 
