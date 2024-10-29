@@ -22,11 +22,7 @@ function Folder({ item, level }: FolderProps) {
 
   const getFolderIcon = isSelected ? 'folder-open' : 'folder-closed';
 
-  // Un dossier = un item qui contient des enfants et dont l'un d'entre eux contient des enfants
-  const hasChildren = !!item.children && item.children.length > 0;
-  const isFolder = hasChildren && !!item.children!.find(el => el.children);
-
-  console.log(item.name, hasChildren, isFolder);
+  const isFolder = item.children.length > 0 && !!item.children!.find(el => el.children);
 
   return (
     <li className='m-folder' style={{ '--folder-level': level } as React.CSSProperties}>
@@ -40,12 +36,11 @@ function Folder({ item, level }: FolderProps) {
           >
             {item.children!.map(el => <Folder item={el} level={1} key={el.id}></Folder>)}
           </Accordion>
-          : hasChildren ?
-            <Stack axis="x" as='button' alignItems='center' onClick={handleClick}>
-              <Icon name={getFolderIcon} />
-              <Text>{item.name}</Text>
-            </Stack>
-            : null
+          :
+          <Stack axis="x" as='button' alignItems='center' onClick={handleClick}>
+            <Icon name={getFolderIcon} />
+            <Text>{item.name}</Text>
+          </Stack>
       }
     </li>
   )
