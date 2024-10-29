@@ -3,29 +3,29 @@ import Stack from '../../01-atoms/Stack/Stack'
 import Text from '../../01-atoms/Text/Text'
 import Icon from '../../01-atoms/Icon/Icon'
 import Accordion from '../../02-molecules/Accordion/Accordion'
+import FolderList from '../../03-organisms/FolderList/FolderList'
 import type { AssetItem } from '../../../types/asset.types'
 import './Folder.scss'
 
 export interface FolderProps extends React.HTMLAttributes<HTMLButtonElement | HTMLDetailsElement> {
   item: AssetItem;
-  level: number;
 }
 
-function Folder({ item, level }: FolderProps) {
+function Folder({ item }: FolderProps) {
   const [isSelected, setSelection] = useState(false)
 
   const handleClick = (e) => {
     e.stopPropagation();
-    console.log('click');
     setSelection(!isSelected);
   };
 
   const getFolderIcon = isSelected ? 'folder-open' : 'folder-closed';
 
-  const isFolder = item.children.length > 0 && !!item.children!.find(el => el.children);
+  const hasChildren = item.children.length > 0;
+  const isFolder = hasChildren && !!item.children!.find(el => el.children && el.children.length > 0);
 
   return (
-    <li className='m-folder' style={{ '--folder-level': level } as React.CSSProperties}>
+    <li className='m-folder' style={{ '--folder-level': item.depth } as React.CSSProperties}>
       {
         isFolder ?
           <Accordion
@@ -34,13 +34,14 @@ function Folder({ item, level }: FolderProps) {
             open={isSelected}
             onToggle={handleClick}
           >
-            {item.children!.map(el => <Folder item={el} level={1} key={el.id}></Folder>)}
+            <FolderList folders={item.children} />
           </Accordion>
-          :
-          <Stack axis="x" as='button' alignItems='center' onClick={handleClick}>
-            <Icon name={getFolderIcon} />
-            <Text>{item.name}</Text>
-          </Stack>
+          : hasChildren ?
+            <Stack axis="x" as='button' alignItems='center' onClick={handleClick}>
+              <Icon name={getFolderIcon} />
+              <Text>{item.name}</Text>
+            </Stack>
+            : null
       }
     </li>
   )
