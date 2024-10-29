@@ -13,14 +13,22 @@ class TreeNode {
   public size?: number;
   public lastModified?: Date;
   public children: Array<TreeNode>;
+  public depth: number;
 
-  constructor(path: string, name: string, size?: number, lastModified?: Date) {
+  constructor(
+    path: string,
+    name: string,
+    size?: number,
+    lastModified?: Date,
+    depth = 0
+  ) {
     this.id = crypto.randomUUID();
     this.name = name;
     this.path = path;
     this.size = size;
     this.lastModified = lastModified;
     this.children = [];
+    this.depth = depth;
   }
 }
 
@@ -53,11 +61,13 @@ export function buildTree(rootPath: string) {
           const childName = child;
           const childSize = fs.statSync(childPath).size;
           const childLastModified = fs.statSync(childPath).mtime;
+          const childDepth = currentNode.depth + 1;
           const childNode = new TreeNode(
             childPath,
             childName,
             childSize,
-            childLastModified
+            childLastModified,
+            childDepth
           );
           currentNode.children.push(childNode);
 
