@@ -24,7 +24,7 @@ function Folder({ summary, summaryIcon, open = false, children, ...props }: Fold
         <Text>{summary}</Text>
         <Icon name='caret-right' className='m-accordion__toggle-icon' />
       </Stack>
-      <div className="m-accrodion__content">
+      <div className="m-accordion__content">
         {children}
       </div>
     </details>

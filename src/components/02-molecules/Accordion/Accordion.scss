@@ -8,7 +8,7 @@
   }
 
   &[open] {
-    .m-accordion__toggle-icon {
+    & > summary .m-accordion__toggle-icon {
       transform: rotate(90deg);
     }
   }
