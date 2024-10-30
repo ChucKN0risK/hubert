@@ -1,3 +1,21 @@
 .m-folder {
+  --background-color: transparent;
+
   margin-inline-start: calc(var(--base-space-2) * var(--folder-level));
+  width: 100%;
+
+  :is(button, summary) {
+    width: 100%;
+    padding-left: var(--base-space-2);
+    padding-right: var(--base-space-2);
+    background-color: var(--background-color);
+    border: none;
+    color: var(--foreground-neutral);
+    border-radius: var(--radius-small);
+
+    &:hover {
+      cursor: pointer;
+      --background-color: color-mix(in srgb, var(--background-neutral), transparent 32%);
+    }
+  }
 }

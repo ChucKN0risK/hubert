@@ -3,13 +3,13 @@
     background-color: var(--foreground-neutral-faded);
   }
 
+  .m-accordion__toggle-icon {
+    margin-left: auto;
+  }
+
   &[open] {
     .m-accordion__toggle-icon {
       transform: rotate(90deg);
     }
-  }
-
-  summary {
-    align-items: center;
   }
 }

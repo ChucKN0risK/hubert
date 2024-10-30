@@ -19,10 +19,10 @@ interface FolderProps extends React.ComponentPropsWithoutRef<'details'> {
 function Folder({ summary, summaryIcon, open = false, children, ...props }: FolderProps) {
   return (
     <details className='m-accordion' open={open} aria-expanded={open} {...props}>
-      <Stack axis="x" as='summary'>
-        <Icon name='caret-right' className='m-accordion__toggle-icon' />
+      <Stack axis="x" as='summary' align='center'>
         {summaryIcon ? <Icon name={summaryIcon} className='m-accordion__summary-icon' /> : null}
         <Text>{summary}</Text>
+        <Icon name='caret-right' className='m-accordion__toggle-icon' />
       </Stack>
       <div className="m-accrodion__content">
         {children}

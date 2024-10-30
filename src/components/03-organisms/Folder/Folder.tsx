@@ -37,7 +37,7 @@ function Folder({ item }: FolderProps) {
             <FolderList folders={item.children} />
           </Accordion>
           : hasChildren ?
-            <Stack axis="x" as='button' alignItems='center' onClick={handleClick}>
+            <Stack axis="x" as='button' align='center' onClick={handleClick}>
               <Icon name={getFolderIcon} />
               <Text>{item.name}</Text>
             </Stack>
