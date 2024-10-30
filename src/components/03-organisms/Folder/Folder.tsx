@@ -1,22 +1,23 @@
-import { useState } from 'react'
-import Stack from '../../01-atoms/Stack/Stack'
-import Text from '../../01-atoms/Text/Text'
-import Icon from '../../01-atoms/Icon/Icon'
-import Accordion from '../../02-molecules/Accordion/Accordion'
-import FolderList from '../../03-organisms/FolderList/FolderList'
-import type { AssetItem } from '../../../types/asset.types'
-import './Folder.scss'
-
+import { useState } from 'react';
+import Stack from '../../01-atoms/Stack/Stack';
+import Text from '../../01-atoms/Text/Text';
+import Icon from '../../01-atoms/Icon/Icon';
+import Accordion from '../../02-molecules/Accordion/Accordion';
+import FolderList from '../../03-organisms/FolderList/FolderList';
+import type { AssetItem } from '../../../types/asset.types';
+import './Folder.scss';
 export interface FolderProps extends React.HTMLAttributes<HTMLButtonElement | HTMLDetailsElement> {
   item: AssetItem;
+  onSelection: (item: AssetItem) => void;
 }
 
-function Folder({ item }: FolderProps) {
+function Folder({ item, onSelection }: FolderProps) {
   const [isSelected, setSelection] = useState(false)
 
   const handleClick = (e) => {
     e.stopPropagation();
     setSelection(!isSelected);
+    onSelection(item);
   };
 
   const getFolderIcon = isSelected ? 'folder-open' : 'folder-closed';
@@ -24,7 +25,7 @@ function Folder({ item }: FolderProps) {
   const isFolder = hasChildren && !!item.children!.find(el => el.children && el.children.length > 0);
 
   return (
-    <li className='m-folder' style={{ '--folder-level': item.depth } as React.CSSProperties}>
+    <li className='m-folder'>
       {
         isFolder ?
           <Accordion

@@ -1,13 +1,14 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
 
-import Folder from "./Folder";
+import Folder from './Folder';
 const meta = {
-  title: "02-molecules/Folder",
+  title: '02-molecules/Folder',
   component: Folder,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   args: {
     item: {
       "id": "6ddcb5f4-5598-4d45-9cd1-e9c675dd85b2",
@@ -37,6 +38,7 @@ const meta = {
       ],
       "depth": 1
     },
+    onSelection: fn(),
   },
 } satisfies Meta<typeof Folder>;
 
@@ -44,7 +46,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const Template: Story['render'] = (args) => (
-  <ul className="u-list-style:none">
+  <ul className='u-list-style:none'>
     <Folder {...args} />
   </ul>
 );
