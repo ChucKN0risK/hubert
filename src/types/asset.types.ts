@@ -5,6 +5,5 @@ export type AssetItem = {
   lastModified?: string;
   size?: number;
   type?: string;
-  depth: number;
   children: AssetItem[];
 };
