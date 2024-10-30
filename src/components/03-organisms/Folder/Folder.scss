@@ -2,14 +2,16 @@
   --background-color: transparent;
 
   width: 100%;
+
+  svg {
+    flex-shrink: 0;
+  }
   
   :is(button, summary) {
     width: 100%;
     height: var(--base-space-8);
     padding-left: var(--base-space-2);
     padding-right: var(--base-space-2);
-    // Icon size (20px => base-space-5) + gap (base-space-2) => base-space-7
-    margin-inline-start: calc(var(--base-space-7) * var(--folder-level));
     background-color: var(--background-color);
     border: none;
     color: var(--foreground-neutral);
@@ -19,5 +21,12 @@
       cursor: pointer;
       --background-color: color-mix(in srgb, var(--background-neutral), transparent 32%);
     }
+  }
+
+  .m-folder__name {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

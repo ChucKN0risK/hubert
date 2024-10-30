@@ -38,7 +38,7 @@ function Folder({ item }: FolderProps) {
           : hasChildren ?
             <Stack axis="x" as='button' align='center' onClick={handleClick}>
               <Icon name={getFolderIcon} />
-              <Text>{item.name}</Text>
+              <Text className='m-folder__name'>{item.name}</Text>
             </Stack>
             : null
       }
