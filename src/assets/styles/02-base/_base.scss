@@ -48,7 +48,7 @@ body {
   font-family: var(--font-text);
   height: 100vh;
   color: var(--foreground-neutral);
-  background-color: var(--background-page);
+  background-color: var(--background-elevation-base);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -81,7 +81,13 @@ aside {
 }
 
 main {
-  grid-area: main;
+  flex: 1;
   overflow-y: scroll;
   max-height: 100%;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
