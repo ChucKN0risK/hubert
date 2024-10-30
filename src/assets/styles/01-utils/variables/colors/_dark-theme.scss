@@ -2,13 +2,15 @@
   @media (prefers-color-scheme: dark) {
     /* COLOR */
     --background-elevation-base: rgb(0, 0, 0);
-    --background-elevation-raised: #191B23;
-    --background-page: rgb(15, 17, 22, 1);
-    --foreground-neutral: white;
-    --foreground-neutral-faded: #5b667e;
-    --foreground-critical: #C42525;
+    --background-elevation-raised: rgb(25, 27, 35);
+    --background-page: rgb(15, 17, 22);
+    --background-neutral: rgb(73, 79, 96);
+    --background-neutral-faded: rgb(34, 40, 53);
+    --foreground-neutral: rgb(255, 255, 255);
+    --foreground-neutral-faded: rgb(91, 102, 126);
+    --foreground-critical: rgb(196, 37, 37);
     --border-neutral: color-mix(in srgb, var(--foreground-neutral), transparent 12.16%);
     --border-neutral-faded: #ffffff17;
-    --border-primary: #3B38ED;
+    --border-primary: rgb(59, 56, 237);
   }
 }
