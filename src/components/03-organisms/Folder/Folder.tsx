@@ -20,7 +20,6 @@ function Folder({ item }: FolderProps) {
   };
 
   const getFolderIcon = isSelected ? 'folder-open' : 'folder-closed';
-
   const hasChildren = item.children.length > 0;
   const isFolder = hasChildren && !!item.children!.find(el => el.children && el.children.length > 0);
 

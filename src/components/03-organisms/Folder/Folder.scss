@@ -1,13 +1,15 @@
 .m-folder {
   --background-color: transparent;
 
-  margin-inline-start: calc(var(--base-space-2) * var(--folder-level));
   width: 100%;
-
+  
   :is(button, summary) {
     width: 100%;
+    height: var(--base-space-8);
     padding-left: var(--base-space-2);
     padding-right: var(--base-space-2);
+    // Icon size (20px => base-space-5) + gap (base-space-2) => base-space-7
+    margin-inline-start: calc(var(--base-space-7) * var(--folder-level));
     background-color: var(--background-color);
     border: none;
     color: var(--foreground-neutral);
