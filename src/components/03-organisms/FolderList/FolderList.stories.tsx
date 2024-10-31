@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import FolderList from './FolderList';
+import { FolderProvider } from '../../../hooks/useFolder';
 import data from '../../../../backend/data.json';
 
 const folders = data.children;
@@ -19,4 +20,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  render: (args) => (
+    <FolderProvider>
+      <FolderList {...args} />
+    </FolderProvider>
+  )
+};
