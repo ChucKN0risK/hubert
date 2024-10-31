@@ -1,14 +1,53 @@
-import { createContext } from "react";
+import { createContext, useState, useContext, ReactNode } from "react";
 import type { AssetItem } from '../types/asset.types';
+
+interface FolderContextType {
+  selectedFolder: AssetItem | null,
+  setSelectedFolder: (folder: AssetItem | null) => void,
+}
 
 // L'objet passé au contexte ici est une "signature" / "structure"
 // qui sert de sécurité. C'est la valeur passée au "value" dans le
 // composant Provider qui prendra le dessus et qui doit correspondre
 // a la meme structure.
-export const FolderContext = createContext({
-  selectedFolder: {},
-  setSelectedFolder: (folder: AssetItem) => { },
-});
+export const FolderContext = createContext<FolderContextType | undefined>(undefined);
+
+export const FolderProvider = ({ children }: { children: ReactNode }) => {
+  const [selectedFolder, setSelectedFolder] = useState<AssetItem | null>(null);
+  const value = { selectedFolder, setSelectedFolder };
+
+  return (
+    <FolderContext.Provider value={value}>
+      {children}
+    </FolderContext.Provider>
+  )
+}
+
+export const useFolderContext = () => {
+  const context = useContext(FolderContext);
+  console.log(context)
+  if (context === undefined) {
+    throw new Error('FolderContext must be used within a FolderProvider');
+  }
+  return context;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // export function FolderContextProvider({ children }) {
 //   const [selectedFolder, setSelectedFolder] = useState({

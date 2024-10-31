@@ -1,18 +1,16 @@
 import Folder from '../../03-organisms/Folder/Folder';
 import './FolderList.scss';
 import type { AssetItem } from '../../../types/asset.types';
-import { useContext } from 'react';
-import { FolderContext } from '../../../hooks/useFolder';
+import { useFolderContext } from '../../../hooks/useFolder';
 
 interface FolderListProps {
   folders: AssetItem[];
 }
 
 function FolderList({ folders }: FolderListProps) {
-  const { setSelectedFolder } = useContext(FolderContext);
+  const { setSelectedFolder } = useFolderContext();
 
   const handleFolderSelection = (el: AssetItem) => {
-    console.log(el);
     setSelectedFolder(el);
   }
 

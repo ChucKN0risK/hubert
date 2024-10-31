@@ -1,15 +1,14 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../../hooks/useTheme";
+import { useThemeContext } from "../../../hooks/useTheme";
 
 function ThemeSwitcher() {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = useThemeContext();
 
-  const toggleTheme = () => {
+  const toggle = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   }
 
   return (
-    <button onClick={toggleTheme}>{theme}</button>
+    <button onClick={toggle}>{theme}</button>
   )
 };
 
