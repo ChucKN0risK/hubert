@@ -30,3 +30,7 @@
 .m-input--large {
   --input-height: var(--interactive-element-height-large);
 }
+
+.m-input__icon {
+  flex-shrink: 0;
+}
