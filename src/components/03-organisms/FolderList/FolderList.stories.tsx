@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import FolderList from './FolderList';
 import { FolderProvider } from '../../../hooks/useFolder';
-import data from '../../../../backend/data.json';
+import data from '../../../../api/data.json';
 
 const folders = data.children;
 

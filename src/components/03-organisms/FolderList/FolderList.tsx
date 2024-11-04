@@ -14,11 +14,15 @@ function FolderList({ folders }: FolderListProps) {
     setSelectedFolder(el);
   }
 
+  const filteredFolders = folders.filter(folder => folder.children.length > 0);
+
   return (
-    <ul className='m-folder-list'>
-      {folders.map(el =>
-        <Folder item={el} key={el.id} onSelection={() => handleFolderSelection(el)} />
-      )}
+    <ul className='u-list-reset m-folder-list'>
+      {filteredFolders.map(el => (
+        <li key={el.id}>
+          <Folder item={el} onSelection={() => handleFolderSelection(el)} />
+        </li>
+      ))}
     </ul>
   )
 }

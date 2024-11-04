@@ -1,5 +1,6 @@
 .m-folder {
   --background-color: transparent;
+  --background-color-selected: color-mix(in srgb, var(--background-neutral), transparent 32%);
 
   width: 100%;
 
@@ -19,14 +20,21 @@
 
     &:hover {
       cursor: pointer;
-      --background-color: color-mix(in srgb, var(--background-neutral), transparent 32%);
+      --background-color: var(--background-color-selected);
     }
   }
 
-  .m-folder__name {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  &.is-selected {
+    & > details > summary,
+    & > button {
+      --background-color: var(--background-color-selected);
+    }
   }
+}
+
+.m-folder__name {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

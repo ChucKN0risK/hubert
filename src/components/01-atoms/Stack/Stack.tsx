@@ -21,13 +21,14 @@ interface StackProps extends React.HTMLAttributes<HTMLElement> {
   | 16
   | 18
   | 20;
+  className?: string;
 }
 
-function Stack({ children, axis = 'y', gap = 2, as = 'div', align, ...props }: StackProps) {
+function Stack({ children, axis = 'y', gap = 2, as = 'div', align, className, ...props }: StackProps) {
   const Tag = as;
   return (
     <Tag
-      className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''} `}
+      className={`a-stack ${axis === 'y' ? 'a-stack--vertical' : ''} ${className ? className : ''}`}
       style={{ '--space': `var(--base-space-${gap})`, '--align-items': align }}
       {...props}
     >

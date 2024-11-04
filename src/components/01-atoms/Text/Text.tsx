@@ -13,7 +13,7 @@ type TextTag =
   | 'label'
   | 'time';
 
-type TextVariant =
+export type TextVariant =
   'title-1'
   | 'title-2'
   | 'title-3'
@@ -44,13 +44,16 @@ interface TextProps extends React.AllHTMLAttributes<HTMLElement> {
   variant?: TextVariant;
   /** The Text color */
   color?: string;
+  /** Other CSS classes coming from parent component */
+  className?: string;
 }
 
-function Text({ as = 'p', children, variant = 'body-1', ...props }: TextProps) {
+function Text({ as = 'p', children, variant = 'body-1', className, ...props }: TextProps) {
   const Tag = as;
+
   return (
-    <Tag className={`text-${variant}`} {...props}>{children}</Tag>
+    <Tag className={`text-${variant} ${className}`} {...props}>{children}</Tag>
   );
 }
 
-export default Text
+export default Text;
