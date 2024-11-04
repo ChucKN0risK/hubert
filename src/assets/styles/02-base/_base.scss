@@ -91,3 +91,20 @@ main {
   height: 100%;
   width: 100%;
 }
+
+// Storybook specific style
+// We need this as our global app styles
+// bleed into Storybook's UI
+html:has(.sb-show-main) {
+  overflow: auto;
+
+  p,
+  a,
+  ul,
+  blockquote,
+  figcaption {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
