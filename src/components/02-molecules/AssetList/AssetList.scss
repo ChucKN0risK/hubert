@@ -1,0 +1,6 @@
+.m-asset-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, min(1fr, 350px));
+  gap: var(--base-space-2);
+  padding: var(--base-space-2);
+}
