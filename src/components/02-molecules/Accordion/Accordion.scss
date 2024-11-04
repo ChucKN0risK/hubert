@@ -18,6 +18,7 @@
 }
 
 .m-accordion__content {
+  padding-block-start: var(--folder-list-gap);
   // Icon size (20px => base-space-5) + gap (base-space-2) => base-space-7
   padding-inline-start: calc(var(--base-space-7) / 2);
   margin-inline-start: calc(var(--base-space-7) / 2);
