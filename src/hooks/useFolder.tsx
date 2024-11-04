@@ -25,7 +25,6 @@ export const FolderProvider = ({ children }: { children: ReactNode }) => {
 
 export const useFolderContext = () => {
   const context = useContext(FolderContext);
-  console.log(context)
   if (context === undefined) {
     throw new Error('FolderContext must be used within a FolderProvider');
   }
