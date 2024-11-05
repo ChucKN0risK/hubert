@@ -1,0 +1,19 @@
+.m-asset-info {
+  position: relative;
+  height: 100%;
+}
+
+.m-asset-info__section {
+  li {
+    justify-content: space-between;
+    color: var(--foreground-neutral-faded);
+  }
+}
+
+.m-asset-info__placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
