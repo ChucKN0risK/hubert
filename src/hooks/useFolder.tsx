@@ -1,19 +1,16 @@
 import { createContext, useState, useContext, ReactNode } from "react";
 import type { AssetItem } from '../types/asset.types';
+import data from '../../api/data.json';
 
 interface FolderContextType {
   selectedFolder: AssetItem | null,
   setSelectedFolder: (folder: AssetItem | null) => void,
 }
 
-// L'objet passé au contexte ici est une "signature" / "structure"
-// qui sert de sécurité. C'est la valeur passée au "value" dans le
-// composant Provider qui prendra le dessus et qui doit correspondre
-// a la meme structure.
 export const FolderContext = createContext<FolderContextType | undefined>(undefined);
 
 export const FolderProvider = ({ children }: { children: ReactNode }) => {
-  const [selectedFolder, setSelectedFolder] = useState<AssetItem | null>(null);
+  const [selectedFolder, setSelectedFolder] = useState<AssetItem | null>(data);
   const value = { selectedFolder, setSelectedFolder };
 
   return (
