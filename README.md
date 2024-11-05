@@ -17,5 +17,12 @@ Assets manager like [Eagle](https://eagle.cool).
   - https://dev.to/seanyasno/handling-icons-in-react-best-practices-22c5
   - https://javascript.plainenglish.io/the-best-way-to-work-with-svg-icons-in-react-and-typescript-e6fb4d4601c6
 - [x] Find a way to have native HTML attributes on the <Text> component when it's rendered as a label. It's the same idea with onClick on the <Stack> when it's rendered as a <button>.
-- [] Fix the scroll in Storybook which is prevented from my global styles on the body w/ overflow:hidden. TL;DR: My global styles bleed into Storybook. I want a part of it to bleed but not everything.
+- [] Fix the import of my app style in Storybook. Importing the whole `style.scss` in `preview.ts` makes my app style bleed in Storybook which changes the SB UI.
 - Handle light/dark theme following [this article](https://css-tricks.com/come-to-the-light-dark-side/)
+- https://dev.to/peaonunes/loading-a-directory-as-a-tree-structure-in-node-52bg
+- https://bolt.new/~/sb1-4al5mu
+- To Fix
+  - [x] Afficher les assets présents au premier niveau du dossier root
+  - [] Ne pas afficher de <li> vides dans <FolderList> ni dans <AssetList>. Check que l'item est un dossier ou un fichier.
+  - [] Pouvoir sélectionner des dossiers enfants
+  - [] Comprendre pourquoi un <Folder> enfant d'un autre se sélectionne mais sélectionne son parent immédiatement après. En gros, la sélection de dossier fonctionne uniquement lorsque qu'un <Folder> n'en contient pas d'autres.
