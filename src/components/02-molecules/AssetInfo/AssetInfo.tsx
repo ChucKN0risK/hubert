@@ -11,6 +11,8 @@ function Folder() {
     if (selectedAsset!.size! > 1000000 && selectedAsset!.size! < 1000000000) return `${(Math.round(selectedAsset!.size!) / 1000000).toFixed(1)} MB`;
   }
 
+  const getAssetLastUpdateDate = () => new Date(selectedAsset!.lastModified!).toDateString();
+
   if (selectedAsset) {
     return (
       <div className="m-asset-info">
@@ -25,6 +27,10 @@ function Folder() {
             <Stack as='li' axis='x'>
               <Text as='span' variant='body-3'>Size</Text>
               <Text as='span' variant='body-3'>{getAssetSize()}</Text>
+            </Stack>
+            <Stack as='li' axis='x'>
+              <Text as='span' variant='body-3'>Last updated</Text>
+              <Text as='span' variant='body-3'>{getAssetLastUpdateDate()}</Text>
             </Stack>
           </ul>
         </div>
