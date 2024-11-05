@@ -1,6 +1,11 @@
 .m-asset-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, min(1fr, 350px));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--base-space-2);
   padding: var(--base-space-2);
+
+  // Prevent content from overflowing grid items
+  li {
+    min-width: 0;
+  }
 }
