@@ -8,19 +8,23 @@ interface FolderListProps {
 }
 
 function FolderList({ folders }: FolderListProps) {
-  const { setSelectedFolder } = useFolderContext();
+  const { selectedFolder, setSelectedFolder } = useFolderContext();
 
   const handleFolderSelection = (el: AssetItem) => {
     setSelectedFolder(el);
   }
 
+  const getSeletedState = (el: AssetItem) => {
+    console.log(el.id === selectedFolder?.id);
+    return el.id === selectedFolder?.id;
+  }
   const filteredFolders = folders.filter(folder => folder.children.length > 0);
 
   return (
     <ul className='u-list-reset m-folder-list'>
       {filteredFolders.map(el => (
         <li key={el.id}>
-          <Folder item={el} onSelection={() => handleFolderSelection(el)} />
+          <Folder item={el} isSelected={getSeletedState(el)} onSelection={() => handleFolderSelection(el)} />
         </li>
       ))}
     </ul>

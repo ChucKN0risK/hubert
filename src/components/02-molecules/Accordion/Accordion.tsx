@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import Text from '../../01-atoms/Text/Text'
 import Icon from '../../01-atoms/Icon/Icon'
 import Stack from '../../01-atoms/Stack/Stack'
@@ -6,7 +6,7 @@ import type { TextVariant } from '../../01-atoms/Text/Text'
 import './Accordion.scss'
 
 // See: https://stackoverflow.com/a/73050903/3906770
-interface FolderProps extends React.ComponentPropsWithoutRef<'details'> {
+interface AccordionProps extends React.ComponentPropsWithoutRef<'details'> {
   summary: string;
   children: ReactNode | ReactNode[];
   summaryIcon?: string;
@@ -15,12 +15,25 @@ interface FolderProps extends React.ComponentPropsWithoutRef<'details'> {
    * Is the Accordion open by default
    * @defaultValue false
    **/
-  open?: boolean;
+  openByDefault?: boolean;
+  onToggle: () => void;
 }
 
-function Folder({ summary, summaryIcon, summaryTextVariant, open = false, children, ...props }: FolderProps) {
+function Accordion({ summary, summaryIcon, summaryTextVariant, openByDefault = false, onToggle, children, ...props }: AccordionProps) {
+  const [openState, setOpenState] = useState(false);
+
+  const handleToggle = (e: React.SyntheticEvent<HTMLDetailsElement>) => {
+    // We must stop the toggle event from
+    // bubbling to prevent a potential parent
+    // <Folder> to be selected instead of the
+    // current child <Folder>
+    e.stopPropagation();
+    setOpenState(e.currentTarget.open);
+    onToggle();
+  }
+
   return (
-    <details className='m-accordion' open={open} aria-expanded={open} {...props}>
+    <details className='m-accordion' open={openByDefault} aria-expanded={openState} {...props} onToggle={(e) => handleToggle(e)}>
       <Stack axis="x" as='summary' align='center'>
         {summaryIcon ? <Icon name={summaryIcon} className='m-accordion__summary-icon' /> : null}
         <Text variant={summaryTextVariant}>{summary}</Text>
@@ -33,4 +46,4 @@ function Folder({ summary, summaryIcon, summaryTextVariant, open = false, childr
   )
 }
 
-export default Folder
+export default Accordion;

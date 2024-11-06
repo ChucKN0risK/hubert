@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Stack from '../../01-atoms/Stack/Stack';
 import Text from '../../01-atoms/Text/Text';
 import Icon from '../../01-atoms/Icon/Icon';
@@ -9,15 +8,12 @@ import type { TextVariant } from '../../01-atoms/Text/Text'
 import './Folder.scss';
 export interface FolderProps extends React.HTMLAttributes<HTMLButtonElement | HTMLDetailsElement> {
   item: AssetItem;
+  isSelected: boolean;
   onSelection: (item: AssetItem) => void;
 }
 
-function Folder({ item, onSelection }: FolderProps) {
-  const [isSelected, setSelection] = useState(false)
-
-  const handleClick = (e) => {
-    e.stopPropagation();
-    setSelection(!isSelected);
+function Folder({ item, isSelected, onSelection }: FolderProps) {
+  const handleClick = () => {
     onSelection(item);
   };
 
@@ -34,8 +30,8 @@ function Folder({ item, onSelection }: FolderProps) {
             summary={item.name}
             summaryIcon={getFolderIcon}
             summaryTextVariant={getFolderTextVariant}
-            open={isSelected}
             onToggle={handleClick}
+            openByDefault={true}
           >
             <FolderList folders={item.children} />
           </Accordion>
