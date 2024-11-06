@@ -34,4 +34,14 @@
   label:not([for]) {
     outline: 2px dotted red;
   }
+
+  /* Empty list elements */
+  :is(ul, ol, li):empty {
+    outline: 2px dotted red;
+  }
+
+  /* details elements without an aria-expanded attribute */
+  details:not([aria-expanded]) {
+    outline: 2px dotted red;
+  }
 }
