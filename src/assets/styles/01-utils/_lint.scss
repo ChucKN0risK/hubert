@@ -44,4 +44,9 @@
   details:not([aria-expanded]) {
     outline: 2px dotted red;
   }
+
+  input:not(form input) {
+    outline: var(--warning-outline);
+    --error-input-orphan: 'The input is outside a <form> element. Users may benefit from <form> semantics and behaviors.'
+  }
 }
