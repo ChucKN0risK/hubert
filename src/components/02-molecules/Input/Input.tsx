@@ -14,14 +14,20 @@ interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, '
    **/
   type?: string;
   icon?: string;
-  onChange: () => void;
 }
 
 function Input({ type = 'text', size = 'medium', icon, placeholder, name, onChange, ...props }: InputProps) {
   return (
     <div className={`m-input m-input--${size}`}>
       {icon ? <Icon name={icon} className="m-input__icon" /> : null}
-      <input type={type} id={name} placeholder={placeholder} className='m-input__input' onChange={onChange} {...props} />
+      <input
+        type={type}
+        id={name}
+        placeholder={placeholder}
+        className='m-input__input'
+        onChange={onChange}
+        {...props}
+      />
     </div>
   )
 }

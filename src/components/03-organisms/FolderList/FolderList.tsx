@@ -15,7 +15,6 @@ function FolderList({ folders }: FolderListProps) {
   }
 
   const getSeletedState = (el: AssetItem) => {
-    console.log(el.id === selectedFolder?.id);
     return el.id === selectedFolder?.id;
   }
   const filteredFolders = folders.filter(folder => folder.children.length > 0);
