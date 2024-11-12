@@ -1,10 +1,10 @@
-import fs from "fs";
-import path from "path";
+import fs from 'fs';
+import path from 'path';
 
 const baseDirectory =
-  "/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎/";
+  '/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎/';
 
-const nodesToExclude = ["Assets.library", ".DS_Store"];
+const nodesToExclude = ['Assets.library', '.DS_Store'];
 
 class TreeNode {
   public id: string;
@@ -28,7 +28,7 @@ class TreeNode {
 function generateDataFile(content: TreeNode) {
   try {
     fs.writeFileSync(
-      path.join(__dirname, "data.json"),
+      path.join(__dirname, 'data.json'),
       JSON.stringify(content)
     );
     // file written successfully
@@ -38,7 +38,7 @@ function generateDataFile(content: TreeNode) {
 }
 
 export function buildTree(rootPath: string) {
-  const root = new TreeNode(rootPath, "00. ASSETS 📎");
+  const root = new TreeNode(rootPath, '00. ASSETS 📎');
 
   const stack = [root];
 

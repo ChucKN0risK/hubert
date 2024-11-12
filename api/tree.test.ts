@@ -1,17 +1,17 @@
-import path from "path";
-import { describe, it, expect } from "vitest";
-import { buildTree } from "./getDirectories";
+// import path from 'path';
+import { describe, it, expect } from 'vitest';
+import { buildTree } from './getDirectories';
 
-describe("buildTree", () => {
+describe('buildTree', () => {
   // const initialPath = path.join(__dirname, "test-directory");
   const initialPath =
-    "/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎";
+    '/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎';
 
-  it("should return root node", () => {
+  it('should return root node', () => {
     const rootNode = buildTree(initialPath);
     expect(rootNode).not.toBeNull();
-    expect(rootNode).toHaveProperty("path", initialPath);
-    expect(rootNode).toHaveProperty("children");
+    expect(rootNode).toHaveProperty('path', initialPath);
+    expect(rootNode).toHaveProperty('children');
   });
 
   // it("should return root node with its exact 6 children", () => {
