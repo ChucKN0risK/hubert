@@ -1,13 +1,14 @@
 .m-input {
   display: flex;
   align-items: center;
-  border: 2px solid var(--input-border-color);
+  border: 1px solid var(--input-border-color);
   gap: var(--base-space-2);
   padding: var(--input-padding);
   height: var(--input-height);
+  width: 100%;
 
   &:focus-within {
-    --input-border-color: var(--border-primary); 
+    --input-border-color: var(--border-primary);
   }
 
   input {
