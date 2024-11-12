@@ -1,11 +1,13 @@
 :root, .light-theme {
   @media (prefers-color-scheme: light) {
     /* COLOR */
+    --background-primary-faded: rgb(236, 235, 254);
     --background-elevation-base: rgb(255, 255, 255);
     --background-elevation-raised: rgb(255, 255, 255);
     --background-page: rgb(255, 255, 255);
     --background-neutral: rgb(223, 226, 234);
     --background-neutral-faded: rgb(243, 243, 245);
+    --foreground-primary: #4f4Cf0;
     --foreground-neutral: rgb(20, 24, 31);
     --foreground-neutral-faded: rgb(91, 102, 126);
     --foreground-critical: rgb(196, 37, 37);

@@ -1,11 +1,13 @@
 :root, .dark-theme {
   @media (prefers-color-scheme: dark) {
     /* COLOR */
+    --background-primary-faded: rgb(37, 37, 68);
     --background-elevation-base: rgb(0, 0, 0);
     --background-elevation-raised: rgb(25, 27, 35);
     --background-page: rgb(15, 17, 22);
     --background-neutral: rgb(73, 79, 96);
     --background-neutral-faded: rgb(34, 40, 53);
+    --foreground-primary: #8b8af7;
     --foreground-neutral: rgb(255, 255, 255);
     --foreground-neutral-faded: rgb(192, 198, 214);
     --foreground-critical: rgb(196, 37, 37);
