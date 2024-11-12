@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import './Text.scss'
 
 type TextTag =
@@ -11,7 +10,10 @@ type TextTag =
   | 'h5'
   | 'h6'
   | 'label'
-  | 'time';
+  | 'time'
+  | 'li'
+  | 'button'
+  | 'div';
 
 export type TextVariant =
   'title-1'
@@ -35,8 +37,6 @@ interface TextProps extends React.AllHTMLAttributes<HTMLElement> {
    * @defaultValue 'p'
    **/
   as?: TextTag;
-  /** The Text content */
-  children: ReactNode
   /**
    * The text variant
    * @defaultValue 'body-1'
@@ -44,15 +44,13 @@ interface TextProps extends React.AllHTMLAttributes<HTMLElement> {
   variant?: TextVariant;
   /** The Text color */
   color?: string;
-  /** Other CSS classes coming from parent component */
-  className?: string;
 }
 
 function Text({ as = 'p', children, variant = 'body-1', className, ...props }: TextProps) {
   const Tag = as;
 
   return (
-    <Tag className={`text-${variant} ${className}`} {...props}>{children}</Tag>
+    <Tag className={`text-${variant} ${className ? className : ''}`} {...props}>{children}</Tag>
   );
 }
 

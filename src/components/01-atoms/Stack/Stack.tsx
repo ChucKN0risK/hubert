@@ -21,7 +21,6 @@ interface StackProps extends React.HTMLAttributes<HTMLElement> {
   | 16
   | 18
   | 20;
-  className?: string;
 }
 
 function Stack({ children, axis = 'y', gap = 2, as = 'div', align, className, ...props }: StackProps) {

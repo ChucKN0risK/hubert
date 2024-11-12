@@ -6,7 +6,7 @@ import type { TextVariant } from '../../01-atoms/Text/Text'
 import './Accordion.scss'
 
 // See: https://stackoverflow.com/a/73050903/3906770
-interface AccordionProps extends React.ComponentPropsWithoutRef<'details'> {
+interface AccordionProps extends React.HTMLProps<HTMLDetailsElement> {
   summary: string;
   children: ReactNode | ReactNode[];
   summaryIcon?: string;
@@ -33,7 +33,13 @@ function Accordion({ summary, summaryIcon, summaryTextVariant, openByDefault = f
   }
 
   return (
-    <details className='m-accordion' open={openByDefault} aria-expanded={openState} {...props} onToggle={(e) => handleToggle(e)}>
+    <details
+      className='m-accordion'
+      open={openByDefault}
+      aria-expanded={openState}
+      onToggle={(e) => handleToggle(e)}
+      {...props}
+    >
       <Stack axis="x" as='summary' align='center'>
         {summaryIcon ? <Icon name={summaryIcon} className='m-accordion__summary-icon' /> : null}
         <Text variant={summaryTextVariant}>{summary}</Text>
