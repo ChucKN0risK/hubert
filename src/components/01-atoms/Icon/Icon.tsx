@@ -1,13 +1,13 @@
 // From: https://stackoverflow.com/a/61472427/3906770
-import { ComponentProps, FC, useEffect, useRef, useState } from "react";
+import { ComponentProps, FC, useEffect, useRef, useState } from 'react';
 
-interface IconProps extends ComponentProps<"svg"> {
+interface IconProps extends ComponentProps<'svg'> {
   name: string;
 }
 
 // This hook can be used to create your own wrapper component.
 const useIconImport = (name: string) => {
-  const importRef = useRef<FC<ComponentProps<"svg">>>();
+  const importRef = useRef<FC<ComponentProps<'svg'>>>();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error>();
 
@@ -36,14 +36,10 @@ const useIconImport = (name: string) => {
 
 // Example wrapper component using the hook.
 export const Icon = ({ name, ...props }: IconProps) => {
-  const { loading, error, Svg } = useIconImport(name);
+  const { error, Svg } = useIconImport(name);
 
   if (error) {
     console.log(`An error occurred while loading icon ${name}`);
-  }
-
-  if (loading) {
-    console.log("Loading...");
   }
 
   if (!Svg) {
