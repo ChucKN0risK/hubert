@@ -19,7 +19,7 @@ const meta = {
   // },
   args: {
     onChange: fn(),
-    name: "formfieldtext",
+    name: "Label",
   },
 } satisfies Meta<typeof FormField>;
 
@@ -28,3 +28,8 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {};
+export const DefaultValue: Story = {
+  args: {
+    defaultValue: "Default value",
+  },
+};

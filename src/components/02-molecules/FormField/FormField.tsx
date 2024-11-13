@@ -5,6 +5,7 @@ import Input from '../Input/Input'
 
 interface FormFieldProps {
   name: string;
+  defaultValue?: string;
   onChange: () => void;
 }
 
@@ -13,13 +14,13 @@ const kebabCase = (string: string) => string
   .replace(/[\s_]+/g, '-')
   .toLowerCase();
 
-function FormField({ name, onChange }: FormFieldProps) {
+function FormField({ name, defaultValue, onChange }: FormFieldProps) {
   const kebabCasedName = kebabCase(name);
 
   return (
     <Stack className='m-form-field'>
       <Text as='label' htmlFor={name}>{kebabCasedName}</Text>
-      <Input name={name} onChange={onChange} />
+      <Input value={defaultValue} name={name} onChange={onChange} />
     </Stack>
   )
 }
