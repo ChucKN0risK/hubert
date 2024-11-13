@@ -1,7 +1,10 @@
 import Text from '../../01-atoms/Text/Text';
 import Stack from '../../01-atoms/Stack/Stack';
+import FormField from '../FormField/FormField';
+import tagsData from '../../../../api/tags.json';
 import { useAssetContext } from '../../../hooks/useAsset';
 import './AssetInfo.scss';
+import TagList from '../TagList/TagList';
 
 function Folder() {
   const { selectedAsset } = useAssetContext();
@@ -13,11 +16,49 @@ function Folder() {
 
   const getAssetLastUpdateDate = () => new Date(selectedAsset!.lastModified!).toDateString();
 
+  const getAssetNameWithoutExt = (name: string) => {
+    return name.replace(/\.[^/.]+$/, '');
+  }
+  const setAssetName = (value: string) => {
+    console.log('new name:', value.trim());
+  }
+
+  const createTag = (tag: string) => {
+    console.log('tag to create', tag);
+  };
+
+  const addTag = (tag: string) => {
+    console.log('tag to add', tag);
+  };
+
+  const deleteTag = (tag: string) => {
+    console.log('tag to delete', tag);
+  };
+
   if (selectedAsset) {
     return (
-      <div className="m-asset-info">
+      <Stack className='m-asset-info' gap={4}>
         <img src={`http://localhost:3000/assets/${selectedAsset.path}`} alt='' />
-        <div className="m-asset-info__section">
+        <div className='m-asset-info__section'>
+          <form action='post'>
+            <FormField
+              defaultValue={getAssetNameWithoutExt(selectedAsset.name)}
+              name='Name'
+              onChange={() => setAssetName}
+            />
+          </form>
+        </div>
+        <div className='m-asset-info__section'>
+          <Text>Tags</Text>
+          <TagList
+            tags={selectedAsset.tags}
+            existingTags={tagsData.tags}
+            onTagCreation={(tag) => createTag(tag)}
+            onTagAddition={(tag) => addTag(tag)}
+            onTagDeletion={(tag) => deleteTag(tag)}
+          />
+        </div>
+        <Stack className='m-asset-info__section' gap={2}>
           <Text>Properties</Text>
           <ul className='u-list-reset'>
             <Stack as='li' axis='x'>
@@ -33,8 +74,8 @@ function Folder() {
               <Text as='span' variant='body-3'>{getAssetLastUpdateDate()}</Text>
             </Stack>
           </ul>
-        </div>
-      </div>
+        </Stack>
+      </Stack>
     )
   } else {
     return (

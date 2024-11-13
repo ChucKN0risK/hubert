@@ -4,6 +4,10 @@
 }
 
 .m-asset-info__section {
+  &, & > * {
+    width: 100%;
+  }
+
   li {
     justify-content: space-between;
     color: var(--foreground-neutral-faded);
