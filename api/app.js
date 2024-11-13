@@ -37,7 +37,7 @@ app.listen(port, () => {
 // API Routes
 app.get('/tags', async (req, res) => {
   try {
-    const data = await fs.readFile(TAGS_FILE, 'utf-8');
+    const data = await fs.readFile(TAGS_FILE, 'utf8');
     return res.json(JSON.parse(data));
   } catch (error) {
     res.status(500).json({ error: 'Failed to read tags' });
