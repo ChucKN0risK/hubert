@@ -4,10 +4,6 @@ import { useFolderContext } from '../../../hooks/useFolder';
 import { useAssetContext } from '../../../hooks/useAsset';
 import { AssetItem } from '../../../types/asset.types';
 
-// interface AssetListProps {
-//   assets?: AssetItem[];
-// }
-
 function AssetList() {
   const { selectedFolder } = useFolderContext();
   const { setSelectedAsset } = useAssetContext();
@@ -16,8 +12,8 @@ function AssetList() {
     setSelectedAsset(el);
     console.log(el);
   }
-
-  const assets = selectedFolder?.children;
+  // Only select elements that don't have any children, hence files
+  const assets = selectedFolder?.children.filter(el => el.children.length === 0);
 
   return (
     <ul className='m-asset-list u-list-reset'>
