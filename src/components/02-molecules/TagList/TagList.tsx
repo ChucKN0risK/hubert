@@ -18,11 +18,11 @@ function TagList({ tags, existingTags, onTagCreation, onTagAddition, onTagDeleti
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const tag = e.currentTarget.value;
+    setNewTag(tag);
 
     if (tag.trim() !== '') {
       toggleExistingTags(true)
-      setFilteredExistingTags([...existingTags.filter(existingTag => existingTag.includes(tag))])
-      setNewTag(tag);
+      setFilteredExistingTags([...existingTags.filter(existingTag => existingTag.includes(tag.toLowerCase()))])
     } else {
       toggleExistingTags(false)
     }
