@@ -1,10 +1,10 @@
 import Text from '../../01-atoms/Text/Text';
 import Stack from '../../01-atoms/Stack/Stack';
 import FormField from '../FormField/FormField';
-import tagsData from '../../../../api/tags.json';
 import { useAssetContext } from '../../../hooks/useAsset';
 import './AssetInfo.scss';
 import TagList from '../TagList/TagList';
+import { useEffect, useState } from 'react';
 
 function Folder() {
   const { selectedAsset } = useAssetContext();
@@ -23,17 +23,76 @@ function Folder() {
     console.log('new name:', value.trim());
   }
 
-  const createTag = (tag: string) => {
-    console.log('tag to create', tag);
+  const [inputValue, setInputValue] = useState('');
+  const [existingTags, setExistingTags] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const fetchTags = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/tags');
+      if (!response.ok) throw new Error('Failed to fetch tags');
+      const data = await response.json();
+      setExistingTags(data.tags);
+    } catch (err) {
+      setError('Failed to load tags');
+      console.log(err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchTags();
+  }, [])
+
+  const createTag = async (tag: string) => {
+    try {
+      const response = await fetch('http://localhost:3000/tags', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: tag.toLowerCase() }),
+      });
+      if (!response.ok) throw new Error('Failed to save tag App.tsx');
+      const newTag = await response.json();
+      console.log(newTag);
+
+      // setExistingTags(prev => [...prev, newTag]);
+      // setInputValue('');
+    } catch (err) {
+      setError('Failed to load tags');
+      console.log(err);
+    }
+  };
+
+  const deleteTag = async (tag: string) => {
+    console.log(tag);
+
+    try {
+      const response = await fetch('http://localhost:3000/tags', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: tag }),
+      });
+      if (!response.ok) throw new Error('Failed to delete tag App.tsx');
+      const resp = await response.json();
+      console.log(resp);
+
+      // setExistingTags(prev => [...prev, newTag]);
+      // setInputValue('');
+    } catch (err) {
+      setError('Failed to load tags');
+      console.log(err);
+    }
   };
 
   const addTag = (tag: string) => {
     console.log('tag to add', tag);
   };
 
-  const deleteTag = (tag: string) => {
-    console.log('tag to delete', tag);
-  };
+  // const deleteTag = (tag: string) => {
+  //   console.log('tag to delete', tag);
+  // };
 
   if (selectedAsset) {
     return (
@@ -52,7 +111,7 @@ function Folder() {
           <Text>Tags</Text>
           <TagList
             tags={selectedAsset.tags}
-            existingTags={tagsData.tags}
+            existingTags={existingTags}
             onTagCreation={(tag) => createTag(tag)}
             onTagAddition={(tag) => addTag(tag)}
             onTagDeletion={(tag) => deleteTag(tag)}
