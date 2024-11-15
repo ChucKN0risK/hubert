@@ -1,27 +1,26 @@
 import express from 'express';
 import cors from 'cors';
 import { promises as fs } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { join } from 'path';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const TAGS_FILE = join(__dirname, 'tags.json');
 
 const app = express();
 const port = 3000;
-
-const saveTags = async (tags) => {
+const saveTags = async (tags: string[]) => {
   await fs.writeFile(TAGS_FILE, JSON.stringify({ tags }, null, 2));
 };
 
 // Ensure tags.json exists
-try {
-  await fs.access(TAGS_FILE);
-} catch {
-  await saveTags([]);
-}
+(async () => {
+  try {
+    await fs.access(TAGS_FILE);
+  } catch {
+    await saveTags([]);
+  }
+})();
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send('Hello World!');
 });
 
@@ -44,6 +43,7 @@ app.get('/tags', async (_req, res) => {
     const data = await fs.readFile(TAGS_FILE, 'utf8');
     return res.json(JSON.parse(data));
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: 'Failed to read tags' });
   }
 });
@@ -72,7 +72,7 @@ app.delete('/tags', async (req, res) => {
     let tags = JSON.parse(data).tags;
     const tagToDelete = req.body.text;
     if (tags.includes(tagToDelete)) {
-      tags = tags.filter((el) => el !== tagToDelete);
+      tags = tags.filter((el: string) => el !== tagToDelete);
       await saveTags(tags);
       res.json({ success: `${tagToDelete} removed from tags` });
     } else {
