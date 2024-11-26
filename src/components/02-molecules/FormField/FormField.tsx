@@ -6,7 +6,7 @@ import Input from '../Input/Input'
 interface FormFieldProps {
   name: string;
   defaultValue?: string;
-  onChange: () => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const kebabCase = (string: string) => string
@@ -20,7 +20,7 @@ function FormField({ name, defaultValue, onChange }: FormFieldProps) {
   return (
     <Stack className='m-form-field'>
       <Text as='label' htmlFor={name}>{kebabCasedName}</Text>
-      <Input value={defaultValue} name={name} onChange={onChange} />
+      <Input value={defaultValue} name={name} onChange={(e) => onChange(e)} />
     </Stack>
   )
 }
