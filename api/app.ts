@@ -1,5 +1,7 @@
 import express from 'express';
 import cors from 'cors';
+import { type Tag } from '../src/types/tags.types';
+import { createTag } from './tagManager';
 import { promises as fs } from 'fs';
 import { join } from 'path';
 
@@ -7,7 +9,7 @@ const TAGS_FILE = join(__dirname, 'tags.json');
 
 const app = express();
 const port = 3000;
-const saveTags = async (tags: string[]) => {
+const saveTags = async (tags: Tag[]) => {
   await fs.writeFile(TAGS_FILE, JSON.stringify({ tags }, null, 2));
 };
 
@@ -16,7 +18,7 @@ const saveTags = async (tags: string[]) => {
   try {
     await fs.access(TAGS_FILE);
   } catch {
-    await saveTags([]);
+    throw new Error("tags.json file doesn't exist");
   }
 })();
 
@@ -41,7 +43,7 @@ app.listen(port, () => {
 app.get('/tags', async (_req, res) => {
   try {
     const data = await fs.readFile(TAGS_FILE, 'utf8');
-    return res.json(JSON.parse(data));
+    res.json(JSON.parse(data));
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: 'Failed to read tags' });
@@ -50,16 +52,8 @@ app.get('/tags', async (_req, res) => {
 
 app.post('/tags', async (req, res) => {
   try {
-    const data = await fs.readFile(TAGS_FILE, 'utf8');
-    const tags = JSON.parse(data).tags;
-    const newTag = req.body.text;
-    if (!tags.includes(newTag)) {
-      tags.push(newTag);
-      await saveTags(tags);
-      res.json({ success: `${newTag} added to saved tags` });
-    } else {
-      return res.json({ message: 'Tag already saved' });
-    }
+    await createTag(req.body.text);
+    res.status(201).json({ success: `${req.body.text} added to saved tags` });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: 'Failed to save tag app.js' });
@@ -71,12 +65,13 @@ app.delete('/tags', async (req, res) => {
     const data = await fs.readFile(TAGS_FILE, 'utf8');
     let tags = JSON.parse(data).tags;
     const tagToDelete = req.body.text;
-    if (tags.includes(tagToDelete)) {
-      tags = tags.filter((el: string) => el !== tagToDelete);
+    const tagAlreadyExists = tags.some((el) => el.name === tagToDelete);
+    if (tagAlreadyExists) {
+      tags = tags.filter((el: Tag) => el.name !== tagToDelete);
       await saveTags(tags);
       res.json({ success: `${tagToDelete} removed from tags` });
     } else {
-      return res.json({ message: "Tag does not exist and can't be deleted" });
+      res.json({ message: "Tag does not exist and can't be deleted" });
     }
   } catch (error) {
     console.log(error);
