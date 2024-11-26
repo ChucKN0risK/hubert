@@ -58,25 +58,22 @@
   border-left: var(--border);
   border-right: var(--border);
   border-bottom: var(--border);
-
-  button {
-    padding: var(--padding);
-  }
-
+  
   & > p {
     padding-top: var(--padding);
     padding-left: var(--padding);
     padding-right: var(--padding);
   }
-
+  
   button {
     display: flex;
     border: none;
     background-color: transparent;
     width: 100%;
+    padding: calc(var(--padding) / 2) var(--padding);
     border-radius: 0;
   
-    &:hover {
+    &:hover, &.is-selected {
       background-color: var(--background-neutral-faded);
       color: var(--foreground-neutral)
     }

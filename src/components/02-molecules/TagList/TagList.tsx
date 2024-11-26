@@ -1,12 +1,13 @@
 import Text from '../../01-atoms/Text/Text';
 import Pill from '../../01-atoms/Pill/Pill';
+import { type Tag } from '../../../types/tags.types';
 import './TagList.scss';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 interface TagListProps {
-  tags: string[] | undefined;
-  existingTags: string[];
-  onTagDeletion: (tag: string) => void;
+  tags: Tag[] | undefined;
+  existingTags: Tag[] | undefined;
+  onTagDeletion: (tagId: string) => void;
   onTagCreation: (tag: string) => void;
   onTagAddition: (tag: string) => void;
 }
@@ -14,7 +15,8 @@ interface TagListProps {
 function TagList({ tags, existingTags, onTagCreation, onTagAddition, onTagDeletion }: TagListProps) {
   const [newTag, setNewTag] = useState('');
   const [showExistingTags, toggleExistingTags] = useState(false);
-  const [filteredExistingTags, setFilteredExistingTags] = useState([...existingTags]);
+  const [filteredExistingTags, setFilteredExistingTags] = useState([...(existingTags || [])]);
+  const dropdown = useRef<HTMLUListElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const tag = e.currentTarget.value;
@@ -22,7 +24,7 @@ function TagList({ tags, existingTags, onTagCreation, onTagAddition, onTagDeleti
 
     if (tag.trim() !== '') {
       toggleExistingTags(true)
-      setFilteredExistingTags([...existingTags.filter(existingTag => existingTag.includes(tag.toLowerCase()))])
+      setFilteredExistingTags([...(existingTags || []).filter(existingTag => existingTag.name.includes(tag.toLowerCase()))]);
     } else {
       toggleExistingTags(false)
     }
@@ -54,11 +56,11 @@ function TagList({ tags, existingTags, onTagCreation, onTagAddition, onTagDeleti
       <ul className='u-list-reset m-asset-tags__tags'>
         {tags?.map(tag =>
           <Pill
-            key={tag}
-            label={tag}
+            key={tag.id}
+            label={tag.name}
             tabIndex={0}
             role='button'
-            onDelete={() => onTagDeletion(tag)}
+            onDelete={() => onTagDeletion(tag.id)}
           />
         )}
         <li className='m-asset-tags__add-tag'>
@@ -77,30 +79,28 @@ function TagList({ tags, existingTags, onTagCreation, onTagAddition, onTagDeleti
           </form>
         </li>
       </ul>
-      {showExistingTags ? (
+      {showExistingTags && (
         <div className='m-asset-tags__dropdown'>
           <Text as='p' variant='body-3'>Select a tag or create one</Text>
-          {filteredExistingTags.length !== 0 ? (
-            <ul className='u-list-reset m-asset-tags__existing-tags'>
-              {filteredExistingTags.map(tag =>
-                <li key={tag}>
-                  <button>
-                    <Pill label={tag} />
-                  </button>
-                </li>
-              )}
-            </ul>
-          ) : null}
           {filteredExistingTags.length === 0 ? (
-            <button onClick={() => handleTagCreation(newTag)}>
+            <button className='is-selected' onClick={() => handleTagCreation(newTag)}>
               <Text as='div' variant='caption-1'>
                 Create <Pill label={newTag} />
               </Text>
             </button>
-          ) : null}
+          ) : (
+            <ul className='u-list-reset m-asset-tags__existing-tags' ref={dropdown}>
+              {filteredExistingTags.map((tag, i) =>
+                <li key={tag.id}>
+                  <button className={i === 0 ? 'is-selected' : ''}>
+                    <Pill label={tag.name} />
+                  </button>
+                </li>
+              )}
+            </ul>
+          )}
         </div>
-      ) : null
-      }
+      )}
     </div>
   )
 }
