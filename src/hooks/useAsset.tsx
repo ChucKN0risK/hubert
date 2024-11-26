@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from "react";
-import { AssetItem } from "../types/asset.types";
+import { AssetItem } from "../types/assets.types";
 
 interface AssetContextType {
   selectedAsset: AssetItem | null,

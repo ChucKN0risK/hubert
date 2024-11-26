@@ -10,3 +10,5 @@ export type AssetItem = {
   tags?: Tag[];
   children: AssetItem[];
 };
+
+export type UpdateAsset = Partial<Pick<AssetItem, 'name' | 'tags'>>;

@@ -2,7 +2,7 @@ import './AssetList.scss';
 import Asset from '../Asset/Asset';
 import { useFolderContext } from '../../../hooks/useFolder';
 import { useAssetContext } from '../../../hooks/useAsset';
-import { AssetItem } from '../../../types/asset.types';
+import { AssetItem } from '../../../types/assets.types';
 
 function AssetList() {
   const { selectedFolder } = useFolderContext();
@@ -10,7 +10,6 @@ function AssetList() {
 
   const handleAssetSelection = (el: AssetItem) => {
     setSelectedAsset(el);
-    console.log(el);
   }
   // Only select elements that don't have any children, hence files
   const assets = selectedFolder?.children.filter(el => el.children.length === 0);

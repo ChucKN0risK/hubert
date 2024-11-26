@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { AssetItem } from '../../../types/asset.types';
+import type { AssetItem } from '../../../types/assets.types';
 export interface FolderProps extends React.HTMLAttributes<HTMLButtonElement> {
   asset: AssetItem;
   onSelection: (asset: AssetItem) => void;
@@ -16,7 +16,7 @@ function Folder({ asset, onSelection }: FolderProps) {
   // Check if the file is an image based on its extension
   const isImage = asset.name.match(/\.(jpg|jpeg|png|gif|avif|webp|svg)$/i);
   const isVideo = asset.name.match(/\.(mp4)$/i);
-  const isPDF = asset.name.match(/\.(pdf)$/i);
+  // const isPDF = asset.name.match(/\.(pdf)$/i);
 
   if (isImage) {
     return (

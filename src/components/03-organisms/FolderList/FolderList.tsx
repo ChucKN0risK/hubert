@@ -1,6 +1,6 @@
 import Folder from '../../03-organisms/Folder/Folder';
 import './FolderList.scss';
-import type { AssetItem } from '../../../types/asset.types';
+import type { AssetItem } from '../../../types/assets.types';
 import { useFolderContext } from '../../../hooks/useFolder';
 
 interface FolderListProps {

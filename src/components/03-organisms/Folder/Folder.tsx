@@ -3,7 +3,7 @@ import Text from '../../01-atoms/Text/Text';
 import Icon from '../../01-atoms/Icon/Icon';
 import Accordion from '../../02-molecules/Accordion/Accordion';
 import FolderList from '../../03-organisms/FolderList/FolderList';
-import type { AssetItem } from '../../../types/asset.types';
+import type { AssetItem } from '../../../types/assets.types';
 import type { TextVariant } from '../../01-atoms/Text/Text'
 import './Folder.scss';
 export interface FolderProps extends React.HTMLAttributes<HTMLButtonElement | HTMLDetailsElement> {

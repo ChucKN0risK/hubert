@@ -1,5 +1,5 @@
 import { createContext, useState, useContext, ReactNode } from "react";
-import type { AssetItem } from '../types/asset.types';
+import type { AssetItem } from '../types/assets.types';
 import data from '../../api/data.json';
 
 interface FolderContextType {
