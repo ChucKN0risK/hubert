@@ -26,6 +26,25 @@ export async function createTag(tag: string, filepath: PathLike = TAGS_FILE) {
   }
 }
 
+export async function deleteTag(tagId: string, filepath: PathLike = TAGS_FILE) {
+  const data = await fs.readFile(filepath, 'utf8');
+  const tags = JSON.parse(data).tags;
+  const tagAlreadyExists = tags.some((el) => el.id === tagId);
+  if (tagAlreadyExists) {
+    const updatedTags = tags.filter((tag) => tag.id !== tagId);
+    try {
+      await fs.writeFile(
+        filepath,
+        JSON.stringify({ tags: updatedTags }, null, 2)
+      );
+    } catch (error) {
+      throw new Error("Tag couldn't be deleted", error);
+    }
+  } else {
+    throw new Error(`Tag does not exist and can not be deleted`);
+  }
+}
+
 export async function getTagsByIds(tagIds: string[]) {
   try {
     const tagsData = await fs.readFile(TAGS_FILE, 'utf8');

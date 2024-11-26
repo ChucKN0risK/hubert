@@ -1,7 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { type Tag } from '../src/types/tags.types';
-import { createTag } from './tagManager';
+import { createTag, deleteTag } from './tagManager';
 import { promises as fs } from 'fs';
 import { join } from 'path';
 
@@ -9,9 +8,6 @@ const TAGS_FILE = join(__dirname, 'tags.json');
 
 const app = express();
 const port = 3000;
-const saveTags = async (tags: Tag[]) => {
-  await fs.writeFile(TAGS_FILE, JSON.stringify({ tags }, null, 2));
-};
 
 // Ensure tags.json exists
 (async () => {
@@ -62,17 +58,8 @@ app.post('/tags', async (req, res) => {
 
 app.delete('/tags', async (req, res) => {
   try {
-    const data = await fs.readFile(TAGS_FILE, 'utf8');
-    let tags = JSON.parse(data).tags;
-    const tagToDelete = req.body.text;
-    const tagAlreadyExists = tags.some((el) => el.name === tagToDelete);
-    if (tagAlreadyExists) {
-      tags = tags.filter((el: Tag) => el.name !== tagToDelete);
-      await saveTags(tags);
-      res.json({ success: `${tagToDelete} removed from tags` });
-    } else {
-      res.json({ message: "Tag does not exist and can't be deleted" });
-    }
+    await deleteTag(req.body.tagId);
+    res.status(200).json({ success: 'Tag removed' });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: 'Failed to delete tag' });
