@@ -1,3 +1,5 @@
+import { type Tag } from './tags.types';
+
 export type AssetItem = {
   id: string;
   name: string;
@@ -5,6 +7,6 @@ export type AssetItem = {
   lastModified?: string;
   size?: number;
   type?: string;
-  tags?: string[];
+  tags?: Tag[];
   children: AssetItem[];
 };
