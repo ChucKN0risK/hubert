@@ -1,6 +1,12 @@
 {
   "tags": [
-    "react",
-    "typescript"
+    {
+      "id": "2006678d-b389-4e78-bc73-a2084e5408d0",
+      "name": "react"
+    },
+    {
+      "id": "6a30e841-92b4-4bc6-8182-190b163b3de8",
+      "name": "vue"
+    }
   ]
 }
