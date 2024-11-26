@@ -1,12 +1,12 @@
 {
   "tags": [
     {
-      "id": "2006678d-b389-4e78-bc73-a2084e5408d0",
+      "id": "1cd43641-5861-4b90-ba33-edd4cf94bcae",
       "name": "react"
     },
     {
-      "id": "6a30e841-92b4-4bc6-8182-190b163b3de8",
-      "name": "vue"
+      "id": "cf0ac3ad-798f-4d89-8b4b-c75667d027fb",
+      "name": "typescript"
     }
   ]
 }

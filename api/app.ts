@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { createTag, deleteTag } from './tagManager';
+import { createTag, deleteTag, updateTag } from './tagManager';
 import { promises as fs } from 'fs';
 import { join } from 'path';
 
@@ -50,6 +50,16 @@ app.post('/tags', async (req, res) => {
   try {
     await createTag(req.body.text);
     res.status(201).json({ success: `${req.body.text} added to saved tags` });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: 'Failed to save tag app.js' });
+  }
+});
+
+app.put('/tags/:id', async (req, res) => {
+  try {
+    await updateTag(req.params.id, req.body.update);
+    res.status(200);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: 'Failed to save tag app.js' });
