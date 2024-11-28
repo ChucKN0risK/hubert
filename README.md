@@ -20,11 +20,59 @@ Assets manager like [Eagle](https://eagle.cool).
 - [] Fix the import of my app style in Storybook. Importing the whole `style.scss` in `preview.ts` makes my app style bleed in Storybook which changes the SB UI.
 - Handle light/dark theme following [this article](https://css-tricks.com/come-to-the-light-dark-side/)
 - https://dev.to/peaonunes/loading-a-directory-as-a-tree-structure-in-node-52bg
-- https://bolt.new/~/sb1-4al5mu
 - To Fix
   - [x] Afficher les assets présents au premier niveau du dossier root
-  - [] Ne pas afficher de <li> vides dans <FolderList> ni dans <AssetList>. Check que l'item est un dossier ou un fichier.
-  - [] Pouvoir sélectionner des dossiers enfants
-  - [] Comprendre pourquoi un <Folder> enfant d'un autre se sélectionne mais sélectionne son parent immédiatement après. En gros, la sélection de dossier fonctionne uniquement lorsque qu'un <Folder> n'en contient pas d'autres.
+  - [x] Ne pas afficher de <li> vides dans <FolderList> ni dans <AssetList>. Check que l'item est un dossier ou un fichier.
+  - [x] Pouvoir sélectionner des dossiers enfants
+  - [x] Comprendre pourquoi un <Folder> enfant d'un autre se sélectionne mais sélectionne son parent immédiatement après. En gros, la sélection de dossier fonctionne uniquement lorsque qu'un <Folder> n'en contient pas d'autres.
 - Check [exifreader](https://www.npmjs.com/package/exifreader) to extract info from asset for the <AssetInfo> component
 - Check [react-grid-gallery](https://www.npmjs.com/package/react-grid-gallery) to potentially add a masonry layout to the <AssetList> component
+
+## How Eagle works under the hood
+
+### 1. Folders
+
+The folder tree is saved in a `metadata.json` file containing nodes with the following structure:
+
+```ts
+type Node = {
+  id: string;
+  name: string;
+  description: string;
+  children: Node[];
+  modificationTime: number;
+  tags: string[];
+};
+```
+
+### 2. Assets
+
+Eagle copies each asset within it's own folder named after an `${id}.info`.
+
+The folder contains:
+
+- the asset copy
+- the asset thumbnail
+- a `metadata.json` file with the following structure:
+  ```ts
+  type Asset = {
+    id: string;
+    name: string;
+    size: number;
+    ext: 'jpg' | 'png' | 'webp' | 'avif' | 'gif' | 'mp4';
+    description: string;
+    tags: string[];
+    folders: string[]; // contains the id of its parent folders
+    modificationTime: number;
+    width: number;
+    height: number;
+    duration?: number;
+  };
+  ```
+
+### 3. Tags
+
+- Tags are saved in a `tags.json` file.
+- Tags saved are not case sensitive
+- a tag is a simple string
+- tags are duplicated between the aforementioned `tags.json` and the `tags` array in all asset `metadata.json` respective files.
