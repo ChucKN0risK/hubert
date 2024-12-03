@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 
 const scssPaths: Array<string> = [
-  './src/assets/styles/01-utils/_mixins.scss',
-  './src/assets/styles/01-utils/_variables.scss',
+  './src/assets/styles/01-utils/variables.scss',
+  './src/assets/styles/01-utils/mixins.scss',
 ];
 
 // https://vitejs.dev/config/
@@ -18,12 +18,11 @@ export default defineConfig({
         additionalData: scssPaths.reduce((acc, scssPath) => {
           const pathToImport = path.resolve(__dirname, scssPath);
           if (acc) {
-            return `${acc} @import '${pathToImport}';`;
+            return `${acc} @use '${pathToImport}'as *;`;
           }
-          return `@import '${pathToImport}';`;
+          return `@use '${pathToImport}' as *;`;
         }, ''),
       },
     },
-    devSourcemap: true,
   },
 });

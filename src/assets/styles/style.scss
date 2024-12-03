@@ -1,19 +1,38 @@
 // 01 - Utils
 // ---------------------
-@import '01-utils/variables';
-@import '01-utils/lint';
-@import '01-utils/mixins';
-@import '01-utils/site-settings';
-@import '01-utils/utility-classes';
+@use '01-utils/variables';
+@use '01-utils/lint';
+@use '01-utils/mixins' as *;
+@use '01-utils/site-settings';
+@use '01-utils/utility-classes';
 
 // 02 - Base
 // ---------------------
-@import '02-base/sanitize';
-@import '02-base/base';
+@use '02-base/sanitize';
+@use '02-base/base';
 
 // 03 - Fonts
 // ---------------------
-@import '03-fonts/fonts';
+@use '03-fonts/fonts';
 
 // 04 - Components
 // ---------------------
+
+// @layer utils, base, fonts;
+
+// @layer utils {
+//   @import '01-utils/variables';
+//   @import '01-utils/lint';
+//   @import '01-utils/mixins';
+//   @import '01-utils/site-settings';
+//   @import '01-utils/utility-classes';
+// }
+
+// @layer base {
+//   @import '02-base/sanitize';
+//   @import '02-base/base'; 
+// }
+
+// @layer fonts {
+//   @import '03-fonts/fonts';
+// }

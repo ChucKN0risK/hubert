@@ -1,5 +1,5 @@
 // ----------------------
 // == Mixins
 // ----------------------
-@import "mixins/mixins";
-@import "mixins/text-styles";
+@forward "mixins/mixins";
+@forward "mixins/text-styles";
