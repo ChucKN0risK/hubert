@@ -77,3 +77,27 @@ The folder contains:
 - Tags saved are not case sensitive
 - a tag is a simple string
 - tags are duplicated between the aforementioned `tags.json` and the `tags` array in all asset `metadata.json` respective files.
+
+## Project prompt
+
+```
+You are a React, Vite and TypeScript expert.
+
+I'm building a web app that allows me to manage assets stored on my computer. The file explorer is not enough and I want this app, to be my personal assets manager.
+
+On the backend I have an API built with Express. This API lets me serve assets to the frontend. This backend takes as input a path targeting a root folder on my computer which contains all my assets and their respective parent folders. These assets can be images, videos, and PDFs.
+
+I want my app to run locally and offline.
+
+My file system and my app must stay in sync. It means that all new updates I make into my root folder containing my assets must be reflected in my application backend.
+
+To replicate my files architecture from my file system here's what I plan to do:
+1. Generate a tree node representing all my folders and their children (files and/or folders) in a JSON file
+2. On a regular basis, I must regenerate this tree to detect potential updates made in my assets folder. I must identify added, deleted and modified nodes.
+3. Compare the old and new tree node (using the json-diff package) while preserving the node id. You absolutely need to preserve the old id when merging the 2 trees.
+4. Merge the old and new node trees together
+
+How would you create such an app?
+
+Be as precise as possible.
+```
