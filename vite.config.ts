@@ -18,7 +18,7 @@ export default defineConfig({
         additionalData: scssPaths.reduce((acc, scssPath) => {
           const pathToImport = path.resolve(__dirname, scssPath);
           if (acc) {
-            return `${acc} @use '${pathToImport}'as *;`;
+            return `${acc} @use '${pathToImport}' as *;`;
           }
           return `@use '${pathToImport}' as *;`;
         }, ''),

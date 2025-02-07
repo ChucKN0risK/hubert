@@ -2,9 +2,9 @@ import fs from 'fs';
 import path from 'path';
 
 const baseDirectory =
-  '/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎/';
+  '/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎';
 
-const nodesToExclude = ['Assets.library', '.DS_Store'];
+const nodesToExclude = ['Assets Lib - My Second Brain.library', '.DS_Store'];
 
 class TreeNode {
   public id: string;
@@ -78,3 +78,4 @@ export function buildTree(rootPath: string) {
 }
 
 buildTree(baseDirectory);
+console.log(buildTree(baseDirectory));

@@ -4,7 +4,7 @@ Assets manager like [Eagle](https://eagle.cool).
 
 ## Install
 
-1. `pnpm install`
+1. `pnpm i`
 2. `pnpm run dev`
 
 ## Todo
@@ -25,7 +25,6 @@ Assets manager like [Eagle](https://eagle.cool).
   - [x] Ne pas afficher de <li> vides dans <FolderList> ni dans <AssetList>. Check que l'item est un dossier ou un fichier.
   - [x] Pouvoir sélectionner des dossiers enfants
   - [x] Comprendre pourquoi un <Folder> enfant d'un autre se sélectionne mais sélectionne son parent immédiatement après. En gros, la sélection de dossier fonctionne uniquement lorsque qu'un <Folder> n'en contient pas d'autres.
-- Check [exifreader](https://www.npmjs.com/package/exifreader) to extract info from asset for the <AssetInfo> component
 - Check [react-grid-gallery](https://www.npmjs.com/package/react-grid-gallery) to potentially add a masonry layout to the <AssetList> component
 _ Check https://github.blog/engineering/user-experience/considerations-for-making-a-tree-view-component-accessible/
 
@@ -60,7 +59,7 @@ The folder contains:
     id: string;
     name: string;
     size: number;
-    ext: 'jpg' | 'png' | 'webp' | 'avif' | 'gif' | 'mp4';
+    ext: "jpg" | "png" | "webp" | "avif" | "gif" | "mp4";
     description: string;
     tags: string[];
     folders: string[]; // contains the id of its parent folders
@@ -101,3 +100,26 @@ How would you create such an app?
 
 Be as precise as possible.
 ```
+
+Or even better, create a dedicated prompt file like so: https://gist.github.com/yifanzz/3cfb8f9065769ffbf94348255f85597d
+
+## Project update
+
+The current logic is hard to work with and can be optimized.
+
+What I do:
+
+1. Generate a copy of my files/folders thanks to `directoryManager.ts` in a `data.json` file
+2. Update a file or folder metadata on the frontend and update the corresponding object in the `data.json` file. To make this work I need to compare (`treeComparator.ts`) and merge (`treeMerger.ts`) the old tree with a new one which is cumbersome.
+
+### Issues
+
+Managing the logic to generate what I have in my file system, update it and keep it as simple and portable as possible is preventing me from focusing on what I want to learn: React.
+
+### Solution
+
+- Separate the generation of the file tree and the writing of my assets metadata
+  - Use the [File System API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API) to generate all the data our frontend needs to display. This could be done when we launch the app. The [showDirectoryPicker()](https://developer.mozilla.org/en-US/docs/Web/API/Window/showDirectoryPicker) method could even be called during the user onboarding and saved in the browser `localStorage`. [Learn more](https://cloudfour.com/thinks/the-many-confusing-file-system-apis/).
+  - Write metadata directly as EXIF data by using [sharp's withExifMerge() method](https://sharp.pixelplumbing.com/api-output#withexifmerge). Some exif properties seem to fit our use case. Unfortunately we can't create a custom EXIF property which would have been even better and future proof.
+    - Potential limitations:
+      - EXIF data may not be available on all file types (e.g., GIF)

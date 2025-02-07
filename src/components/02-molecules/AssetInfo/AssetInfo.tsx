@@ -2,6 +2,8 @@ import Text from '../../01-atoms/Text/Text';
 import Stack from '../../01-atoms/Stack/Stack';
 import FormField from '../FormField/FormField';
 import { useAssetContext } from '../../../hooks/useAsset';
+import { type Tag } from '../../../types/tags.types';
+import { type UpdateAsset } from '../../../types/assets.types';
 import './AssetInfo.scss';
 import TagList from '../TagList/TagList';
 import { useEffect, useState } from 'react';
@@ -19,14 +21,11 @@ function Folder() {
   const getAssetNameWithoutExt = (name: string) => {
     return name.replace(/\.[^/.]+$/, '');
   }
-  const setAssetName = (value: string) => {
-    console.log('new name:', value.trim());
-  }
 
   const [inputValue, setInputValue] = useState('');
-  const [existingTags, setExistingTags] = useState<string[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [assetName, setAssetName] = useState('');
+  const [assetTags, setAssetTags] = useState<Tag[]>([]);
+  const [existingTags, setExistingTags] = useState<Tag[]>([]);
 
   const fetchTags = async () => {
     try {
@@ -35,16 +34,38 @@ function Folder() {
       const data = await response.json();
       setExistingTags(data.tags);
     } catch (err) {
-      setError('Failed to load tags');
       console.log(err);
-    } finally {
-      setIsLoading(false);
+      throw new Error('Failed to load tags');
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLFormElement>) => {
+    if (e.key === 'Enter') {
+      updateAsset({ name: assetName });
+    }
+  };
+
+  const updateAsset = async (update: UpdateAsset) => {
+    try {
+      const response = await fetch(`http://localhost:3000/asset/${selectedAsset!.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(update),
+      });
+      if (!response.ok) throw new Error('Failed to update asset');
+    } catch (err) {
+      console.log(err);
+      throw new Error('Failed to update asset');
     }
   };
 
   useEffect(() => {
     fetchTags();
-  }, [])
+    // console.log(selectedAsset);
+
+    // setAssetName(getAssetNameWithoutExt(selectedAsset.name));
+    // getAssetTags();
+  }, [selectedAsset])
 
   const createTag = async (tag: string) => {
     try {
@@ -60,19 +81,17 @@ function Folder() {
       // setExistingTags(prev => [...prev, newTag]);
       // setInputValue('');
     } catch (err) {
-      setError('Failed to load tags');
       console.log(err);
+      throw new Error('Failed to load tags');
     }
   };
 
-  const deleteTag = async (tag: string) => {
-    console.log(tag);
-
+  const deleteTag = async (tagId: string) => {
     try {
       const response = await fetch('http://localhost:3000/tags', {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: tag }),
+        body: JSON.stringify({ tagId }),
       });
       if (!response.ok) throw new Error('Failed to delete tag App.tsx');
       const resp = await response.json();
@@ -81,8 +100,8 @@ function Folder() {
       // setExistingTags(prev => [...prev, newTag]);
       // setInputValue('');
     } catch (err) {
-      setError('Failed to load tags');
       console.log(err);
+      throw new Error('Failed to load tags');
     }
   };
 
@@ -90,27 +109,23 @@ function Folder() {
     console.log('tag to add', tag);
   };
 
-  // const deleteTag = (tag: string) => {
-  //   console.log('tag to delete', tag);
-  // };
-
   if (selectedAsset) {
     return (
       <Stack className='m-asset-info' gap={4}>
         <img src={`http://localhost:3000/assets/${selectedAsset.path}`} alt='' />
         <div className='m-asset-info__section'>
-          <form action='post'>
+          <form action='post' onSubmit={(e) => e.preventDefault()} onKeyDown={e => handleKeyDown(e)}>
             <FormField
-              defaultValue={getAssetNameWithoutExt(selectedAsset.name)}
+              defaultValue={assetName}
               name='Name'
-              onChange={() => setAssetName}
+              onChange={(e) => setAssetName(e.target.value)}
             />
           </form>
         </div>
         <div className='m-asset-info__section'>
           <Text>Tags</Text>
           <TagList
-            tags={selectedAsset.tags}
+            tags={assetTags}
             existingTags={existingTags}
             onTagCreation={(tag) => createTag(tag)}
             onTagAddition={(tag) => addTag(tag)}
