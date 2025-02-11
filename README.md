@@ -103,6 +103,8 @@ Be as precise as possible.
 
 Or even better, create a dedicated prompt file like so: https://gist.github.com/yifanzz/3cfb8f9065769ffbf94348255f85597d
 
+and take inspiration from: https://cursor.directory/
+
 ## Project update
 
 The current logic is hard to work with and can be optimized.
