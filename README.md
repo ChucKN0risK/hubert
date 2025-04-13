@@ -27,6 +27,7 @@ Assets manager like [Eagle](https://eagle.cool).
   - [x] Comprendre pourquoi un <Folder> enfant d'un autre se sélectionne mais sélectionne son parent immédiatement après. En gros, la sélection de dossier fonctionne uniquement lorsque qu'un <Folder> n'en contient pas d'autres.
 - Check [react-grid-gallery](https://www.npmjs.com/package/react-grid-gallery) to potentially add a masonry layout to the <AssetList> component
 _ Check https://github.blog/engineering/user-experience/considerations-for-making-a-tree-view-component-accessible/
+- Check https://ishadeed.com/article/tree-view-css-indent/
 
 ## How Eagle works under the hood
 
