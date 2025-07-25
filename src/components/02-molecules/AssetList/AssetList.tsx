@@ -11,8 +11,7 @@ function AssetList() {
   const handleAssetSelection = (el: AssetItem) => {
     setSelectedAsset(el);
   }
-  // Only select elements that don't have any children, hence files
-  const assets = selectedFolder?.children.filter(el => el.children.length === 0);
+  const assets = selectedFolder?.children?.filter(el => el.type === 'file');
 
   return (
     <ul className='m-asset-list u-list-reset'>

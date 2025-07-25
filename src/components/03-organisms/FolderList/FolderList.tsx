@@ -4,10 +4,10 @@ import type { AssetItem } from '../../../types/assets.types';
 import { useFolderContext } from '../../../hooks/useFolder';
 
 interface FolderListProps {
-  folders: AssetItem[];
+  items: AssetItem[];
 }
 
-function FolderList({ folders }: FolderListProps) {
+function FolderList({ items = [] }: FolderListProps) {
   const { selectedFolder, setSelectedFolder } = useFolderContext();
 
   const handleFolderSelection = (el: AssetItem) => {
@@ -17,7 +17,7 @@ function FolderList({ folders }: FolderListProps) {
   const getSeletedState = (el: AssetItem) => {
     return el.id === selectedFolder?.id;
   }
-  const filteredFolders = folders.filter(folder => folder.children.length > 0);
+  const filteredFolders = items.filter(item => item.type === 'directory' && item.children && item.children.length > 0);
 
   return (
     <ul className='u-list-reset m-folder-list'>

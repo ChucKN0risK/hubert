@@ -4,7 +4,8 @@ import Text from './components/01-atoms/Text/Text';
 import Input from './components/02-molecules/Input/Input';
 import Sidebar from './components/03-organisms/Sidebar/Sidebar';
 import AssetList from './components/02-molecules/AssetList/AssetList';
-import AssetInfo from './components/02-molecules/AssetInfo/AssetInfo';
+// import AssetInfo from './components/02-molecules/AssetInfo/AssetInfo';
+import DirectoryPicker from './components/02-molecules/DirectoryPicker/DirectoryPicker';
 import FolderList from './components/03-organisms/FolderList/FolderList';
 import { FolderProvider } from './hooks/useFolder';
 import { AssetProvider } from './hooks/useAsset';
@@ -27,16 +28,17 @@ function App() {
                 <Input id='search' icon='search' placeholder='Search' onChange={() => handleChange} />
               </form>
               <Text>Folders</Text>
-              <FolderList folders={data.children} />
+              <FolderList items={data.children} />
             </Sidebar>
             <main>
+              <DirectoryPicker />
               {/* <header>
                 <ThemeSwitcher />
               </header> */}
               <AssetList />
             </main>
             <Sidebar>
-              <AssetInfo />
+              {/* <AssetInfo /> */}
             </Sidebar>
           </AssetProvider>
         </FolderProvider>

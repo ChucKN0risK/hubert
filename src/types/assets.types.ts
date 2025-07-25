@@ -8,7 +8,7 @@ export type AssetItem = {
   size?: number;
   type?: string;
   tags?: Tag[];
-  children: AssetItem[];
+  children?: AssetItem[];
 };
 
 export type UpdateAsset = Partial<Pick<AssetItem, 'name' | 'tags'>>;

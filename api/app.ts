@@ -1,32 +1,18 @@
-import express from 'express';
-import cors from 'cors';
-import { createTag, deleteTag, updateTag } from './tagManager';
-import { promises as fs } from 'fs';
-import { join } from 'path';
+import express from "express";
+import cors from "cors";
+import fs from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
-const TAGS_FILE = join(__dirname, 'tags.json');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3000;
 
-// Ensure tags.json exists
-(async () => {
-  try {
-    await fs.access(TAGS_FILE);
-  } catch {
-    throw new Error("tags.json file doesn't exist");
-  }
-})();
-
-app.get('/', (_req, res) => {
-  res.send('Hello World!');
-});
-
 app.use(
-  '/assets',
-  express.static(
-    '/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎'
-  )
+  "/assets",
+  express.static("/Users/lucho/Textes/my-second-brain/🧠 My Second Brain/00. ASSETS 📎")
 );
 app.use(express.json());
 app.use(cors());
@@ -36,42 +22,32 @@ app.listen(port, () => {
 });
 
 // API Routes
-app.get('/tags', async (_req, res) => {
+// Route to save directory content to JSON file
+app.post("/api/save-directory", async (req, res) => {
   try {
-    const data = await fs.readFile(TAGS_FILE, 'utf8');
-    res.json(JSON.parse(data));
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ error: 'Failed to read tags' });
-  }
-});
+    const { directoryContent } = req.body;
 
-app.post('/tags', async (req, res) => {
-  try {
-    await createTag(req.body.text);
-    res.status(201).json({ success: `${req.body.text} added to saved tags` });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ error: 'Failed to save tag app.js' });
-  }
-});
+    if (!directoryContent) {
+      return res.status(400).json({ error: "No directory content provided" });
+    }
 
-app.put('/tags/:id', async (req, res) => {
-  try {
-    await updateTag(req.params.id, req.body.update);
-    res.status(200);
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ error: 'Failed to save tag app.js' });
-  }
-});
+    // Create a directory for saving files if it doesn't exist
+    const outputDir = join(__dirname, "");
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
 
-app.delete('/tags', async (req, res) => {
-  try {
-    await deleteTag(req.body.tagId);
-    res.status(200).json({ success: 'Tag removed' });
+    const outputPath = join(outputDir, 'data.json');
+
+    fs.writeFileSync(outputPath, JSON.stringify(directoryContent, null, 2));
+
+    res.json({
+      success: true,
+      message: "Directory content saved successfully",
+      filePath: outputPath,
+    });
   } catch (error) {
-    console.log(error);
-    res.status(500).json({ error: 'Failed to delete tag' });
+    console.error("Error saving directory content:", error);
+    res.status(500).json({ error: "Failed to save directory content" });
   }
 });
