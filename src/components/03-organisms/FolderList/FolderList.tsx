@@ -30,4 +30,4 @@ function FolderList({ items = [] }: FolderListProps) {
   )
 }
 
-export default FolderList
+export default FolderList;

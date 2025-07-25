@@ -19,8 +19,8 @@ function Folder({ item, isSelected, onSelection }: FolderProps) {
 
   const getFolderIcon = 'folder-closed';
   const getFolderTextVariant: TextVariant = 'body-3';
-  const hasChildren = item.children.length > 0;
-  const isFolder = hasChildren && !!item.children!.find(el => el.children && el.children.length > 0);
+  const hasChildren = item.children && item.children.length > 0;
+  const isFolder = hasChildren && item.children!.find(el => el.type === 'directory');
 
   return (
     <div className={`m-folder ${isSelected ? 'is-selected' : ''}`}>
@@ -33,7 +33,7 @@ function Folder({ item, isSelected, onSelection }: FolderProps) {
             onToggle={handleClick}
             openByDefault={true}
           >
-            <FolderList folders={item.children} />
+            <FolderList items={item.children!} />
           </Accordion>
           : hasChildren ?
             <Stack axis="x" as='button' align='center' onClick={handleClick}>

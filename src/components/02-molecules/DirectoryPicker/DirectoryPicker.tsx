@@ -67,6 +67,7 @@ function DirectoryPicker() {
     setDirectoryStructure(null);
     try {
       const fileList: File[] = [];
+      const filesToExclude = ['.DS_Store'];
 
       // Create root directory structure
       const rootDir: DirectoryItem = {
@@ -86,7 +87,7 @@ function DirectoryPicker() {
         for await (const [name, handle] of entry.entries()) {
           const entryPath = path ? `${path}/${name}` : name;
 
-          if (handle.kind === 'file') {
+          if (handle.kind === 'file' && !filesToExclude.includes(name)) {
             try {
               const fileHandle = handle as FileSystemFileHandle;
               const file = await fileHandle.getFile();
