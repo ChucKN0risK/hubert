@@ -1,1168 +1,1543 @@
 {
-  "id": "01ee4900-eadb-4182-acb5-3857252ead53",
-  "name": "Development",
-  "path": "Development",
+  "id": "94539d75-a746-4fb6-9eef-ea978444393c",
+  "name": "Design Systems",
+  "path": "Design Systems",
   "type": "directory",
   "children": [
     {
-      "id": "f3cd7cfb-aafd-4f69-a365-8439e0bfe1c7",
+      "id": "c0bd2610-2897-4cc4-9085-412ca23e11ee",
       "name": "Tools",
-      "path": "Development/Tools",
+      "path": "Design Systems/Tools",
       "type": "directory",
       "children": [
         {
-          "id": "bd339097-84cb-412d-a883-3c9213cb1c1b",
-          "name": "cursor.jpg",
-          "path": "Development/Tools/cursor.jpg",
-          "type": "file",
-          "size": 289592,
-          "lastModified": "2025-03-07T10:02:05.225Z"
+          "id": "bc60bcb9-3ad5-4b3b-8aca-8264b2992c5b",
+          "name": "Million-js",
+          "path": "Design Systems/Tools/Million-js",
+          "type": "directory",
+          "children": [
+            {
+              "id": "23f37a36-7a48-48d4-94dc-dae6372ea956",
+              "name": "millions-js.mp4",
+              "path": "Design Systems/Tools/Million-js/millions-js.mp4",
+              "type": "file",
+              "size": 1562595,
+              "lastModified": "2024-03-18T15:18:27.013Z",
+              "children": []
+            },
+            {
+              "id": "ed81c1fb-4e97-4568-9d78-361cc8371597",
+              "name": "million-js.jpg",
+              "path": "Design Systems/Tools/Million-js/million-js.jpg",
+              "type": "file",
+              "size": 237134,
+              "lastModified": "2024-03-18T14:37:42.646Z",
+              "children": []
+            }
+          ]
         },
         {
-          "id": "f993705b-10e8-473b-825c-9dc120fbcc8e",
-          "name": "ARA-report-example.png",
-          "path": "Development/Tools/ARA-report-example.png",
-          "type": "file",
-          "size": 220027,
-          "lastModified": "2024-09-26T20:43:03.987Z"
+          "id": "bcf26ec9-1d05-47fe-84d8-7daf9f401744",
+          "name": "Include (by eBay)",
+          "path": "Design Systems/Tools/Include (by eBay)",
+          "type": "directory",
+          "children": [
+            {
+              "id": "55e23077-8e19-45f3-8508-a3537dc8c4cf",
+              "name": "eBay - Include (a11y Figma Plugin)-converted.mp4",
+              "path": "Design Systems/Tools/Include (by eBay)/eBay - Include (a11y Figma Plugin)-converted.mp4",
+              "type": "file",
+              "size": 8553972,
+              "lastModified": "2024-11-20T10:26:11.516Z",
+              "children": []
+            },
+            {
+              "id": "9f6b0039-1c41-48b8-9941-3b01cf848c18",
+              "name": "eBay - Include (a11y Figma Plugin).mp4",
+              "path": "Design Systems/Tools/Include (by eBay)/eBay - Include (a11y Figma Plugin).mp4",
+              "type": "file",
+              "size": 8907167,
+              "lastModified": "2024-11-19T18:10:26.475Z",
+              "children": []
+            },
+            {
+              "id": "b1663720-8edc-481f-a49b-42d04884f478",
+              "name": "eBay - Include (a11y Figma Plugin).png",
+              "path": "Design Systems/Tools/Include (by eBay)/eBay - Include (a11y Figma Plugin).png",
+              "type": "file",
+              "size": 501808,
+              "lastModified": "2024-11-19T18:41:41.337Z",
+              "children": []
+            }
+          ]
         },
         {
-          "id": "4717485d-183c-45d1-96b6-60cc793eef92",
-          "name": "vite.jpg",
-          "path": "Development/Tools/vite.jpg",
-          "type": "file",
-          "size": 165099,
-          "lastModified": "2024-05-05T20:04:48.843Z"
+          "id": "e54d0783-d704-4796-b5db-dd0918e88b57",
+          "name": "Lottie",
+          "path": "Design Systems/Tools/Lottie",
+          "type": "directory",
+          "children": [
+            {
+              "id": "2024b585-a918-434e-8d59-610b12eb5e0e",
+              "name": "lottie.jpg",
+              "path": "Design Systems/Tools/Lottie/lottie.jpg",
+              "type": "file",
+              "size": 230689,
+              "lastModified": "2025-02-20T14:50:39.289Z",
+              "children": []
+            },
+            {
+              "id": "582e05c8-29cc-4967-a097-886a7a897177",
+              "name": "lottie-creator.mp4",
+              "path": "Design Systems/Tools/Lottie/lottie-creator.mp4",
+              "type": "file",
+              "size": 10092735,
+              "lastModified": "2025-02-20T14:56:50.831Z",
+              "children": []
+            }
+          ]
         },
         {
-          "id": "0b3e3aa9-08d0-418f-a315-fb9921d580fa",
-          "name": "vite-environments.svg",
-          "path": "Development/Tools/vite-environments.svg",
-          "type": "file",
-          "size": 265939,
-          "lastModified": "2024-11-27T22:52:51.858Z"
+          "id": "5020142a-d343-48e9-a555-6dfb8fabc5c5",
+          "name": "Specify",
+          "path": "Design Systems/Tools/Specify",
+          "type": "directory",
+          "children": [
+            {
+              "id": "af42614e-f8de-4af2-b98b-f006a1102606",
+              "name": "specify-parser-pipeline-example.png",
+              "path": "Design Systems/Tools/Specify/specify-parser-pipeline-example.png",
+              "type": "file",
+              "size": 703407,
+              "lastModified": "2025-03-19T16:56:40.522Z",
+              "children": []
+            },
+            {
+              "id": "e2a2e5d3-8ee3-48c0-863d-97b7de20ea8b",
+              "name": "specify.png",
+              "path": "Design Systems/Tools/Specify/specify.png",
+              "type": "file",
+              "size": 311923,
+              "lastModified": "2021-09-23T13:11:33.080Z",
+              "children": []
+            },
+            {
+              "id": "1f60ef6f-9dd1-4eac-9b08-1859876d5fff",
+              "name": "what-specify-really-is.png",
+              "path": "Design Systems/Tools/Specify/what-specify-really-is.png",
+              "type": "file",
+              "size": 8290,
+              "lastModified": "2021-09-13T13:19:09.220Z",
+              "children": []
+            },
+            {
+              "id": "00b964aa-bd22-420a-bec6-9044c04146d9",
+              "name": "specify-workflow.mp4",
+              "path": "Design Systems/Tools/Specify/specify-workflow.mp4",
+              "type": "file",
+              "size": 4886090,
+              "lastModified": "2025-03-19T16:57:40.457Z",
+              "children": []
+            }
+          ]
         },
         {
-          "id": "ea983039-217b-4da0-b516-2f89c71606bd",
-          "name": "melt.jpg",
-          "path": "Development/Tools/melt.jpg",
+          "id": "e6e65114-da43-4d27-b9e3-4f8cd2a28aca",
+          "name": "coral-ui.mp4",
+          "path": "Design Systems/Tools/coral-ui.mp4",
           "type": "file",
-          "size": 311601,
-          "lastModified": "2025-04-12T13:59:37.209Z"
+          "size": 37834149,
+          "lastModified": "2024-11-21T09:09:52.440Z",
+          "children": []
         },
         {
-          "id": "3bfb9b76-868c-40e2-be61-14b1ceb1e6dc",
-          "name": "tRPC.mp4",
-          "path": "Development/Tools/tRPC.mp4",
+          "id": "e6d84381-fe88-4ace-acb2-a4f04b8989c9",
+          "name": "story-to-design.mp4",
+          "path": "Design Systems/Tools/story-to-design.mp4",
           "type": "file",
-          "size": 445639,
-          "lastModified": "2024-04-26T15:23:09.459Z"
+          "size": 4440562,
+          "lastModified": "2024-03-18T12:41:34.928Z",
+          "children": []
         },
         {
-          "id": "e33af6a7-c3e7-4c2e-b58b-803f26e39dc1",
-          "name": "bolt.jpg",
-          "path": "Development/Tools/bolt.jpg",
+          "id": "0f4ed43b-e99c-454d-b49b-dc9a1c091ec3",
+          "name": "playroom-demo.gif",
+          "path": "Design Systems/Tools/playroom-demo.gif",
           "type": "file",
-          "size": 162523,
-          "lastModified": "2024-11-22T13:19:20.191Z"
+          "size": 606738,
+          "lastModified": "2023-10-12T11:25:42.681Z",
+          "children": []
         },
         {
-          "id": "26ea4e3e-77db-4af4-a0d7-1317ed246465",
-          "name": "remotion.jpg",
-          "path": "Development/Tools/remotion.jpg",
+          "id": "8495ca9a-b24f-4c43-bef6-ec0fbcd4ed4a",
+          "name": "histoire.jpg",
+          "path": "Design Systems/Tools/histoire.jpg",
           "type": "file",
-          "size": 150411,
-          "lastModified": "2025-03-21T14:32:23.594Z"
+          "size": 144200,
+          "lastModified": "2024-03-18T12:40:58.639Z",
+          "children": []
         },
         {
-          "id": "43517119-94a1-4149-a2a9-1bc7e541345f",
-          "name": "stackblitz.jpg",
-          "path": "Development/Tools/stackblitz.jpg",
+          "id": "2181b6d3-3297-45e3-b5ba-e09f61625f1a",
+          "name": "auto.jpg",
+          "path": "Design Systems/Tools/auto.jpg",
           "type": "file",
-          "size": 231008,
-          "lastModified": "2024-05-30T09:18:11.021Z"
+          "size": 120109,
+          "lastModified": "2024-04-22T14:51:55.801Z",
+          "children": []
         },
         {
-          "id": "fd6bac38-f47c-4499-b28e-a77c0ecfff4c",
-          "name": "plugma.jpg",
-          "path": "Development/Tools/plugma.jpg",
+          "id": "a9732599-8842-4cc9-be1a-f7732f940b8e",
+          "name": "component.gallery.jpg",
+          "path": "Design Systems/Tools/component.gallery.jpg",
           "type": "file",
-          "size": 297200,
-          "lastModified": "2024-10-29T17:53:29.105Z"
+          "size": 734570,
+          "lastModified": "2023-10-19T09:15:39.809Z",
+          "children": []
         },
         {
-          "id": "c43b82ce-0e57-4a27-8c1e-4c1fcd3b16de",
-          "name": "v0-music-app-demo.mp4",
-          "path": "Development/Tools/v0-music-app-demo.mp4",
+          "id": "95159890-727d-4335-95e0-37cb9c7c668a",
+          "name": "radix.jpg",
+          "path": "Design Systems/Tools/radix.jpg",
           "type": "file",
-          "size": 9215759,
-          "lastModified": "2024-09-25T08:23:55.108Z"
+          "size": 632574,
+          "lastModified": "2024-03-24T17:53:02.889Z",
+          "children": []
         },
         {
-          "id": "f91172fb-b214-4ac9-9323-c8e0c471e79e",
-          "name": "pintora.jpg",
-          "path": "Development/Tools/pintora.jpg",
+          "id": "3aed4e1f-dfe0-488d-818f-7b044c4d602a",
+          "name": "mobbin.jpg",
+          "path": "Design Systems/Tools/mobbin.jpg",
           "type": "file",
-          "size": 229770,
-          "lastModified": "2024-05-23T11:52:24.455Z"
+          "size": 327538,
+          "lastModified": "2024-04-21T10:59:44.126Z",
+          "children": []
         },
         {
-          "id": "7387b8a2-9752-4780-9efc-0b0218eedbf3",
-          "name": "esbuild.jpg",
-          "path": "Development/Tools/esbuild.jpg",
+          "id": "f87ab35d-8ad0-4f69-ba6a-52288cad9b76",
+          "name": "speccer.jpg",
+          "path": "Design Systems/Tools/speccer.jpg",
           "type": "file",
-          "size": 220006,
-          "lastModified": "2024-05-05T15:27:43.325Z"
+          "size": 310005,
+          "lastModified": "2024-03-13T18:48:39.878Z",
+          "children": []
         },
         {
-          "id": "abeff1ae-c90a-4b8d-b31a-6e989ce3d441",
-          "name": "stencil.jpg",
-          "path": "Development/Tools/stencil.jpg",
+          "id": "1969007e-ebc6-4d2f-8233-de0c75d7b919",
+          "name": "zeroheight.jpg",
+          "path": "Design Systems/Tools/zeroheight.jpg",
           "type": "file",
-          "size": 418802,
-          "lastModified": "2024-05-03T18:27:19.780Z"
+          "size": 258084,
+          "lastModified": "2024-03-18T14:15:17.186Z",
+          "children": []
         },
         {
-          "id": "a7eba5c6-aa62-47e0-8756-7f3bab3b97d8",
-          "name": "vue.jpg",
-          "path": "Development/Tools/vue.jpg",
+          "id": "dad3c3f2-3f7d-4f21-90c1-e8a8333f2ca5",
+          "name": "polipo.jpg",
+          "path": "Design Systems/Tools/polipo.jpg",
           "type": "file",
-          "size": 220366,
-          "lastModified": "2024-05-04T14:11:22.328Z"
+          "size": 360128,
+          "lastModified": "2025-03-20T14:42:57.190Z",
+          "children": []
         },
         {
-          "id": "4e5a32a1-aa23-4067-80ff-d8357cbed244",
-          "name": "tRPC.jpg",
-          "path": "Development/Tools/tRPC.jpg",
+          "id": "8145fd36-4b87-4562-bb1a-aee6f90130fe",
+          "name": "shadcn.jpg",
+          "path": "Design Systems/Tools/shadcn.jpg",
           "type": "file",
-          "size": 313474,
-          "lastModified": "2024-04-26T15:23:28.323Z"
+          "size": 255832,
+          "lastModified": "2024-09-25T08:05:44.741Z",
+          "children": []
         },
         {
-          "id": "9460934c-4b5e-4ab5-b655-8e4f8de2eea8",
-          "name": "react-native.png",
-          "path": "Development/Tools/react-native.png",
+          "id": "a6a522e8-9770-4c82-ba61-8c36819a5be0",
+          "name": "paper.jpg",
+          "path": "Design Systems/Tools/paper.jpg",
           "type": "file",
-          "size": 270322,
-          "lastModified": "2024-09-27T20:54:09.562Z"
+          "size": 287121,
+          "lastModified": "2025-04-08T08:39:51.139Z",
+          "children": []
         },
         {
-          "id": "89fedded-6ebf-4eef-b96a-c603261c75a0",
-          "name": "lynx.jpg",
-          "path": "Development/Tools/lynx.jpg",
+          "id": "ce6f3332-a44a-4bc0-bc3e-6a7b67f91a75",
+          "name": "relume-company-description-to-sitemap.mp4",
+          "path": "Design Systems/Tools/relume-company-description-to-sitemap.mp4",
           "type": "file",
-          "size": 134984,
-          "lastModified": "2025-03-07T13:00:44.648Z"
+          "size": 6923821,
+          "lastModified": "2025-02-27T09:55:27.746Z",
+          "children": []
         },
         {
-          "id": "3e9a6c4a-ed3b-4753-b948-30c034f8b717",
-          "name": "mantine.dev.jpg",
-          "path": "Development/Tools/mantine.dev.jpg",
+          "id": "2d4f6581-2f53-44d6-84a5-a684b6480769",
+          "name": "magic patterns.jpg",
+          "path": "Design Systems/Tools/magic patterns.jpg",
           "type": "file",
-          "size": 144222,
-          "lastModified": "2025-07-24T08:16:24.980Z"
+          "size": 245693,
+          "lastModified": "2024-04-21T10:59:14.077Z",
+          "children": []
         },
         {
-          "id": "cb92b2ac-d8f6-495f-b7dd-06db0a094327",
-          "name": "expo.png",
-          "path": "Development/Tools/expo.png",
+          "id": "7ae6cf6f-2760-41ec-86b6-5e0027c859a7",
+          "name": "components-ai.jpg",
+          "path": "Design Systems/Tools/components-ai.jpg",
           "type": "file",
-          "size": 393364,
-          "lastModified": "2024-09-27T20:54:09.562Z"
+          "size": 345566,
+          "lastModified": "2024-03-18T12:51:44.079Z",
+          "children": []
         },
         {
-          "id": "5613c41d-7bc0-4308-903f-e61a0325515c",
-          "name": "tanstack-query.jpg",
-          "path": "Development/Tools/tanstack-query.jpg",
+          "id": "ea66ec63-051b-4411-8d84-1eec8efeb596",
+          "name": "storybook-addon-test-codegen.gif",
+          "path": "Design Systems/Tools/storybook-addon-test-codegen.gif",
           "type": "file",
-          "size": 342349,
-          "lastModified": "2024-09-24T20:55:45.211Z"
+          "size": 7051371,
+          "lastModified": "2025-03-21T13:21:43.204Z",
+          "children": []
         },
         {
-          "id": "ccbb0cb0-3acc-4bd9-9737-2eaf6c816c32",
-          "name": "one.jpg",
-          "path": "Development/Tools/one.jpg",
+          "id": "4b4ee26a-0bc0-4edd-bc7c-479b58247a09",
+          "name": "stylebit.jpg",
+          "path": "Design Systems/Tools/stylebit.jpg",
           "type": "file",
-          "size": 392790,
-          "lastModified": "2024-11-27T22:42:38.236Z"
+          "size": 166462,
+          "lastModified": "2024-03-18T12:40:49.862Z",
+          "children": []
         },
         {
-          "id": "b60cc506-6953-44f0-ad67-9bbe9c6f5269",
-          "name": "zagjs.png",
-          "path": "Development/Tools/zagjs.png",
+          "id": "e3451928-4665-4d6a-aa92-6703d1205c27",
+          "name": "kascade.jpg",
+          "path": "Design Systems/Tools/kascade.jpg",
           "type": "file",
-          "size": 258940,
-          "lastModified": "2024-10-16T21:37:38.267Z"
+          "size": 547903,
+          "lastModified": "2024-02-22T16:11:03.443Z",
+          "children": []
         },
         {
-          "id": "16a8402b-1b5c-4e7e-8f78-68211ec99c30",
-          "name": "htmx.jpg",
-          "path": "Development/Tools/htmx.jpg",
+          "id": "6e801494-6574-498b-97ae-96c1053bbe12",
+          "name": "penpot.mp4",
+          "path": "Design Systems/Tools/penpot.mp4",
           "type": "file",
-          "size": 270186,
-          "lastModified": "2024-06-25T09:01:29.117Z"
+          "size": 281363,
+          "lastModified": "2023-11-07T09:24:31.480Z",
+          "children": []
         },
         {
-          "id": "169c415e-2599-4c4b-8d8d-10e1f2c5da9d",
-          "name": "lynx-markup.jpg",
-          "path": "Development/Tools/lynx-markup.jpg",
+          "id": "402544aa-56bc-4d34-b741-91e415a1d546",
+          "name": "builder.mp4",
+          "path": "Design Systems/Tools/builder.mp4",
           "type": "file",
-          "size": 107107,
-          "lastModified": "2025-03-07T12:58:50.893Z"
+          "size": 1569811,
+          "lastModified": "2024-05-07T09:04:06.012Z",
+          "children": []
         },
         {
-          "id": "90945163-cd5e-4b9c-a63b-f89c7480bd80",
-          "name": "react-aria.jpg",
-          "path": "Development/Tools/react-aria.jpg",
+          "id": "da759853-e9bf-456a-afed-2b4acecedbd1",
+          "name": "terazzo.jpg",
+          "path": "Design Systems/Tools/terazzo.jpg",
           "type": "file",
-          "size": 289532,
-          "lastModified": "2024-05-04T12:31:24.270Z"
+          "size": 386228,
+          "lastModified": "2024-11-13T10:42:02.458Z",
+          "children": []
         },
         {
-          "id": "a25a14f4-0113-43fb-b723-619e199ef005",
-          "name": "tauri.png",
-          "path": "Development/Tools/tauri.png",
+          "id": "c3889caa-c625-4d77-85b3-bdfa48e287d9",
+          "name": "locofy.jpg",
+          "path": "Design Systems/Tools/locofy.jpg",
           "type": "file",
-          "size": 572354,
-          "lastModified": "2024-10-23T12:26:38.663Z"
+          "size": 329633,
+          "lastModified": "2024-04-21T10:59:14.074Z",
+          "children": []
         },
         {
-          "id": "27596496-c8c9-40f6-b580-b39421f9e978",
-          "name": "rolldown.jpg",
-          "path": "Development/Tools/rolldown.jpg",
+          "id": "6e2bfed0-1ff6-48e1-84f1-4f45238bc3ab",
+          "name": "supernova2_0.mp4",
+          "path": "Design Systems/Tools/supernova2_0.mp4",
           "type": "file",
-          "size": 200681,
-          "lastModified": "2024-05-05T20:27:21.420Z"
+          "size": 10670747,
+          "lastModified": "2024-03-18T12:41:34.887Z",
+          "children": []
         },
         {
-          "id": "d088caaa-2deb-4466-8dde-58cfa26e7fc9",
-          "name": "next.jpg",
-          "path": "Development/Tools/next.jpg",
+          "id": "d82927d6-cdc6-4026-9216-81c2d7a21304",
+          "name": "skippr.jpg",
+          "path": "Design Systems/Tools/skippr.jpg",
           "type": "file",
-          "size": 213826,
-          "lastModified": "2024-04-25T09:02:11.866Z"
+          "size": 263023,
+          "lastModified": "2024-04-21T10:59:14.080Z",
+          "children": []
         },
         {
-          "id": "24011bea-a83e-4ab5-a7c4-e5d4c688856e",
-          "name": "pixi-js.jpg",
-          "path": "Development/Tools/pixi-js.jpg",
+          "id": "2e5f2378-1c2d-4823-93fd-59245780b53b",
+          "name": "Genius (by Diagram).mp4",
+          "path": "Design Systems/Tools/Genius (by Diagram).mp4",
           "type": "file",
-          "size": 452405,
-          "lastModified": "2024-05-22T17:58:31.188Z"
+          "size": 20631739,
+          "lastModified": "2024-03-18T12:40:58.627Z",
+          "children": []
         },
         {
-          "id": "7e9757ee-09c5-4f24-9796-05140327c4bc",
-          "name": "component-party.jpg",
-          "path": "Development/Tools/component-party.jpg",
+          "id": "4e5366a9-cf60-48b5-90ac-bd8f9153573a",
+          "name": "webflow.jpg",
+          "path": "Design Systems/Tools/webflow.jpg",
           "type": "file",
-          "size": 440138,
-          "lastModified": "2024-04-28T11:40:44.181Z"
+          "size": 217611,
+          "lastModified": "2025-03-18T16:15:51.558Z",
+          "children": []
         },
         {
-          "id": "219507a6-54e0-4b33-969a-24cb87f882e7",
-          "name": "astro.jpg",
-          "path": "Development/Tools/astro.jpg",
+          "id": "8e48861f-51f8-4be6-8de7-860fdc869c0a",
+          "name": "builder.jpg",
+          "path": "Design Systems/Tools/builder.jpg",
           "type": "file",
-          "size": 430601,
-          "lastModified": "2024-04-05T08:56:08.339Z"
+          "size": 306419,
+          "lastModified": "2024-05-07T09:04:41.618Z",
+          "children": []
         },
         {
-          "id": "b320be43-060f-4b5f-87a0-8ae02e82fa3b",
-          "name": "silktide-toolbar.png",
-          "path": "Development/Tools/silktide-toolbar.png",
+          "id": "74602d3d-2df2-4ef5-b1d1-ecd9d5a31026",
+          "name": "relume.jpg",
+          "path": "Design Systems/Tools/relume.jpg",
           "type": "file",
-          "size": 458344,
-          "lastModified": "2024-09-27T20:54:09.564Z"
+          "size": 599485,
+          "lastModified": "2025-02-27T09:48:23.472Z",
+          "children": []
         },
         {
-          "id": "e9b3b6b5-d692-4582-924c-8b99e4cf3d23",
-          "name": "lit.jpg",
-          "path": "Development/Tools/lit.jpg",
+          "id": "311584f1-9f43-40e0-9500-4f78f2940b7e",
+          "name": "storybook.jpg",
+          "path": "Design Systems/Tools/storybook.jpg",
           "type": "file",
-          "size": 496600,
-          "lastModified": "2024-05-03T18:26:59.971Z"
+          "size": 274396,
+          "lastModified": "2024-03-18T12:40:58.642Z",
+          "children": []
         },
         {
-          "id": "9a084146-d910-44fa-916e-90f4ca0f88a6",
-          "name": "playwright.jpg",
-          "path": "Development/Tools/playwright.jpg",
+          "id": "6559b848-042f-49eb-948a-4c85213a5df0",
+          "name": "dessn.jpg",
+          "path": "Design Systems/Tools/dessn.jpg",
           "type": "file",
-          "size": 200950,
-          "lastModified": "2025-03-20T13:54:08.715Z"
+          "size": 877352,
+          "lastModified": "2025-03-20T14:23:45.944Z",
+          "children": []
         },
         {
-          "id": "4bbdc5be-4955-4048-9621-01fc1d57cba2",
-          "name": "ark-ui.jpg",
-          "path": "Development/Tools/ark-ui.jpg",
+          "id": "1a6b4dd9-444c-4022-86d4-32ebeb11b791",
+          "name": "rive-editor.avif",
+          "path": "Design Systems/Tools/rive-editor.avif",
           "type": "file",
-          "size": 151458,
-          "lastModified": "2025-07-24T08:23:48.706Z"
+          "size": 65154,
+          "lastModified": "2025-02-20T14:59:43.279Z",
+          "children": []
         },
         {
-          "id": "21d0730f-bb63-4eec-96c5-fe784172a3e7",
-          "name": "svelte.jpg",
-          "path": "Development/Tools/svelte.jpg",
+          "id": "b129ffe7-3761-4f1a-9381-87acb6b6aadc",
+          "name": "hermae-demo-reshaped-storybook.mp4",
+          "path": "Design Systems/Tools/hermae-demo-reshaped-storybook.mp4",
           "type": "file",
-          "size": 316930,
-          "lastModified": "2024-05-05T19:50:16.976Z"
+          "size": 1733476,
+          "lastModified": "2024-09-24T07:42:03.163Z",
+          "children": []
         },
         {
-          "id": "e797b8ee-d182-442c-9043-bd49ecd876fc",
-          "name": "v0.jpg",
-          "path": "Development/Tools/v0.jpg",
+          "id": "3485b7d7-cd14-470b-a110-9274860f6ff9",
+          "name": "napkins.dev.png",
+          "path": "Design Systems/Tools/napkins.dev.png",
           "type": "file",
-          "size": 160126,
-          "lastModified": "2024-09-25T08:43:18.185Z"
+          "size": 174002,
+          "lastModified": "2024-09-26T20:43:03.986Z",
+          "children": []
         },
         {
-          "id": "da251e03-ba68-4900-b084-014490e96d65",
-          "name": "qwik.jpg",
-          "path": "Development/Tools/qwik.jpg",
+          "id": "27d75b75-e5a4-4aaf-b9fb-591c53ab0b85",
+          "name": "coral-ui.jpg",
+          "path": "Design Systems/Tools/coral-ui.jpg",
           "type": "file",
-          "size": 202389,
-          "lastModified": "2024-05-07T09:11:26.434Z"
+          "size": 205282,
+          "lastModified": "2024-11-21T09:09:42.529Z",
+          "children": []
         },
         {
-          "id": "80803db8-15b2-4026-8938-daff3e814b47",
-          "name": "headless-ui.jpg",
-          "path": "Development/Tools/headless-ui.jpg",
+          "id": "357f1cf4-494e-4493-bea1-e500f1680a22",
+          "name": "vev.webp",
+          "path": "Design Systems/Tools/vev.webp",
           "type": "file",
-          "size": 447572,
-          "lastModified": "2024-05-28T15:57:56.379Z"
+          "size": 89232,
+          "lastModified": "2023-11-07T09:25:51.445Z",
+          "children": []
         },
         {
-          "id": "3baf7204-a70c-4d9f-bad0-40a8a4a471e1",
-          "name": "remix.jpg",
-          "path": "Development/Tools/remix.jpg",
+          "id": "ae126a0a-a0b9-4100-b3bd-54edc09bd851",
+          "name": "luro.jpg",
+          "path": "Design Systems/Tools/luro.jpg",
           "type": "file",
-          "size": 290811,
-          "lastModified": "2024-04-25T08:51:07.327Z"
+          "size": 309622,
+          "lastModified": "2024-04-20T12:29:57.372Z",
+          "children": []
         },
         {
-          "id": "a3d83d42-3c71-4f11-b61f-76f6bec091fb",
-          "name": "electron.png",
-          "path": "Development/Tools/electron.png",
+          "id": "12bf5f5d-a91e-49cc-8938-bfef656ec860",
+          "name": "chromatic.jpg",
+          "path": "Design Systems/Tools/chromatic.jpg",
           "type": "file",
-          "size": 298787,
-          "lastModified": "2024-10-23T12:26:38.651Z"
+          "size": 249140,
+          "lastModified": "2024-09-24T07:44:41.536Z",
+          "children": []
         },
         {
-          "id": "3153c761-024d-443c-91b6-005612cdd7fc",
-          "name": "tailwind-ui.jpg",
-          "path": "Development/Tools/tailwind-ui.jpg",
+          "id": "e8255845-6bbb-42d4-950a-80f2a956f747",
+          "name": "framer.jpg",
+          "path": "Design Systems/Tools/framer.jpg",
           "type": "file",
-          "size": 258499,
-          "lastModified": "2024-05-28T15:53:28.214Z"
+          "size": 151995,
+          "lastModified": "2025-03-18T16:22:08.824Z",
+          "children": []
         },
         {
-          "id": "668ed980-3804-401c-9ea2-923e25fbe0f0",
-          "name": "lightning-css.jpg",
-          "path": "Development/Tools/lightning-css.jpg",
+          "id": "eb64846e-81e4-4cd7-8c86-de96f77ec95d",
+          "name": "chakra-ui.jpg",
+          "path": "Design Systems/Tools/chakra-ui.jpg",
           "type": "file",
-          "size": 331524,
-          "lastModified": "2024-05-22T17:00:16.144Z"
+          "size": 179150,
+          "lastModified": "2024-03-29T12:27:18.070Z",
+          "children": []
         },
         {
-          "id": "b6b9e71e-7c14-4ae0-8bf9-79bc25215f3f",
-          "name": "bits-ui.jpg",
-          "path": "Development/Tools/bits-ui.jpg",
+          "id": "d933f79f-1169-4f10-acf8-e7bf5be8134b",
+          "name": "omlet.mp4",
+          "path": "Design Systems/Tools/omlet.mp4",
           "type": "file",
-          "size": 201680,
-          "lastModified": "2025-04-12T13:53:22.543Z"
+          "size": 172349,
+          "lastModified": "2024-03-18T12:46:53.552Z",
+          "children": []
         },
         {
-          "id": "233e4756-96ca-4b63-81de-9df82971fcf8",
-          "name": "commitizen.gif",
-          "path": "Development/Tools/commitizen.gif",
+          "id": "eea52f63-1db6-427c-a9d3-3bfac928b35f",
+          "name": "ariakit.jpg",
+          "path": "Design Systems/Tools/ariakit.jpg",
           "type": "file",
-          "size": 132841,
-          "lastModified": "2025-04-10T11:04:16.826Z"
+          "size": 201598,
+          "lastModified": "2024-03-29T12:24:28.148Z",
+          "children": []
         },
         {
-          "id": "96d3d3ea-857a-4d21-96c7-ac2c8b94b093",
-          "name": "ARA.png",
-          "path": "Development/Tools/ARA.png",
+          "id": "309a80bd-ff89-4e85-bc97-3fa59b076c34",
+          "name": "superposition.jpg",
+          "path": "Design Systems/Tools/superposition.jpg",
           "type": "file",
-          "size": 235241,
-          "lastModified": "2024-09-26T20:43:03.988Z"
+          "size": 622933,
+          "lastModified": "2024-02-22T16:26:06.521Z",
+          "children": []
         },
         {
-          "id": "6163e524-792b-4d82-a663-78e3ba1c2d0b",
-          "name": "v0-music-app-demo.jpg",
-          "path": "Development/Tools/v0-music-app-demo.jpg",
+          "id": "3b4186ab-7bf1-4939-94d8-795761c90b4b",
+          "name": "design.principles.png",
+          "path": "Design Systems/Tools/design.principles.png",
           "type": "file",
-          "size": 436885,
-          "lastModified": "2024-09-25T08:42:06.920Z"
+          "size": 261848,
+          "lastModified": "2024-09-26T20:43:03.985Z",
+          "children": []
+        },
+        {
+          "id": "8112875f-8b66-4a52-9477-8c32aa657868",
+          "name": "WCAG Plugin usage.jpg",
+          "path": "Design Systems/Tools/WCAG Plugin usage.jpg",
+          "type": "file",
+          "size": 107370,
+          "lastModified": "2025-02-04T20:39:11.885Z",
+          "children": []
+        },
+        {
+          "id": "482a54ca-911a-4712-9f32-eb76516dc6f9",
+          "name": "mitosis.gif",
+          "path": "Design Systems/Tools/mitosis.gif",
+          "type": "file",
+          "size": 11587566,
+          "lastModified": "2024-05-07T08:43:42.706Z",
+          "children": []
+        },
+        {
+          "id": "ff83f93e-9736-4457-a355-61e4d3c1c03a",
+          "name": "workflow.jpg",
+          "path": "Design Systems/Tools/workflow.jpg",
+          "type": "file",
+          "size": 313372,
+          "lastModified": "2024-09-22T14:21:44.338Z",
+          "children": []
+        },
+        {
+          "id": "a34d9fd6-ae3f-4196-a95a-88482ea7b595",
+          "name": "rive.jpg",
+          "path": "Design Systems/Tools/rive.jpg",
+          "type": "file",
+          "size": 223354,
+          "lastModified": "2025-02-20T14:59:59.190Z",
+          "children": []
+        },
+        {
+          "id": "3754d7a3-3fe8-4442-8f28-5b8ca29b101c",
+          "name": "bolt.mp4",
+          "path": "Design Systems/Tools/bolt.mp4",
+          "type": "file",
+          "size": 1600587,
+          "lastModified": "2024-11-22T13:18:44.254Z",
+          "children": []
+        },
+        {
+          "id": "8f675338-b5f0-411b-b65a-d7ea0d838d1f",
+          "name": "fractal.jpg",
+          "path": "Design Systems/Tools/fractal.jpg",
+          "type": "file",
+          "size": 122041,
+          "lastModified": "2024-03-26T12:50:56.887Z",
+          "children": []
+        },
+        {
+          "id": "a267cdf4-4671-4a3e-81c9-24f92a4502cd",
+          "name": "relume-sitemap-to-wireframes.mp4",
+          "path": "Design Systems/Tools/relume-sitemap-to-wireframes.mp4",
+          "type": "file",
+          "size": 13572486,
+          "lastModified": "2025-02-27T09:56:07.732Z",
+          "children": []
         }
       ]
     },
     {
-      "id": "923fcba7-d4c8-4415-9075-278403eee518",
-      "name": "javascript-code-we-write.jpg",
-      "path": "Development/javascript-code-we-write.jpg",
-      "type": "file",
-      "size": 61139,
-      "lastModified": "2024-05-07T09:36:09.522Z"
-    },
-    {
-      "id": "c561373f-ef76-4142-bc09-913adda97774",
-      "name": "computer-programming-langages-levels.webp",
-      "path": "Development/computer-programming-langages-levels.webp",
-      "type": "file",
-      "size": 21904,
-      "lastModified": "2024-05-23T13:54:24.050Z"
-    },
-    {
-      "id": "92b8c92a-5966-4825-a597-491376c85ead",
-      "name": "barrel-file-complex-cycles.png",
-      "path": "Development/barrel-file-complex-cycles.png",
-      "type": "file",
-      "size": 1644907,
-      "lastModified": "2024-10-13T00:02:11.392Z"
-    },
-    {
-      "id": "a8b6fcf2-b750-438f-8c55-4a832f39f6aa",
-      "name": "monorepo.png",
-      "path": "Development/monorepo.png",
-      "type": "file",
-      "size": 193225,
-      "lastModified": "2024-04-28T11:45:23.728Z"
-    },
-    {
-      "id": "5c98e2a2-2f77-49af-a49f-a23c15428e83",
-      "name": "Infrastrucure Depends On Needs.jpg",
-      "path": "Development/Infrastrucure Depends On Needs.jpg",
-      "type": "file",
-      "size": 557197,
-      "lastModified": "2024-04-30T05:18:06.146Z"
-    },
-    {
-      "id": "ab2fd689-c386-4149-884c-d63028b56447",
-      "name": "service-worker.jpg",
-      "path": "Development/service-worker.jpg",
-      "type": "file",
-      "size": 23096,
-      "lastModified": "2024-06-03T08:27:36.043Z"
-    },
-    {
-      "id": "afe6858e-3360-4b1f-9104-268183743230",
-      "name": "testing-pyramid.jpeg",
-      "path": "Development/testing-pyramid.jpeg",
-      "type": "file",
-      "size": 78685,
-      "lastModified": "2024-05-09T15:47:19.406Z"
-    },
-    {
-      "id": "4acb6bd8-c9e4-4b0d-b8bd-4adcbc6fa522",
-      "name": "streaming-server-side-rendering.mp4",
-      "path": "Development/streaming-server-side-rendering.mp4",
-      "type": "file",
-      "size": 207299,
-      "lastModified": "2024-11-19T12:55:56.824Z"
-    },
-    {
-      "id": "dc63264c-c7eb-411e-b096-f310476c1a4a",
-      "name": "lifo-queuing-strategy.mp4",
-      "path": "Development/lifo-queuing-strategy.mp4",
-      "type": "file",
-      "size": 3903766,
-      "lastModified": "2024-05-22T17:48:13.820Z"
-    },
-    {
-      "id": "f3f0dc24-e3a0-4ec7-a800-abf5f72d6fe7",
-      "name": "javascript-runtime.jpg",
-      "path": "Development/javascript-runtime.jpg",
-      "type": "file",
-      "size": 178335,
-      "lastModified": "2024-04-26T08:05:32.933Z"
-    },
-    {
-      "id": "a03d5f92-450b-4224-8601-1a7bcc59abdd",
-      "name": "streaming-video-buffering.svg",
-      "path": "Development/streaming-video-buffering.svg",
-      "type": "file",
-      "size": 12830,
-      "lastModified": "2024-06-16T18:43:45.477Z"
-    },
-    {
-      "id": "b225b720-f349-41d2-a4c7-439a6e00c4e5",
-      "name": "dot-language-example.webp",
-      "path": "Development/dot-language-example.webp",
-      "type": "file",
-      "size": 3824,
-      "lastModified": "2024-05-05T12:32:23.835Z"
-    },
-    {
-      "id": "6b0e844d-02f0-478d-8bd3-8ba5c96b8ae8",
-      "name": "Amazon EC2 Auto Scaling.jpg",
-      "path": "Development/Amazon EC2 Auto Scaling.jpg",
-      "type": "file",
-      "size": 396828,
-      "lastModified": "2024-04-30T04:53:17.972Z"
-    },
-    {
-      "id": "fb7755f6-2417-4ea5-8791-79a2b52a37eb",
-      "name": "itcss-key-metrics.svg",
-      "path": "Development/itcss-key-metrics.svg",
-      "type": "file",
-      "size": 1931,
-      "lastModified": "2024-12-04T13:43:23.795Z"
-    },
-    {
-      "id": "9032f543-aea2-4333-8c0b-1cafed4da803",
-      "name": "jamstack.jpg",
-      "path": "Development/jamstack.jpg",
-      "type": "file",
-      "size": 27740,
-      "lastModified": "2024-04-28T20:31:29.472Z"
-    },
-    {
-      "id": "f8a13f49-716e-4605-8401-237d5678bec8",
-      "name": "promise-consumer-executor.png",
-      "path": "Development/promise-consumer-executor.png",
-      "type": "file",
-      "size": 43249,
-      "lastModified": "2024-05-24T14:49:58.664Z"
-    },
-    {
-      "id": "221b3b20-2e49-4a11-bb54-8cb6bb7f8e47",
-      "name": "csr-rendering-graph.png",
-      "path": "Development/csr-rendering-graph.png",
-      "type": "file",
-      "size": 54353,
-      "lastModified": "2024-04-20T12:30:04.414Z"
-    },
-    {
-      "id": "6191a08b-72af-423a-b910-e0274a57ce4a",
-      "name": "infrastructure-needs.jpg",
-      "path": "Development/infrastructure-needs.jpg",
-      "type": "file",
-      "size": 488724,
-      "lastModified": "2024-04-30T04:20:40.220Z"
-    },
-    {
-      "id": "27b687fa-248a-455b-abe8-f658fb4d3aac",
-      "name": "build-times-regeneration.avif",
-      "path": "Development/build-times-regeneration.avif",
-      "type": "file",
-      "size": 7023,
-      "lastModified": "2024-11-19T10:38:33.386Z"
-    },
-    {
-      "id": "83e5786e-9f1c-4a1c-95b6-832739bd9f6e",
-      "name": "static-rendering-variations.webp",
-      "path": "Development/static-rendering-variations.webp",
-      "type": "file",
-      "size": 156610,
-      "lastModified": "2024-04-28T14:34:44.366Z"
-    },
-    {
-      "id": "e07a9c4e-6070-451a-a64b-a35753475bf4",
-      "name": ".DS_Store",
-      "path": "Development/.DS_Store",
-      "type": "file",
-      "size": 8196,
-      "lastModified": "2025-07-24T08:18:04.152Z"
-    },
-    {
-      "id": "d5908611-5aba-4206-88b5-7be813222d0e",
-      "name": "app-verticals-microfrontend-microservice-architecture-ui-example.png",
-      "path": "Development/app-verticals-microfrontend-microservice-architecture-ui-example.png",
-      "type": "file",
-      "size": 130125,
-      "lastModified": "2024-05-17T11:20:40.111Z"
-    },
-    {
-      "id": "691d2b7b-f7b1-4eaa-93d8-2e7ae3cc9cf4",
-      "name": "static-with-client-side-fetch.webp",
-      "path": "Development/static-with-client-side-fetch.webp",
-      "type": "file",
-      "size": 99780,
-      "lastModified": "2024-04-28T14:40:04.777Z"
-    },
-    {
-      "id": "65c83649-d9fd-451c-94a7-9fe034816f63",
-      "name": "progressive-hydration-[patterns.dev].webm",
-      "path": "Development/progressive-hydration-[patterns.dev].webm",
-      "type": "file",
-      "size": 479208,
-      "lastModified": "2024-04-23T11:38:05.075Z"
-    },
-    {
-      "id": "43c3ff0f-f8c6-476e-bbf8-fe8cec6422ab",
-      "name": "high-level-system-design-ecommerce-2.jpg",
-      "path": "Development/high-level-system-design-ecommerce-2.jpg",
-      "type": "file",
-      "size": 357244,
-      "lastModified": "2024-05-09T17:09:02.784Z"
-    },
-    {
-      "id": "1e4659c6-20c6-4290-ae2a-ea7870cff39a",
-      "name": "vercel-directory-in-project.jpg",
-      "path": "Development/vercel-directory-in-project.jpg",
-      "type": "file",
-      "size": 378271,
-      "lastModified": "2024-04-30T05:32:32.823Z"
-    },
-    {
-      "id": "fafb996c-b877-45ec-a144-b7f859a066cd",
-      "name": "vertical-scaling.avif",
-      "path": "Development/vertical-scaling.avif",
-      "type": "file",
-      "size": 10529,
-      "lastModified": "2024-04-28T12:07:51.327Z"
-    },
-    {
-      "id": "81194622-c8ca-4188-8913-1691a058fe50",
-      "name": "API-REST-101.jpg",
-      "path": "Development/API-REST-101.jpg",
-      "type": "file",
-      "size": 116622,
-      "lastModified": "2024-05-29T15:27:41.869Z"
-    },
-    {
-      "id": "f9533102-4197-4934-964a-d3c39df4079b",
-      "name": "developer-needs.jpg",
-      "path": "Development/developer-needs.jpg",
-      "type": "file",
-      "size": 427403,
-      "lastModified": "2024-04-30T04:19:33.603Z"
-    },
-    {
-      "id": "9eee907d-c49f-4026-b0fa-6918686b92cf",
-      "name": "high-level-system-design-ecommerce.jpg",
-      "path": "Development/high-level-system-design-ecommerce.jpg",
-      "type": "file",
-      "size": 274716,
-      "lastModified": "2024-05-09T17:10:08.541Z"
-    },
-    {
-      "id": "7d666796-5a02-4e23-8225-cfefbd684f36",
-      "name": "why-we-need-queues.mp4",
-      "path": "Development/why-we-need-queues.mp4",
-      "type": "file",
-      "size": 1929761,
-      "lastModified": "2024-05-22T17:34:55.179Z"
-    },
-    {
-      "id": "2625391d-ba9a-4d17-96db-b97d757f0e80",
-      "name": "plain-static-rendering.webp",
-      "path": "Development/plain-static-rendering.webp",
-      "type": "file",
-      "size": 40466,
-      "lastModified": "2024-04-28T14:39:33.662Z"
-    },
-    {
-      "id": "23b16bf7-9669-44b3-9f97-23d46bdcca1c",
-      "name": "csr-rendering-timeline.png",
-      "path": "Development/csr-rendering-timeline.png",
-      "type": "file",
-      "size": 76975,
-      "lastModified": "2024-04-28T20:21:33.274Z"
-    },
-    {
-      "id": "3c18941a-574e-4173-b830-28f279b1ca51",
-      "name": "cloudflare.png",
-      "path": "Development/cloudflare.png",
-      "type": "file",
-      "size": 213360,
-      "lastModified": "2024-05-04T14:58:25.678Z"
-    },
-    {
-      "id": "3889b4e1-3b2b-42e5-98c1-b0a8c561685b",
-      "name": "Amazon Cloudfront Functions to S3.jpg",
-      "path": "Development/Amazon Cloudfront Functions to S3.jpg",
-      "type": "file",
-      "size": 342692,
-      "lastModified": "2024-04-30T04:42:59.210Z"
-    },
-    {
-      "id": "fdc1dd7f-d81c-4e69-bf06-30781485a1be",
-      "name": "high-level-system-design-ecommerce-1.jpg",
-      "path": "Development/high-level-system-design-ecommerce-1.jpg",
-      "type": "file",
-      "size": 327067,
-      "lastModified": "2024-05-09T17:04:50.690Z"
-    },
-    {
-      "id": "3a8945a6-62d7-422a-bb9f-8f95d3d363f8",
-      "name": "ai-assisted-developer-workflow.jpg",
-      "path": "Development/ai-assisted-developer-workflow.jpg",
-      "type": "file",
-      "size": 460266,
-      "lastModified": "2024-06-12T09:38:10.604Z"
-    },
-    {
-      "id": "323f1c0f-70f9-419b-a2ef-9265b7a0f419",
-      "name": "optimized-ssr-rendering-graph.png",
-      "path": "Development/optimized-ssr-rendering-graph.png",
-      "type": "file",
-      "size": 56174,
-      "lastModified": "2024-04-20T12:30:04.429Z"
-    },
-    {
-      "id": "bf7763fb-f0af-45b2-b31c-2b4fbe59c9a3",
-      "name": "jest-snapshot-test-fail.png",
-      "path": "Development/jest-snapshot-test-fail.png",
-      "type": "file",
-      "size": 68274,
-      "lastModified": "2024-05-09T16:13:44.494Z"
-    },
-    {
-      "id": "ca4c8d7e-8f5e-45cb-a9d1-017a7f9cfdd7",
-      "name": "debugging-tactics.jpg",
-      "path": "Development/debugging-tactics.jpg",
-      "type": "file",
-      "size": 410464,
-      "lastModified": "2024-06-12T09:53:45.986Z"
-    },
-    {
-      "id": "768b9cfd-5686-4177-ac15-cfb8b0cf5db9",
-      "name": "Amazon API Gateway.jpg",
-      "path": "Development/Amazon API Gateway.jpg",
-      "type": "file",
-      "size": 415600,
-      "lastModified": "2024-04-30T05:09:21.023Z"
-    },
-    {
-      "id": "12881a04-2a79-4640-8bb7-1672ec679d2d",
-      "name": "spectrum-of-possibilities-for-ai-in-development.jpg",
-      "path": "Development/spectrum-of-possibilities-for-ai-in-development.jpg",
-      "type": "file",
-      "size": 353009,
-      "lastModified": "2024-06-12T09:33:48.809Z"
-    },
-    {
-      "id": "934e02b4-0c59-466a-bdca-e4ab8af2070c",
-      "name": "compiling-example.webp",
-      "path": "Development/compiling-example.webp",
-      "type": "file",
-      "size": 29110,
-      "lastModified": "2024-05-24T08:03:16.653Z"
-    },
-    {
-      "id": "654c44d4-2053-43ed-a2ae-dcc655ff4f7a",
-      "name": "user-needs.jpg",
-      "path": "Development/user-needs.jpg",
-      "type": "file",
-      "size": 345005,
-      "lastModified": "2024-04-30T04:18:29.721Z"
-    },
-    {
-      "id": "242660d9-ead8-4b9d-9c19-ee4a75993b01",
-      "name": "ssr-rendering-timeline.png",
-      "path": "Development/ssr-rendering-timeline.png",
-      "type": "file",
-      "size": 77480,
-      "lastModified": "2024-04-28T20:22:05.924Z"
-    },
-    {
-      "id": "6a4d2d22-79c2-440e-9c03-0bd0c1da30cf",
-      "name": "core-web-vitals.webp",
-      "path": "Development/core-web-vitals.webp",
-      "type": "file",
-      "size": 115010,
-      "lastModified": "2024-04-28T14:38:59.213Z"
-    },
-    {
-      "id": "148304d1-de6f-4f72-99c2-cec7b6bf5f56",
-      "name": "javascript-main-thread-vs-web-apis-thread-vs-workers-thread.jpg",
-      "path": "Development/javascript-main-thread-vs-web-apis-thread-vs-workers-thread.jpg",
-      "type": "file",
-      "size": 80953,
-      "lastModified": "2024-05-07T09:33:21.666Z"
-    },
-    {
-      "id": "a611e871-14a9-437d-a1f6-b918385a2f7a",
-      "name": "buffered-data-transfer-flow.png",
-      "path": "Development/buffered-data-transfer-flow.png",
-      "type": "file",
-      "size": 124926,
-      "lastModified": "2024-06-16T11:43:21.143Z"
-    },
-    {
-      "id": "8c6a7130-52d4-4446-a93c-027bd1cdaaca",
-      "name": "itcss-layers.svg",
-      "path": "Development/itcss-layers.svg",
-      "type": "file",
-      "size": 4969,
-      "lastModified": "2024-12-04T13:41:21.353Z"
-    },
-    {
-      "id": "09779137-b5c8-4964-9c0a-78a7b1892e34",
-      "name": "common-rendering-strategies-comparison.avif",
-      "path": "Development/common-rendering-strategies-comparison.avif",
-      "type": "file",
-      "size": 17322,
-      "lastModified": "2024-11-19T10:29:10.415Z"
-    },
-    {
-      "id": "dc4a90ee-3a56-478e-90b0-668e0cc4f951",
-      "name": "barrel-files-reduce-clarity.png",
-      "path": "Development/barrel-files-reduce-clarity.png",
-      "type": "file",
-      "size": 917261,
-      "lastModified": "2024-10-13T00:02:11.414Z"
-    },
-    {
-      "id": "aa33ee97-e7c9-45c0-b35a-bf0475551486",
-      "name": "Amazon Elastic Load Balancer to EC2 Auto Scaling.jpg",
-      "path": "Development/Amazon Elastic Load Balancer to EC2 Auto Scaling.jpg",
-      "type": "file",
-      "size": 387233,
-      "lastModified": "2024-04-30T04:55:12.688Z"
-    },
-    {
-      "id": "7fd06f31-a9aa-4045-993b-15bc9c0cd296",
-      "name": "dropped-requests.mp4",
-      "path": "Development/dropped-requests.mp4",
-      "type": "file",
-      "size": 108912,
-      "lastModified": "2024-05-22T17:52:29.864Z"
-    },
-    {
-      "id": "5b746ee1-a4b4-4e41-89f0-0fa82c27c66f",
-      "name": "fcp-timeline.png",
-      "path": "Development/fcp-timeline.png",
-      "type": "file",
-      "size": 94234,
-      "lastModified": "2024-04-28T17:09:59.749Z"
-    },
-    {
-      "id": "a4032918-8004-4ff3-a11e-c5c8e38ea056",
-      "name": "graphQL.png",
-      "path": "Development/graphQL.png",
-      "type": "file",
-      "size": 389871,
-      "lastModified": "2024-04-21T14:40:14.861Z"
-    },
-    {
-      "id": "ff8a34c5-9f52-4209-98d6-7d67b70f4f91",
-      "name": "javascript-main-thread-vs-web-apis-main-thread-optimization-part.jpg",
-      "path": "Development/javascript-main-thread-vs-web-apis-main-thread-optimization-part.jpg",
-      "type": "file",
-      "size": 75244,
-      "lastModified": "2024-05-07T09:32:35.030Z"
-    },
-    {
-      "id": "afdf3c38-2ed9-4173-9f1d-86a4ce6f2f4d",
-      "name": "partytown-web-workers.png",
-      "path": "Development/partytown-web-workers.png",
-      "type": "file",
-      "size": 40830,
-      "lastModified": "2024-05-07T09:26:26.560Z"
-    },
-    {
-      "id": "15455d7e-97af-4711-89f2-c0879cfb6802",
-      "name": "critical rendering path.svg",
-      "path": "Development/critical rendering path.svg",
-      "type": "file",
-      "size": 23969,
-      "lastModified": "2024-05-07T09:47:22.956Z"
-    },
-    {
-      "id": "3ae44154-d966-4507-b8c6-b1aff1c5aa29",
-      "name": "requests-not-dropped-thanks-to-queues.mp4",
-      "path": "Development/requests-not-dropped-thanks-to-queues.mp4",
-      "type": "file",
-      "size": 163744,
-      "lastModified": "2024-05-22T17:54:01.895Z"
-    },
-    {
-      "id": "31575edb-d563-428b-8cfd-d93feb66c202",
-      "name": "streaming-server-side-rendering-[patterns.dev].webm",
-      "path": "Development/streaming-server-side-rendering-[patterns.dev].webm",
-      "type": "file",
-      "size": 524523,
-      "lastModified": "2024-04-23T11:34:15.455Z"
-    },
-    {
-      "id": "11fa114d-0046-45f5-aded-06dc57641803",
-      "name": "AWS WAF.jpg",
-      "path": "Development/AWS WAF.jpg",
-      "type": "file",
-      "size": 398614,
-      "lastModified": "2024-04-30T04:59:04.450Z"
-    },
-    {
-      "id": "bb64247b-03cc-47a1-9dac-a1304dfb2766",
-      "name": "microarchitecture-system.jpg",
-      "path": "Development/microarchitecture-system.jpg",
-      "type": "file",
-      "size": 194407,
-      "lastModified": "2024-04-21T11:15:06.524Z"
-    },
-    {
-      "id": "0d5b3f10-c07d-4c24-94d9-74ad72e96197",
-      "name": "barrel-file.png",
-      "path": "Development/barrel-file.png",
-      "type": "file",
-      "size": 890396,
-      "lastModified": "2024-10-13T00:02:11.398Z"
-    },
-    {
-      "id": "f14a6834-838b-418c-8446-babfc0fce9d7",
-      "name": "system-design-ecommerce-product-table.jpg",
-      "path": "Development/system-design-ecommerce-product-table.jpg",
-      "type": "file",
-      "size": 279348,
-      "lastModified": "2024-05-09T16:47:06.955Z"
-    },
-    {
-      "id": "78de2b23-527f-441b-963d-76179020eee7",
-      "name": "low-level-high-level-programming-languages.webp",
-      "path": "Development/low-level-high-level-programming-languages.webp",
-      "type": "file",
-      "size": 28934,
-      "lastModified": "2024-05-23T13:32:28.561Z"
-    },
-    {
-      "id": "40c43a9a-98c5-48f6-9a6e-e70e29d19b4b",
-      "name": "high-level-system-design-ecommerce-scaled-infrastructure.jpg",
-      "path": "Development/high-level-system-design-ecommerce-scaled-infrastructure.jpg",
-      "type": "file",
-      "size": 183019,
-      "lastModified": "2024-05-09T17:11:47.797Z"
-    },
-    {
-      "id": "312d644a-fd4a-4cb3-875e-3fdc8250b604",
-      "name": "high-level-system-design-ecommerce-scaled-infrastructure-optimized.jpg",
-      "path": "Development/high-level-system-design-ecommerce-scaled-infrastructure-optimized.jpg",
-      "type": "file",
-      "size": 241902,
-      "lastModified": "2024-05-09T17:22:04.018Z"
-    },
-    {
-      "id": "f6bc4862-e37b-4740-855d-8e62ef6936bf",
-      "name": "app-monolith-frontback-microservices.png",
-      "path": "Development/app-monolith-frontback-microservices.png",
-      "type": "file",
-      "size": 41688,
-      "lastModified": "2024-05-17T11:09:43.986Z"
-    },
-    {
-      "id": "b12b27c1-8d2b-4ecc-bc5f-fb6425688ce3",
-      "name": "rest-api.webp",
-      "path": "Development/rest-api.webp",
-      "type": "file",
-      "size": 45658,
-      "lastModified": "2024-05-13T17:42:17.292Z"
-    },
-    {
-      "id": "7b112867-ce7a-4c19-bec1-afda0a128612",
-      "name": "plain-static-rendering-graph.webp",
-      "path": "Development/plain-static-rendering-graph.webp",
-      "type": "file",
-      "size": 140232,
-      "lastModified": "2024-04-28T14:36:43.444Z"
-    },
-    {
-      "id": "941481ec-863e-448d-8541-2c2fdb8c3320",
-      "name": "largest-contentful-paint-timeline.png",
-      "path": "Development/largest-contentful-paint-timeline.png",
-      "type": "file",
-      "size": 125309,
-      "lastModified": "2024-04-28T17:12:14.179Z"
-    },
-    {
-      "id": "ef4923e7-08b8-4a5c-abaa-3ec1fbbbe843",
-      "name": "webassembly.png",
-      "path": "Development/webassembly.png",
-      "type": "file",
-      "size": 558530,
-      "lastModified": "2024-05-30T21:16:02.965Z"
-    },
-    {
-      "id": "76c2a906-72db-4ed1-9410-596be262b9e4",
-      "name": "horizontal-scaling.avif",
-      "path": "Development/horizontal-scaling.avif",
-      "type": "file",
-      "size": 9712,
-      "lastModified": "2024-04-28T12:12:37.326Z"
-    },
-    {
-      "id": "d2f2186f-1746-401c-888e-ccc14f82d82e",
-      "name": "elastic-search-inverse-index.png",
-      "path": "Development/elastic-search-inverse-index.png",
-      "type": "file",
-      "size": 18057,
-      "lastModified": "2024-05-13T17:09:44.107Z"
-    },
-    {
-      "id": "1c7bf6a1-7ea2-4cb6-9291-242f24c6f877",
-      "name": "stale-while-revalidate.jpg",
-      "path": "Development/stale-while-revalidate.jpg",
-      "type": "file",
-      "size": 60169,
-      "lastModified": "2024-04-28T13:40:02.165Z"
-    },
-    {
-      "id": "adc23194-0c5d-4a34-aac6-362ad77a2beb",
-      "name": "request-flow-incremenral-static-regeneration.avif",
-      "path": "Development/request-flow-incremenral-static-regeneration.avif",
-      "type": "file",
-      "size": 24402,
-      "lastModified": "2024-11-19T11:35:55.328Z"
-    },
-    {
-      "id": "93567b19-0a3b-4d0b-b953-d6142a955124",
-      "name": "streaming-data-transfer-flow.png",
-      "path": "Development/streaming-data-transfer-flow.png",
-      "type": "file",
-      "size": 135936,
-      "lastModified": "2024-06-16T11:43:31.578Z"
-    },
-    {
-      "id": "10bfeb39-895c-4478-a119-185c106fde0f",
-      "name": "AWS Cloudfront to S3.jpg",
-      "path": "Development/AWS Cloudfront to S3.jpg",
-      "type": "file",
-      "size": 332578,
-      "lastModified": "2024-04-30T04:28:59.072Z"
-    },
-    {
-      "id": "2f4290e0-488f-4c24-825a-dfab7a3aa0c9",
-      "name": "design-token-resolver.png",
-      "path": "Development/design-token-resolver.png",
-      "type": "file",
-      "size": 39779,
-      "lastModified": "2024-06-03T12:08:54.971Z"
-    },
-    {
-      "id": "69d1d051-24e8-4a99-9e9b-4b66266b4df4",
-      "name": "system-design-ecommerce-orders-products-tables.jpg",
-      "path": "Development/system-design-ecommerce-orders-products-tables.jpg",
-      "type": "file",
-      "size": 556070,
-      "lastModified": "2024-05-09T16:54:10.903Z"
-    },
-    {
-      "id": "afab3a77-2e8a-40cf-bc70-2ac4f510f8cc",
-      "name": "AWS Route 53 to Cloudfront.jpg",
-      "path": "Development/AWS Route 53 to Cloudfront.jpg",
-      "type": "file",
-      "size": 307585,
-      "lastModified": "2024-04-30T04:35:35.903Z"
-    },
-    {
-      "id": "70dc0ea4-da57-4802-8fc1-20f8faaa5515",
-      "name": "system-design-ecommerce-db-tables-1.jpg",
-      "path": "Development/system-design-ecommerce-db-tables-1.jpg",
-      "type": "file",
-      "size": 217490,
-      "lastModified": "2024-05-09T16:43:23.891Z"
-    },
-    {
-      "id": "bc423914-711c-4029-9627-c6b1061d59c4",
-      "name": "barrel-files-infrastructure-strain.png",
-      "path": "Development/barrel-files-infrastructure-strain.png",
-      "type": "file",
-      "size": 1669882,
-      "lastModified": "2024-10-13T00:02:11.404Z"
-    },
-    {
-      "id": "14a8e1a1-3153-4dd2-8d46-f5cd0aea34b0",
-      "name": "music-player-state-machine.png",
-      "path": "Development/music-player-state-machine.png",
-      "type": "file",
-      "size": 112766,
-      "lastModified": "2024-04-29T08:08:33.107Z"
-    },
-    {
-      "id": "b055ac4b-d29e-4901-b668-61b0b76d4a8d",
-      "name": "fifo-queuing-strategy.mp4",
-      "path": "Development/fifo-queuing-strategy.mp4",
-      "type": "file",
-      "size": 4800951,
-      "lastModified": "2024-05-22T17:37:15.376Z"
-    },
-    {
-      "id": "d73dc6d3-9623-4481-8821-51dd3831411d",
-      "name": "forward-proxy-vs-reverse-proxy.png",
-      "path": "Development/forward-proxy-vs-reverse-proxy.png",
-      "type": "file",
-      "size": 52518,
-      "lastModified": "2024-04-21T15:30:24.132Z"
-    },
-    {
-      "id": "4954cfd0-9366-4e2a-88b2-6f70d5916d7c",
-      "name": "memory-usage-comparison-buffer-vs-streaming.png",
-      "path": "Development/memory-usage-comparison-buffer-vs-streaming.png",
-      "type": "file",
-      "size": 24819,
-      "lastModified": "2024-06-16T11:47:10.623Z"
-    },
-    {
-      "id": "fa619dc7-2323-4f9b-b3ab-6f1da0adb99d",
-      "name": "ssr-rendering-graph.png",
-      "path": "Development/ssr-rendering-graph.png",
-      "type": "file",
-      "size": 56799,
-      "lastModified": "2024-04-20T12:30:04.448Z"
-    },
-    {
-      "id": "23a26a00-0cff-412c-bee7-39d1492057a4",
-      "name": "hydration-vs-resumable.webp",
-      "path": "Development/hydration-vs-resumable.webp",
-      "type": "file",
-      "size": 24474,
-      "lastModified": "2024-05-07T08:57:03.152Z"
-    },
-    {
-      "id": "63e52047-e745-439f-a33c-a6796b122196",
-      "name": "browser-page-rendering-process.png",
-      "path": "Development/browser-page-rendering-process.png",
-      "type": "file",
-      "size": 39761,
-      "lastModified": "2024-05-03T16:15:09.049Z"
-    },
-    {
-      "id": "42562221-75ba-49ae-a7e6-42f97912d316",
-      "name": "transpiling-example.webp",
-      "path": "Development/transpiling-example.webp",
-      "type": "file",
-      "size": 24910,
-      "lastModified": "2024-05-24T08:03:07.713Z"
-    },
-    {
-      "id": "1fbc33f8-befb-42c9-b194-5818fc1fd799",
-      "name": "wasm-module-binary.jpg",
-      "path": "Development/wasm-module-binary.jpg",
-      "type": "file",
-      "size": 1306052,
-      "lastModified": "2024-05-31T08:47:45.748Z"
-    },
-    {
-      "id": "93918b4a-2ab6-4bc3-bd98-04a94033b795",
-      "name": "javascript-main-thread-vs-web-apis-main-thread.jpg",
-      "path": "Development/javascript-main-thread-vs-web-apis-main-thread.jpg",
-      "type": "file",
-      "size": 68895,
-      "lastModified": "2024-05-07T09:32:11.413Z"
-    },
-    {
-      "id": "9edf1c68-c9ee-4fc2-92cf-5259d8c6869a",
-      "name": "horizontal-sharding.avif",
-      "path": "Development/horizontal-sharding.avif",
-      "type": "file",
-      "size": 55858,
-      "lastModified": "2024-04-28T12:14:30.319Z"
-    },
-    {
-      "id": "9afebbf7-0585-4017-82ae-60f1c3334bd4",
-      "name": "JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue.mp4",
-      "path": "Development/JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue.mp4",
-      "type": "file",
-      "size": 87636835,
-      "lastModified": "2024-05-24T09:52:02.597Z"
-    },
-    {
-      "id": "1205253c-cfb1-4b41-a8fe-e01419a48be1",
-      "name": "app-verticals-microfrontend-microservice-architecture.png",
-      "path": "Development/app-verticals-microfrontend-microservice-architecture.png",
-      "type": "file",
-      "size": 127751,
-      "lastModified": "2024-05-17T11:10:33.780Z"
+      "id": "649aeed2-5d90-49bc-8952-f0f2ed860c9d",
+      "name": "Quantum (EA)",
+      "path": "Design Systems/Quantum (EA)",
+      "type": "directory",
+      "children": [
+        {
+          "id": "1ed8fedd-91b8-4e85-b414-e9b482c44b47",
+          "name": "ea-design-system-quantum-2.jpg",
+          "path": "Design Systems/Quantum (EA)/ea-design-system-quantum-2.jpg",
+          "type": "file",
+          "size": 93324,
+          "lastModified": "2024-04-01T16:37:51.313Z",
+          "children": []
+        },
+        {
+          "id": "1ec69faa-b9e8-4e97-b8c8-4826aa4f74f0",
+          "name": "ea-design-system-quantum-1.webp",
+          "path": "Design Systems/Quantum (EA)/ea-design-system-quantum-1.webp",
+          "type": "file",
+          "size": 11546,
+          "lastModified": "2024-04-01T16:29:51.071Z",
+          "children": []
+        },
+        {
+          "id": "1814475f-e320-4f9a-8504-a2e75ba4dc8c",
+          "name": "ea-design-system-quantum-3.jpg",
+          "path": "Design Systems/Quantum (EA)/ea-design-system-quantum-3.jpg",
+          "type": "file",
+          "size": 48114,
+          "lastModified": "2024-04-01T16:38:14.730Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "9f0bec80-533f-41b9-9512-54ebcb7d8da1",
+      "name": "AI and Design Systems - Brad Frost",
+      "path": "Design Systems/AI and Design Systems - Brad Frost",
+      "type": "directory",
+      "children": [
+        {
+          "id": "befc3550-53ec-40a8-ac1b-971f50ac693a",
+          "name": "AI and Design Systems - Converting a React component to a Web Component.mp4",
+          "path": "Design Systems/AI and Design Systems - Brad Frost/AI and Design Systems - Converting a React component to a Web Component.mp4",
+          "type": "file",
+          "size": 5736912,
+          "lastModified": "2024-02-29T13:22:02.000Z",
+          "children": []
+        },
+        {
+          "id": "6571a28e-15bf-47c6-b554-1f5db73aa123",
+          "name": "AI and Design Systems - Documentation Generation.mp4",
+          "path": "Design Systems/AI and Design Systems - Brad Frost/AI and Design Systems - Documentation Generation.mp4",
+          "type": "file",
+          "size": 3490946,
+          "lastModified": "2024-02-23T18:29:34.000Z",
+          "children": []
+        },
+        {
+          "id": "e4021dea-d72c-45da-87b6-f3b2d5ef87fe",
+          "name": "AI and Design Systems - AI-Generated Accessibility Report.mp4",
+          "path": "Design Systems/AI and Design Systems - Brad Frost/AI and Design Systems - AI-Generated Accessibility Report.mp4",
+          "type": "file",
+          "size": 2730388,
+          "lastModified": "2024-02-23T18:23:57.000Z",
+          "children": []
+        },
+        {
+          "id": "cb2263d4-81ff-4dd3-9622-602550491e75",
+          "name": "AI and Design Systems - Authoring Unit Tests.mp4",
+          "path": "Design Systems/AI and Design Systems - Brad Frost/AI and Design Systems - Authoring Unit Tests.mp4",
+          "type": "file",
+          "size": 3185243,
+          "lastModified": "2024-02-23T18:15:19.000Z",
+          "children": []
+        },
+        {
+          "id": "827cd429-053b-4ab1-8778-e140cac530b7",
+          "name": "AI and Design Systems - Component Code Generation.mp4",
+          "path": "Design Systems/AI and Design Systems - Brad Frost/AI and Design Systems - Component Code Generation.mp4",
+          "type": "file",
+          "size": 1688956,
+          "lastModified": "2024-03-02T00:01:08.000Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c389691c-6fa2-48fe-a7ee-9b86f3f152bc",
+      "name": "Gestalt (Pinterest)",
+      "path": "Design Systems/Gestalt (Pinterest)",
+      "type": "directory",
+      "children": [
+        {
+          "id": "993bbccd-1109-4380-b15d-c1c7206f8337",
+          "name": "gestalt-pinterest.jpg",
+          "path": "Design Systems/Gestalt (Pinterest)/gestalt-pinterest.jpg",
+          "type": "file",
+          "size": 240032,
+          "lastModified": "2024-04-09T11:40:15.684Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "4c6ddf6c-9bac-43a0-8092-9293d6c9d60e",
+      "name": "KITT (Typeform)",
+      "path": "Design Systems/KITT (Typeform)",
+      "type": "directory",
+      "children": [
+        {
+          "id": "36ee6254-1485-4709-af43-db5ce4c82ec2",
+          "name": "KITT-typeform-design-system-shadows.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-shadows.png",
+          "type": "file",
+          "size": 27827,
+          "lastModified": "2024-04-21T10:59:53.884Z",
+          "children": []
+        },
+        {
+          "id": "e0f8cecb-ace3-4fd8-af35-d6fa460291c7",
+          "name": "KITT-typeform-design-system-storybook.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-storybook.png",
+          "type": "file",
+          "size": 163943,
+          "lastModified": "2024-04-21T10:59:53.887Z",
+          "children": []
+        },
+        {
+          "id": "d6887f77-1488-44ea-a1ca-223f715ac004",
+          "name": "KITT-typeform-design-system-adoption-model.svg",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-adoption-model.svg",
+          "type": "file",
+          "size": 67212,
+          "lastModified": "2024-04-21T10:59:53.881Z",
+          "children": []
+        },
+        {
+          "id": "0cbedc9e-5386-483c-a003-697c182d42f9",
+          "name": "KITT-typeform-design-system-spacing-unit.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-spacing-unit.png",
+          "type": "file",
+          "size": 37654,
+          "lastModified": "2024-04-21T10:59:53.885Z",
+          "children": []
+        },
+        {
+          "id": "67a4c3e5-b722-43f6-914b-286438db58b6",
+          "name": "KITT-typeform-design-system-border-radius.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-border-radius.png",
+          "type": "file",
+          "size": 30377,
+          "lastModified": "2024-04-21T10:59:53.881Z",
+          "children": []
+        },
+        {
+          "id": "e512d711-e110-4869-8f8a-112f549bf7d0",
+          "name": "KITT-typeform-design-system-components.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-components.png",
+          "type": "file",
+          "size": 190147,
+          "lastModified": "2024-04-21T10:59:53.883Z",
+          "children": []
+        },
+        {
+          "id": "1560f5e2-728b-4f4d-af0a-38d5988fd4ec",
+          "name": "KITT-typeform-design-system-spacing.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-spacing.png",
+          "type": "file",
+          "size": 43905,
+          "lastModified": "2024-04-21T10:59:53.885Z",
+          "children": []
+        },
+        {
+          "id": "e7b51c03-e16a-4c81-8011-fe90f709f10d",
+          "name": "KITT-typeform-design-system-icons.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-icons.png",
+          "type": "file",
+          "size": 15515,
+          "lastModified": "2024-04-21T10:59:53.884Z",
+          "children": []
+        },
+        {
+          "id": "d215ce68-0db2-41b9-9380-44868385a409",
+          "name": "KITT-typeform-design-system-typography.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-typography.png",
+          "type": "file",
+          "size": 32925,
+          "lastModified": "2024-04-21T10:59:53.887Z",
+          "children": []
+        },
+        {
+          "id": "783c832b-6d2b-4803-bea3-3f8c1dd370a0",
+          "name": "KITT-typeform-design-system-dynamic-colors.png",
+          "path": "Design Systems/KITT (Typeform)/KITT-typeform-design-system-dynamic-colors.png",
+          "type": "file",
+          "size": 13738,
+          "lastModified": "2024-04-21T10:59:53.883Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c434d9db-e9ad-414e-9888-b4c72599d771",
+      "name": "Nike Rise",
+      "path": "Design Systems/Nike Rise",
+      "type": "directory",
+      "children": [
+        {
+          "id": "58a47310-1655-4a22-a0a0-cb96ae4dee4a",
+          "name": "nike-rise-web-console-1.webp",
+          "path": "Design Systems/Nike Rise/nike-rise-web-console-1.webp",
+          "type": "file",
+          "size": 26808,
+          "lastModified": "2024-04-01T15:31:38.141Z",
+          "children": []
+        },
+        {
+          "id": "6bfe1db8-e13e-4e5e-9960-fd15ec95c20b",
+          "name": "nike-screen-ratios.mp4",
+          "path": "Design Systems/Nike Rise/nike-screen-ratios.mp4",
+          "type": "file",
+          "size": 2181202,
+          "lastModified": "2024-04-01T15:27:26.483Z",
+          "children": []
+        },
+        {
+          "id": "3720cfbb-cd18-4499-a5b6-fd036908f81e",
+          "name": "nike-store-screens.mp4",
+          "path": "Design Systems/Nike Rise/nike-store-screens.mp4",
+          "type": "file",
+          "size": 4574116,
+          "lastModified": "2024-04-01T15:19:29.520Z",
+          "children": []
+        },
+        {
+          "id": "df4d2c35-5ec3-4148-b7cc-9eccdb879027",
+          "name": "nike-rise-web-console-3.webp",
+          "path": "Design Systems/Nike Rise/nike-rise-web-console-3.webp",
+          "type": "file",
+          "size": 37234,
+          "lastModified": "2024-04-01T15:31:48.255Z",
+          "children": []
+        },
+        {
+          "id": "abc8d034-9f44-4aea-b7cb-ab9346f7259d",
+          "name": "nike-rise-web-console-2.webp",
+          "path": "Design Systems/Nike Rise/nike-rise-web-console-2.webp",
+          "type": "file",
+          "size": 14702,
+          "lastModified": "2024-04-01T15:31:44.372Z",
+          "children": []
+        },
+        {
+          "id": "73a03269-0ae0-4af1-a119-73959da86559",
+          "name": "nike-store-screen-live-running-data.mp4",
+          "path": "Design Systems/Nike Rise/nike-store-screen-live-running-data.mp4",
+          "type": "file",
+          "size": 8457427,
+          "lastModified": "2024-04-01T15:33:59.885Z",
+          "children": []
+        },
+        {
+          "id": "f57535ba-96c1-44a7-8556-0710317e9a9f",
+          "name": "nike-store.mp4",
+          "path": "Design Systems/Nike Rise/nike-store.mp4",
+          "type": "file",
+          "size": 44891733,
+          "lastModified": "2024-04-01T15:19:03.118Z",
+          "children": []
+        },
+        {
+          "id": "a0d6f6e3-993f-4d4b-9978-b8e3698a3d98",
+          "name": "nike-store-seasonal.mp4",
+          "path": "Design Systems/Nike Rise/nike-store-seasonal.mp4",
+          "type": "file",
+          "size": 46810981,
+          "lastModified": "2024-04-01T15:20:16.954Z",
+          "children": []
+        },
+        {
+          "id": "23877e0b-50e5-4842-aaba-173c18e1c97e",
+          "name": "nike-generative-branding.mp4",
+          "path": "Design Systems/Nike Rise/nike-generative-branding.mp4",
+          "type": "file",
+          "size": 16236886,
+          "lastModified": "2024-04-01T15:28:38.573Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "7d2dd5d8-2bc4-436f-9e0d-e5d20ca66bdb",
+      "name": "Lens (Loom)",
+      "path": "Design Systems/Lens (Loom)",
+      "type": "directory",
+      "children": [
+        {
+          "id": "0fb16178-466f-474b-99c8-da7ea022a9be",
+          "name": "loom-lens-design-system-theme.png",
+          "path": "Design Systems/Lens (Loom)/loom-lens-design-system-theme.png",
+          "type": "file",
+          "size": 491172,
+          "lastModified": "2024-04-21T10:59:53.898Z",
+          "children": []
+        },
+        {
+          "id": "2b6741dd-1fc8-45ee-9f6c-9a56f8539508",
+          "name": "loom-lens-design-system-components.png",
+          "path": "Design Systems/Lens (Loom)/loom-lens-design-system-components.png",
+          "type": "file",
+          "size": 246131,
+          "lastModified": "2024-04-21T10:59:53.892Z",
+          "children": []
+        },
+        {
+          "id": "ad0a4c9e-3611-4c52-a718-e24e39ad991b",
+          "name": "loom-lens-design-system-code-playground.png",
+          "path": "Design Systems/Lens (Loom)/loom-lens-design-system-code-playground.png",
+          "type": "file",
+          "size": 397675,
+          "lastModified": "2024-04-21T10:59:53.890Z",
+          "children": []
+        },
+        {
+          "id": "67344b83-1bf3-46e5-bc14-509ba9a2bbed",
+          "name": "loom-lens-design-system.png",
+          "path": "Design Systems/Lens (Loom)/loom-lens-design-system.png",
+          "type": "file",
+          "size": 482370,
+          "lastModified": "2024-04-21T10:59:53.938Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "db052842-5e47-4310-9c38-e022ef38e345",
+      "name": "2024-05-16 - Design System Coffee",
+      "path": "Design Systems/2024-05-16 - Design System Coffee",
+      "type": "directory",
+      "children": [
+        {
+          "id": "e9a0c0be-584a-4ace-9e27-eadbc91d8d62",
+          "name": "CleanShot 2024-05-16 at 14.16.45@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.16.45@2x.jpg",
+          "type": "file",
+          "size": 453464,
+          "lastModified": "2024-05-16T12:16:45.458Z",
+          "children": []
+        },
+        {
+          "id": "4db9ef72-db66-4e6c-becb-7ea94b9d887e",
+          "name": "CleanShot 2024-05-16 at 14.08.51@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.08.51@2x.jpg",
+          "type": "file",
+          "size": 569870,
+          "lastModified": "2024-05-16T12:08:52.018Z",
+          "children": []
+        },
+        {
+          "id": "b0cdf4b5-55e5-4094-a827-a06bbec177c0",
+          "name": "CleanShot 2024-05-16 at 14.09.50@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.09.50@2x.jpg",
+          "type": "file",
+          "size": 475473,
+          "lastModified": "2024-05-16T12:09:50.961Z",
+          "children": []
+        },
+        {
+          "id": "8e5e3f06-60a5-49c0-838d-0fd69f1e035b",
+          "name": "CleanShot 2024-05-16 at 14.09.11@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.09.11@2x.jpg",
+          "type": "file",
+          "size": 545211,
+          "lastModified": "2024-05-16T12:09:12.241Z",
+          "children": []
+        },
+        {
+          "id": "ce14145e-1f87-46cb-b246-78a2f89d54ee",
+          "name": "CleanShot 2024-05-16 at 14.33.26@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.33.26@2x.jpg",
+          "type": "file",
+          "size": 888759,
+          "lastModified": "2024-05-16T12:33:27.075Z",
+          "children": []
+        },
+        {
+          "id": "4470ab2c-7642-4786-9df5-168cce43a576",
+          "name": "CleanShot 2024-05-16 at 14.06.49@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.06.49@2x.jpg",
+          "type": "file",
+          "size": 38684,
+          "lastModified": "2024-05-16T12:08:07.734Z",
+          "children": []
+        },
+        {
+          "id": "23c46672-93fc-4da4-bc19-5fbca7ca8ae3",
+          "name": "CleanShot 2024-05-16 at 14.29.29@2x.jpg",
+          "path": "Design Systems/2024-05-16 - Design System Coffee/CleanShot 2024-05-16 at 14.29.29@2x.jpg",
+          "type": "file",
+          "size": 705903,
+          "lastModified": "2024-05-22T15:44:45.797Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "a83f7a0e-97b9-4733-96a8-760895936fe9",
+      "name": "Sarah Drasner Adobe DS Screenshots",
+      "path": "Design Systems/Sarah Drasner Adobe DS Screenshots",
+      "type": "directory",
+      "children": [
+        {
+          "id": "252e4d7b-9251-4d19-9ac3-5ed03fd23c35",
+          "name": "Screen Shot 2018-02-28 at 20.51.54.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 20.51.54.png",
+          "type": "file",
+          "size": 207730,
+          "lastModified": "2018-02-28T19:52:01.000Z",
+          "children": []
+        },
+        {
+          "id": "c2eb68c7-541d-4aa9-beef-4a73d0951623",
+          "name": "Screen Shot 2018-02-28 at 21.06.49.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 21.06.49.png",
+          "type": "file",
+          "size": 146209,
+          "lastModified": "2018-02-28T20:06:54.000Z",
+          "children": []
+        },
+        {
+          "id": "94e47618-ccc7-473d-90b5-30d0eb2b8d2c",
+          "name": "Screen Shot 2018-02-28 at 21.05.20.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 21.05.20.png",
+          "type": "file",
+          "size": 94232,
+          "lastModified": "2018-02-28T20:05:28.000Z",
+          "children": []
+        },
+        {
+          "id": "2b22bcca-8ddf-4310-b356-9d1b9f11626f",
+          "name": "Screen Shot 2018-02-28 at 20.52.03.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 20.52.03.png",
+          "type": "file",
+          "size": 318532,
+          "lastModified": "2018-02-28T19:52:07.000Z",
+          "children": []
+        },
+        {
+          "id": "9eb9b80a-e3b9-44a3-9dfe-0bc955c99f2b",
+          "name": "Screen Shot 2018-03-01 at 10.02.24.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-03-01 at 10.02.24.png",
+          "type": "file",
+          "size": 624441,
+          "lastModified": "2018-03-01T09:02:27.000Z",
+          "children": []
+        },
+        {
+          "id": "7c6f008d-9323-4f2a-a5f1-eb4cb62ab374",
+          "name": "Screen Shot 2018-02-28 at 20.36.07 (2).png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 20.36.07 (2).png",
+          "type": "file",
+          "size": 504422,
+          "lastModified": "2018-02-28T19:36:07.000Z",
+          "children": []
+        },
+        {
+          "id": "43e83d0c-655b-4306-b900-12888ef1b850",
+          "name": "Screen Shot 2018-03-01 at 10.00.56.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-03-01 at 10.00.56.png",
+          "type": "file",
+          "size": 540546,
+          "lastModified": "2018-03-01T09:00:59.000Z",
+          "children": []
+        },
+        {
+          "id": "8dbcdd37-4a9a-45c1-bce0-20a6544803d0",
+          "name": "Screen Shot 2018-03-01 at 09.59.57.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-03-01 at 09.59.57.png",
+          "type": "file",
+          "size": 433346,
+          "lastModified": "2018-03-01T09:00:00.000Z",
+          "children": []
+        },
+        {
+          "id": "80900792-2c47-4503-9849-048f9c7860d5",
+          "name": "Screen Shot 2018-03-01 at 10.00.32.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-03-01 at 10.00.32.png",
+          "type": "file",
+          "size": 489568,
+          "lastModified": "2018-03-01T09:00:34.000Z",
+          "children": []
+        },
+        {
+          "id": "038a69e1-6745-4ed8-b83b-5533e3886734",
+          "name": "Screen Shot 2018-02-28 at 21.06.15.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 21.06.15.png",
+          "type": "file",
+          "size": 274669,
+          "lastModified": "2018-02-28T20:06:19.000Z",
+          "children": []
+        },
+        {
+          "id": "68c7aa91-02c7-4f99-b4ef-30912715e2af",
+          "name": "Screen Shot 2018-02-28 at 20.37.13.png",
+          "path": "Design Systems/Sarah Drasner Adobe DS Screenshots/Screen Shot 2018-02-28 at 20.37.13.png",
+          "type": "file",
+          "size": 105988,
+          "lastModified": "2018-02-28T19:37:16.000Z",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "63d2a9cd-0464-427b-907f-25c02389b87c",
+      "name": "documentation-system-nate-baldwin.webp",
+      "path": "Design Systems/documentation-system-nate-baldwin.webp",
+      "type": "file",
+      "size": 25810,
+      "lastModified": "2023-03-30T16:17:05.828Z",
+      "children": []
+    },
+    {
+      "id": "3316ece7-bc02-49f1-b082-ccad181138d4",
+      "name": "design_system_parameters.png",
+      "path": "Design Systems/design_system_parameters.png",
+      "type": "file",
+      "size": 80168,
+      "lastModified": "2021-09-05T08:18:48.000Z",
+      "children": []
+    },
+    {
+      "id": "8dae8405-54d2-449d-a9d2-5845b05cc506",
+      "name": "white-label-button-applied-on-several-brands.jpg",
+      "path": "Design Systems/white-label-button-applied-on-several-brands.jpg",
+      "type": "file",
+      "size": 1707944,
+      "lastModified": "2023-10-13T08:33:31.617Z",
+      "children": []
+    },
+    {
+      "id": "e85f8fef-ab74-4aa5-ab9e-1e62d308989b",
+      "name": "maze-design-system-ariane.png",
+      "path": "Design Systems/maze-design-system-ariane.png",
+      "type": "file",
+      "size": 171268,
+      "lastModified": "2022-09-02T15:03:31.057Z",
+      "children": []
+    },
+    {
+      "id": "32edc30d-9eec-4f64-a6fc-ec40e508ed14",
+      "name": "design_system_architecture_with_layers.png",
+      "path": "Design Systems/design_system_architecture_with_layers.png",
+      "type": "file",
+      "size": 589971,
+      "lastModified": "2021-09-05T20:23:27.000Z",
+      "children": []
+    },
+    {
+      "id": "b9e0761e-290b-44b3-b638-1fa6b2b4becc",
+      "name": "organisation-bnp-design-system.jpg",
+      "path": "Design Systems/organisation-bnp-design-system.jpg",
+      "type": "file",
+      "size": 217089,
+      "lastModified": "2024-11-20T13:23:58.530Z",
+      "children": []
+    },
+    {
+      "id": "6d26c4dc-1a61-49b7-9aea-18074c3929a6",
+      "name": "primer.jpg",
+      "path": "Design Systems/primer.jpg",
+      "type": "file",
+      "size": 366224,
+      "lastModified": "2025-04-09T08:00:17.622Z",
+      "children": []
+    },
+    {
+      "id": "c98af947-c4b1-4b3c-b54a-e0b930725e00",
+      "name": "State-AI-Design-Systems-2024.pdf",
+      "path": "Design Systems/State-AI-Design-Systems-2024.pdf",
+      "type": "file",
+      "size": 21656270,
+      "lastModified": "2025-02-14T12:58:25.907Z",
+      "children": []
+    },
+    {
+      "id": "7f9401ab-dae7-4206-8d57-18892407dffd",
+      "name": "gestalt-pinterest.jpg",
+      "path": "Design Systems/gestalt-pinterest.jpg",
+      "type": "file",
+      "size": 172645,
+      "lastModified": "2024-04-24T09:23:28.935Z",
+      "children": []
+    },
+    {
+      "id": "4e7112c8-a14c-40bc-aa2b-8993ce47da2b",
+      "name": "ui-visual-language-system-nate-baldwin.webp",
+      "path": "Design Systems/ui-visual-language-system-nate-baldwin.webp",
+      "type": "file",
+      "size": 21548,
+      "lastModified": "2023-03-30T16:13:00.822Z",
+      "children": []
+    },
+    {
+      "id": "7f81d91e-cfe6-4590-a8d1-4ff43a6b554c",
+      "name": "spotify-supported-platforms.webp",
+      "path": "Design Systems/spotify-supported-platforms.webp",
+      "type": "file",
+      "size": 162788,
+      "lastModified": "2025-03-26T16:53:26.921Z",
+      "children": []
+    },
+    {
+      "id": "c0f037b4-cdbb-467a-97d1-a2ee88482fd3",
+      "name": "design-systems-definition-2.avif",
+      "path": "Design Systems/design-systems-definition-2.avif",
+      "type": "file",
+      "size": 267699,
+      "lastModified": "2022-11-02T09:24:38.695Z",
+      "children": []
+    },
+    {
+      "id": "b9c91c76-b397-4cd0-b5d9-67497c1e6ca8",
+      "name": "bnp-design-system-performance-metrics.jpg",
+      "path": "Design Systems/bnp-design-system-performance-metrics.jpg",
+      "type": "file",
+      "size": 173729,
+      "lastModified": "2024-11-20T13:29:44.379Z",
+      "children": []
+    },
+    {
+      "id": "f8ad6e29-10a6-4f9d-be11-969b335bbbf3",
+      "name": "every-component-has-endless-variations.png",
+      "path": "Design Systems/every-component-has-endless-variations.png",
+      "type": "file",
+      "size": 398141,
+      "lastModified": "2024-10-05T10:56:52.632Z",
+      "children": []
+    },
+    {
+      "id": "60a7a8f4-f2a2-4eb7-ade6-5a4a386c8038",
+      "name": "anatomy_design_system_by_sparkbox.svg",
+      "path": "Design Systems/anatomy_design_system_by_sparkbox.svg",
+      "type": "file",
+      "size": 31110,
+      "lastModified": "2023-03-10T10:12:13.344Z",
+      "children": []
+    },
+    {
+      "id": "67be2542-f43d-4726-bd24-c391625314a3",
+      "name": "design_system_libraries-workflow.jpg",
+      "path": "Design Systems/design_system_libraries-workflow.jpg",
+      "type": "file",
+      "size": 71495,
+      "lastModified": "2021-09-07T20:10:22.259Z",
+      "children": []
+    },
+    {
+      "id": "1e8e9717-a65c-4a13-9fec-96763be7d9df",
+      "name": "bnp-dls-user-satisfaction-metrics.jpg",
+      "path": "Design Systems/bnp-dls-user-satisfaction-metrics.jpg",
+      "type": "file",
+      "size": 91827,
+      "lastModified": "2024-11-20T13:34:52.799Z",
+      "children": []
+    },
+    {
+      "id": "b6e3bcbb-07e0-4599-a826-5acde15d65eb",
+      "name": "design_system_patterns_same_structure.png",
+      "path": "Design Systems/design_system_patterns_same_structure.png",
+      "type": "file",
+      "size": 342708,
+      "lastModified": "2021-09-05T08:18:50.000Z",
+      "children": []
+    },
+    {
+      "id": "8f2a53c1-ad43-426c-802a-1416bbc571c0",
+      "name": "interface-design-systems-by-nate-baldwin.png",
+      "path": "Design Systems/interface-design-systems-by-nate-baldwin.png",
+      "type": "file",
+      "size": 107552,
+      "lastModified": "2022-11-02T09:11:26.517Z",
+      "children": []
+    },
+    {
+      "id": "03d62d55-8a1a-4493-b78f-e852bc9d4007",
+      "name": "layers-of-a-design-system.jpg",
+      "path": "Design Systems/layers-of-a-design-system.jpg",
+      "type": "file",
+      "size": 158971,
+      "lastModified": "2022-01-17T15:10:02.302Z",
+      "children": []
+    },
+    {
+      "id": "545bd0e7-d44e-4f91-928b-0448621063da",
+      "name": "spotify-encore-foundation.png",
+      "path": "Design Systems/spotify-encore-foundation.png",
+      "type": "file",
+      "size": 1660184,
+      "lastModified": "2023-10-03T12:53:56.617Z",
+      "children": []
+    },
+    {
+      "id": "1f538ef5-7249-4d92-9ff7-bc69da9c79a7",
+      "name": "design-system-est-un-processus.png",
+      "path": "Design Systems/design-system-est-un-processus.png",
+      "type": "file",
+      "size": 40340,
+      "lastModified": "2025-02-10T17:55:02.033Z",
+      "children": []
+    },
+    {
+      "id": "69c130c7-b4a8-44fe-a40e-3fa38dd908fb",
+      "name": "grab-mosaic-illustrations-types.jpg",
+      "path": "Design Systems/grab-mosaic-illustrations-types.jpg",
+      "type": "file",
+      "size": 168278,
+      "lastModified": "2025-02-20T15:12:28.963Z",
+      "children": []
+    },
+    {
+      "id": "c4ce7ee5-6c4b-4031-a2d2-5964f822f7b1",
+      "name": "design_system_architecture.jpg",
+      "path": "Design Systems/design_system_architecture.jpg",
+      "type": "file",
+      "size": 328968,
+      "lastModified": "2022-01-17T15:09:21.339Z",
+      "children": []
+    },
+    {
+      "id": "a9a11280-8169-4e0b-8c0f-abb76957db87",
+      "name": "Design_Systems_Alla_Kholmatova.pdf",
+      "path": "Design Systems/Design_Systems_Alla_Kholmatova.pdf",
+      "type": "file",
+      "size": 40347826,
+      "lastModified": "2021-09-04T23:31:44.019Z",
+      "children": []
+    },
+    {
+      "id": "20d855a1-4f55-4adc-bc67-46eea9c7a585",
+      "name": "design_system_patterns_to_be_merged.png",
+      "path": "Design Systems/design_system_patterns_to_be_merged.png",
+      "type": "file",
+      "size": 730569,
+      "lastModified": "2021-09-05T08:18:48.000Z",
+      "children": []
+    },
+    {
+      "id": "d94add22-5884-4a3b-be14-f47816926e1b",
+      "name": "design-system-contribution-workflow.png",
+      "path": "Design Systems/design-system-contribution-workflow.png",
+      "type": "file",
+      "size": 773470,
+      "lastModified": "2017-11-18T11:18:14.000Z",
+      "children": []
+    },
+    {
+      "id": "858dbbc8-4dc3-43d4-b822-510dc8308327",
+      "name": "grab-mosaic-llm-creation.jpg",
+      "path": "Design Systems/grab-mosaic-llm-creation.jpg",
+      "type": "file",
+      "size": 280064,
+      "lastModified": "2025-02-20T15:15:29.527Z",
+      "children": []
+    },
+    {
+      "id": "c4a7d71b-cb36-4186-9e25-2b5ad5d13611",
+      "name": "interface-design-system-nate-baldwin.webp",
+      "path": "Design Systems/interface-design-system-nate-baldwin.webp",
+      "type": "file",
+      "size": 29904,
+      "lastModified": "2023-03-30T16:17:51.584Z",
+      "children": []
+    },
+    {
+      "id": "fac26d21-70bd-4035-8340-c64807c8386b",
+      "name": "bnp-dls-workflow-component-development.jpg",
+      "path": "Design Systems/bnp-dls-workflow-component-development.jpg",
+      "type": "file",
+      "size": 114526,
+      "lastModified": "2024-11-20T14:00:53.478Z",
+      "children": []
+    },
+    {
+      "id": "16e6f100-4a60-4967-9c32-795b70784ba0",
+      "name": "design-system-iceberg-imerged.jpg",
+      "path": "Design Systems/design-system-iceberg-imerged.jpg",
+      "type": "file",
+      "size": 393657,
+      "lastModified": "2024-02-29T10:41:34.651Z",
+      "children": []
+    },
+    {
+      "id": "ea60a07b-7d8a-423f-94a7-69e4c7ba33c4",
+      "name": "generic_components (from Deliveroo DS).png",
+      "path": "Design Systems/generic_components (from Deliveroo DS).png",
+      "type": "file",
+      "size": 67044,
+      "lastModified": "2018-11-22T11:19:55.000Z",
+      "children": []
+    },
+    {
+      "id": "91a463e7-a490-42fa-ab35-bfe755e8f73f",
+      "name": "grab-mosaic.jpg",
+      "path": "Design Systems/grab-mosaic.jpg",
+      "type": "file",
+      "size": 162856,
+      "lastModified": "2025-02-20T15:13:49.982Z",
+      "children": []
+    },
+    {
+      "id": "0d473ebc-8483-4824-bfa7-8b1f3664eb8d",
+      "name": "design_system_serves_teams.jpg",
+      "path": "Design Systems/design_system_serves_teams.jpg",
+      "type": "file",
+      "size": 116851,
+      "lastModified": "2021-09-05T19:29:29.549Z",
+      "children": []
+    },
+    {
+      "id": "12cf8527-b3cc-4ab5-bef0-9da2e283ce98",
+      "name": "représentation-design-system-selon-figma.png",
+      "path": "Design Systems/représentation-design-system-selon-figma.png",
+      "type": "file",
+      "size": 53990,
+      "lastModified": "2025-02-10T17:52:04.843Z",
+      "children": []
+    },
+    {
+      "id": "48aa961f-0f02-456b-aaf9-b99199316d4a",
+      "name": "brand-system-nate-baldwin.webp",
+      "path": "Design Systems/brand-system-nate-baldwin.webp",
+      "type": "file",
+      "size": 24930,
+      "lastModified": "2023-03-30T16:10:05.217Z",
+      "children": []
+    },
+    {
+      "id": "98b82c5d-294d-4265-b8de-c94fa4e71329",
+      "name": "multi-brand-design-systems.jpg",
+      "path": "Design Systems/multi-brand-design-systems.jpg",
+      "type": "file",
+      "size": 138641,
+      "lastModified": "2024-04-21T14:19:27.450Z",
+      "children": []
+    },
+    {
+      "id": "19433a7d-d5e0-4394-bfec-cb776525de15",
+      "name": "Rapport-Salaires-Design-System-2024-2025.pdf",
+      "path": "Design Systems/Rapport-Salaires-Design-System-2024-2025.pdf",
+      "type": "file",
+      "size": 5921504,
+      "lastModified": "2025-02-20T09:55:26.295Z",
+      "children": []
+    },
+    {
+      "id": "7dca21a2-7ee0-4752-a2a7-3a5bb0764852",
+      "name": "design_system_specificity_scale.png",
+      "path": "Design Systems/design_system_specificity_scale.png",
+      "type": "file",
+      "size": 79500,
+      "lastModified": "2021-09-05T08:18:48.000Z",
+      "children": []
+    },
+    {
+      "id": "31ab1f7f-81b3-485c-9394-5f30cfda9d77",
+      "name": "design-system-iceberg-emerged.jpg",
+      "path": "Design Systems/design-system-iceberg-emerged.jpg",
+      "type": "file",
+      "size": 244781,
+      "lastModified": "2024-02-29T10:42:02.685Z",
+      "children": []
+    },
+    {
+      "id": "42edd3d9-4d11-4661-9324-bd38c0588c2a",
+      "name": "simpson-character-guidelines.jpg",
+      "path": "Design Systems/simpson-character-guidelines.jpg",
+      "type": "file",
+      "size": 161102,
+      "lastModified": "2024-11-07T16:25:53.938Z",
+      "children": []
+    },
+    {
+      "id": "355db602-5b76-4aa0-9053-42d8b224ff39",
+      "name": "component-system-nate-baldwin.webp",
+      "path": "Design Systems/component-system-nate-baldwin.webp",
+      "type": "file",
+      "size": 22722,
+      "lastModified": "2023-03-30T16:13:54.545Z",
+      "children": []
+    },
+    {
+      "id": "90f6b844-6b37-49c5-ae21-12975635cda4",
+      "name": "design_system_grouped_patterns.png",
+      "path": "Design Systems/design_system_grouped_patterns.png",
+      "type": "file",
+      "size": 714582,
+      "lastModified": "2021-09-05T08:18:48.000Z",
+      "children": []
+    },
+    {
+      "id": "64fd4f66-f221-4874-9f14-6cbcf983039d",
+      "name": "design_system_pattern_prominent.png",
+      "path": "Design Systems/design_system_pattern_prominent.png",
+      "type": "file",
+      "size": 1149827,
+      "lastModified": "2021-09-05T08:18:50.000Z",
+      "children": []
+    },
+    {
+      "id": "e6bf5288-e611-4779-bcdd-afdcb937d0af",
+      "name": "bnp-paris+hellobank.jpg",
+      "path": "Design Systems/bnp-paris+hellobank.jpg",
+      "type": "file",
+      "size": 128387,
+      "lastModified": "2024-11-20T13:19:09.659Z",
+      "children": []
+    },
+    {
+      "id": "d9e950be-88bb-4e73-95a7-2adb54075b12",
+      "name": "design-system-consumers.jpg",
+      "path": "Design Systems/design-system-consumers.jpg",
+      "type": "file",
+      "size": 154828,
+      "lastModified": "2023-03-15T11:09:47.136Z",
+      "children": []
+    },
+    {
+      "id": "ce2e55a4-da36-45f9-bff0-0c0299496f65",
+      "name": "design-system-layers.png",
+      "path": "Design Systems/design-system-layers.png",
+      "type": "file",
+      "size": 9940,
+      "lastModified": "2021-09-04T23:10:26.149Z",
+      "children": []
     }
   ]
 }
