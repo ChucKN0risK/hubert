@@ -26,8 +26,15 @@ Assets manager like [Eagle](https://eagle.cool).
   - [x] Pouvoir sélectionner des dossiers enfants
   - [x] Comprendre pourquoi un <Folder> enfant d'un autre se sélectionne mais sélectionne son parent immédiatement après. En gros, la sélection de dossier fonctionne uniquement lorsque qu'un <Folder> n'en contient pas d'autres.
 - Check [react-grid-gallery](https://www.npmjs.com/package/react-grid-gallery) to potentially add a masonry layout to the <AssetList> component
-_ Check https://github.blog/engineering/user-experience/considerations-for-making-a-tree-view-component-accessible/
-- Check https://ishadeed.com/article/tree-view-css-indent/
+- Check https://github.blog/engineering/user-experience/considerations-for-making-a-tree-view-component-accessible/
+- [] Add empty state in main view when no root directory is selected
+- [] Update file data after each file has been parsed by the File System API:
+  - [] `name`: "AI/test-folder/claude.jpg" -> "claude.jpg" (strip parent folders from name)
+  - [] `size`: 808871 -> size in Gb/Mb/Kb...
+  - [] Add EXIF data `UserComments` with potential existing value from file
+  - [] `lastModified`: 1707337452174 -> `new Date(1707337452174)`
+- [] Migrate TreeDirectory component from 'project 4' to this one
+- [x] In "project 4" Save data to JSON without clicking the "Save to server button"
 
 ## How Eagle works under the hood
 
@@ -126,3 +133,10 @@ Managing the logic to generate what I have in my file system, update it and keep
   - Write metadata directly as EXIF data by using [sharp's withExifMerge() method](https://sharp.pixelplumbing.com/api-output#withexifmerge). Some exif properties seem to fit our use case. Unfortunately we can't create a custom EXIF property which would have been even better and future proof.
     - Potential limitations:
       - EXIF data may not be available on all file types (e.g., GIF)
+
+### Todo
+
+- [] Ajouter un empty state au démarrage de l'app si aucun dossier n'a été sélectionné (si rien dans `api/data.json`)
+  - Utiliser le composant `<DirectoryPicker>`
+- [] Modifier `<FolderList>` component pour qu'il prenne en compte la nouvelle structure des dossiers "flat" générée dans `data.json` (cf. project 4)
+- []
